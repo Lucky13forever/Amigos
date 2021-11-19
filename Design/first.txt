@@ -1,1 +1,1 @@
-Boom first
+AM schimbat coloana 2
