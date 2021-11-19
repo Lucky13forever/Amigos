@@ -1,1 +1,0 @@
-AM schimbat coloana 1234
