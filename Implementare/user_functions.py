@@ -133,9 +133,6 @@ def get_table_user():
 
 get_table_user.__doc__ = 'Returns the user table'
 
-for i in range(1000, 1000):
-    create_new_user(f'Andrei{i}', f'andrei{i}@gmail.com', 're412', 'Timis', 'Timisoara', '1234567890', 300)
-
 # change_attr('3', {'name' : 'Andrei C.', 'parola' : 'restaurant'})
 
 # delete_user('2')
