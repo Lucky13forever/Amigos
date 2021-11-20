@@ -1,5 +1,4 @@
 import json
-from os import curdir, name
 
 class User():
     def __init__(self, name, email, password, county, city, phone, avg_consumption, surface) -> None:
