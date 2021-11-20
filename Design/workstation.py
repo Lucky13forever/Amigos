@@ -1,4 +1,4 @@
-from user_functions import *
+from Implementare.user_functions import *
 
 # table_user = get_table_user()
 create_new_user('Emanuel', 'emanuel@gamil.com', '1234', 'Timis', 'Timisoara', '0724037007', 300, 2)
