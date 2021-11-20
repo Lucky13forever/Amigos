@@ -1,3 +1,1 @@
-{
-    "0": 0
-}
+{"0": 1, "1": {"name": "Razvan_05", "email": "razvan@gmail.com", "password": "1234", "county": "Timis", "city": "Timisoara", "phone": "1234567890", "avg_consumption": 400, "surface": 50}}
