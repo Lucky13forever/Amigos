@@ -30,8 +30,7 @@ print(unu)
 #     'surface' : 20,
 
 # })
+from Proiect import Implementare
 
-from  import User
-
-rez = User.get_table_user()
+rez = User.delete_database()
 
