@@ -31,3 +31,7 @@ print(unu)
 
 # })
 
+from  import User
+
+rez = User.get_table_user()
+
