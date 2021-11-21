@@ -1,4 +1,7 @@
+from sys import flags
 from flask import Blueprint, render_template, request
+import flask
+from flask.helpers import flash
 
 from .our_classes.user_class import User
 
@@ -21,5 +24,16 @@ def sign_up():
         name = data.get('name')
         email = data.get('email')
         password = data.get('password')
+
+        flash = flask.flash
+
+        if len(name) < 2:
+            flash('Name must have atleast 4 characters', category='error')
+        if len(email) < 4:
+            flash('Email must have at least 4 characters', category='error')
+        if len(password) < 6:
+            flash('Password must have a length of at least 6 characters', category='error')
+        else:
+            flash('Account created', category='succes')
         User.create_new_user(name, email, password, 'Timis', 'Timisoara', '1234567890', 300, 50)
     return render_template("sign-up.html")
