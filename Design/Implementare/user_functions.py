@@ -84,7 +84,7 @@ class User():
             current['0'] += 1
 
             with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'w') as file:
-                json.dump(current, file, indent=None)
+                json.dump(current, file, indent=4)
 
         return 'User has been added succesfully'
 
@@ -97,7 +97,7 @@ class User():
                 current[user_id][key] = value
 
             with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'w') as file:
-                json.dump(current, file, indent=None)
+                json.dump(current, file, indent=4)
 
     change_attr.__doc__ = "Attributes of a user are 'name', 'email', 'password', 'county', 'city', 'phone', 'avg_consumption', 'surface'"
 
@@ -127,11 +127,18 @@ class User():
             rez = json.load(file)
 
             with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'w') as file:
-                json.dump(rez, file, indent=None)
+                json.dump(rez, file, indent=4)
         return rez
 
     get_table_user.__doc__ = 'Returns the user table'
 
+
+    def pretty_print():
+        with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'r') as file:
+            rez = json.load(file)
+
+            with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'w') as file:
+                json.dump(rez, file, indent=4)
 # change_attr('3', {'name' : 'Andrei C.', 'parola' : 'restaurant'})
 
 # delete_user('2')
