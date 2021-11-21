@@ -1,5 +1,5 @@
 {
-    "0": 1,
+    "0": 3,
     "1": {
         "name": "Emanuel",
         "email": "emanuellugojan@gmail.com",
@@ -9,5 +9,25 @@
         "phone": "0724037007",
         "avg_consumption": 300,
         "surface": 20
+    },
+    "2": {
+        "name": "Lugo_1",
+        "email": "lugo_1@gmail.com",
+        "password": "E@uv5FNAYmZM7Xa",
+        "county": "Timis",
+        "city": "Timisoara",
+        "phone": "1234567890",
+        "avg_consumption": 300,
+        "surface": 50
+    },
+    "3": {
+        "name": "Bombastic",
+        "email": "bomba@hot.ro",
+        "password": "trouble",
+        "county": "Timis",
+        "city": "Timisoara",
+        "phone": "1234567890",
+        "avg_consumption": 300,
+        "surface": 50
     }
 }

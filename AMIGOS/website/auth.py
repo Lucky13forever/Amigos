@@ -1,5 +1,7 @@
 from flask import Blueprint, render_template, request
 
+from .our_classes.user_class import User
+
 auth = Blueprint('auth', __name__)
 
 @auth.route('/login', methods=['GET', 'POST'])
@@ -15,5 +17,9 @@ def logout():
 @auth.route('/sign-up', methods=['GET', 'POST'])
 def sign_up():
     data = request.form
-    print(data)
+    if request.method == 'POST':
+        name = data.get('name')
+        email = data.get('email')
+        password = data.get('password')
+        User.create_new_user(name, email, password, 'Timis', 'Timisoara', '1234567890', 300, 50)
     return render_template("sign-up.html")
