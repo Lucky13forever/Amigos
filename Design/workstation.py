@@ -30,9 +30,7 @@
 #     'surface' : 20,
 
 # })
-from Proiect import Implementare
 from Implementare.user_functions import User
-
 
 print(User.get_table_user())
 
