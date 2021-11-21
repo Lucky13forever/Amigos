@@ -30,9 +30,9 @@
 #     'surface' : 20,
 
 # })
-from Proiect.Implementare.user_functions import User
+from Proiect import Implementare
+from Implementare.user_functions import User
 
 
-
-# rez = User.delete_database()
+print(User.get_table_user())
 
