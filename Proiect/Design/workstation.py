@@ -1,13 +1,13 @@
-from Implementare.user_functions import User
+# from Implementare.user_functions import User
 
-# User.delete_database()
-rez = User.create_new_user('Razvan_05', 'razvan@gmail.com', '1234', 'Timis', 'Timisoara', '1234567890', 400, 50)
+# # User.delete_database()
+# rez = User.create_new_user('Razvan_05', 'razvan@gmail.com', '1234', 'Timis', 'Timisoara', '1234567890', 400, 50)
 
-print(rez)
+# print(rez)
 
-unu = User.create_new_user('Razvan_06', 'razvan12@gmail.com', '1234', 'Timis', 'Timisoara', '123450', 400, 50)
-print(unu)
-# rez = User.get_table_user()
+# unu = User.create_new_user('Razvan_06', 'razvan12@gmail.com', '1234', 'Timis', 'Timisoara', '123450', 400, 50)
+# print(unu)
+# # rez = User.get_table_user()
 # print(rez['1'])
 
 # User.change_attr('1', {'name' : 'Razvan_05'})
@@ -30,7 +30,9 @@ print(unu)
 #     'surface' : 20,
 
 # })
-from Proiect import Implementare
+from Proiect.Implementare.user_functions import User
 
-rez = User.delete_database()
+
+
+# rez = User.delete_database()
 
