@@ -2,10 +2,10 @@
     "0": 1,
     "1": {
         "name": "Emanuel",
-        "email": "emanuel@gmail.com",
-        "password": "1234",
+        "email": "emanuellugojan@gmail.com",
+        "password": "lugobugo",
         "county": "Timis",
-        "city": "Timisora",
+        "city": "Timisoara",
         "phone": "0724037007",
         "avg_consumption": 300,
         "surface": 20

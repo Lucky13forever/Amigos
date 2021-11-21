@@ -42,7 +42,7 @@ class User():
         
 
         # append the new_user
-        with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'r') as file:
+        with open(r'HTML-PYTHON\website\database\tabel_users.json', 'r') as file:
             current = json.load(file)
 
 
@@ -83,70 +83,70 @@ class User():
 
             current['0'] += 1
 
-            with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'w') as file:
+            with open(r'HTML-PYTHON\website\database\tabel_users.json', 'w') as file:
                 json.dump(current, file, indent=4)
 
         return 'User has been added succesfully'
 
+    def check_if_in_database(email_or_username, password):
+        with open(r'HTML-PYTHON\website\database\tabel_users.json', 'r') as file:
+            current = json.load(file)
+
+            for user_data in current.values():
+                if type(user_data) == dict:
+                    if email_or_username == user_data['name'] or email_or_username == user_data['email']:
+                        if password == user_data['password']:
+                            return True
+
+        return False
+
     # change indent from None to 4 to pretty print
     def change_attr(user_id, my_dict):
-        with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'r') as file:
+        with open(r'HTML-PYTHON\website\database\tabel_users.json', 'r') as file:
             current = json.load(file)
 
             for key, value in my_dict.items():
                 current[user_id][key] = value
 
-            with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'w') as file:
+            with open(r'HTML-PYTHON\website\database\tabel_users.json', 'w') as file:
                 json.dump(current, file, indent=4)
 
     change_attr.__doc__ = "Attributes of a user are 'name', 'email', 'password', 'county', 'city', 'phone', 'avg_consumption', 'surface'"
 
     def delete_user(user_id):
-        with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'r') as file:
+        with open(r'HTML-PYTHON\website\database\tabel_users.json', 'r') as file:
             current = json.load(file)
 
             del current[user_id]
 
-            with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'w') as file:
+            with open(r'HTML-PYTHON\website\database\tabel_users.json', 'w') as file:
                 json.dump(current, file, indent=4)
 
     def delete_database():
-        with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'r') as file:
+        with open(r'HTML-PYTHON\website\database\tabel_users.json', 'r') as file:
             current = {
                 "0" : 0,
             }
 
-            with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'w') as file:
+            with open(r'HTML-PYTHON\website\database\tabel_users.json', 'w') as file:
                 json.dump(current, file, indent=4)
 
 
 
     def get_table_user():
         rez = {}
-        with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'r') as file:
+        with open(r'HTML-PYTHON\website\database\tabel_users.json', 'r') as file:
             rez = json.load(file)
-
-            with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'w') as file:
-                json.dump(rez, file, indent=4)
+            
         return rez
 
     get_table_user.__doc__ = 'Returns the user table'
 
 
     def pretty_print():
-        with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'r') as file:
+        with open(r'HTML-PYTHON\website\database\tabel_users.json', 'r') as file:
             rez = json.load(file)
 
-            with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'w') as file:
+            with open(r'HTML-PYTHON\website\database\tabel_users.json', 'w') as file:
                 json.dump(rez, file, indent=4)
-# change_attr('3', {'name' : 'Andrei C.', 'parola' : 'restaurant'})
-
-# delete_user('2')
-
-# delete_database()
-
-# with open(r'Design\Implementare\Baze_de_Date\tabel_users.json', 'r') as file:
-#         current = json.load(file)
-#         print(current['850'])
-
 
