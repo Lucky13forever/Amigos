@@ -88,6 +88,7 @@ class User():
 
         return 'User has been added succesfully'
 
+
     def check_if_in_database(email_or_username, password):
         with open(r'AMIGOS\website\database\tabel_users.json', 'r') as file:
             current = json.load(file)
@@ -100,6 +101,11 @@ class User():
 
         return False
 
+    check_if_in_database.__doc__ = "Returns the id for an user, after checking the username and password"
+    
+    
+    
+    
     # change indent from None to 4 to pretty print
     def change_attr(user_id, my_dict):
         with open(r'AMIGOS\website\database\tabel_users.json', 'r') as file:
