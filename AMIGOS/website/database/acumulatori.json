@@ -1,0 +1,8 @@
+{
+    "1" : {
+        "name" : "Jarrett High Tech",
+        "type" : "gel", 
+        "capacity" : 100,
+        "price" : 600
+    }
+}

@@ -1,0 +1,37 @@
+Fisierele json sunt practic dictionare in python
+
+Pentru:
+
+-> regiuni.json
+cheia = regiunea din cele 5 aflate in poza regiuni.png
+valoarea = lista cu judetele din acea regiunea
+
+-> orase.json
+cheia = judet
+valoare = lista cu orasele din judetul respectiv
+
+-> eficienta_lunara.json
+Cautati cam ce eficienta ar avea un panou solar in functie de fiecare lunar
+Unde Iulie si August ar avea 100% eficienta, iar Decembrie-Ianuarie probabil va fi undeva la 50% sau mai putin
+Incercati sa gasiti un procent pentru fiecare luna
+
+-> panouri.json
+Cautati cateva modele de panouri solare, minim 5
+cheia = id_panou
+valoare = un dictionar ce va avea urmatoarele chei: 
+= > name
+= > type (tip de celula fotovoltaica), 
+= > power (cati kW poate produce pe zi in medie), 
+= > degrade (fiecare panou se degradeaza unpic pe an, am impresia ca e ceva de genu 3-5%, din care ii scade eficienta)
+= > size (masurata in m^ 2)
+= > price
+
+-> acumulatori.json
+Cautati mai multe tipuri de acumulatori, minim 5
+cheia = id_acumulator
+valoare = un dictionar cu urm chei:
+= > name
+= > type (tehnologia din spate)
+= > capacity ( masurata in Ah)
+= > price 
+

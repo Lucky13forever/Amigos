@@ -1,0 +1,9 @@
+{
+    "1" : {
+        "type" : "monocristal",
+        "power" : 1,
+        "degrade" : 5,
+        "size" : 1,
+        "price" : 2500 
+    }
+}
