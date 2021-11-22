@@ -8,4 +8,5 @@ views = Blueprint('views', __name__)
 def home():
     print(User.check_if_in_database('Emanuel', 'lugobugo'))
     print(User.get_table_user())
+    print(User.check_if_in_database("Vlad", "vladboss"))
     return render_template("home.html", table_user=User.get_table_user())
