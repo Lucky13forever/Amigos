@@ -92,11 +92,11 @@ class User():
         with open(r'AMIGOS\website\database\tabel_users.json', 'r') as file:
             current = json.load(file)
 
-            for user_data in current.values():
+            for user_id, user_data in current.items():
                 if type(user_data) == dict:
                     if email_or_username == user_data['name'] or email_or_username == user_data['email']:
                         if password == user_data['password']:
-                            return True
+                            return user_id
 
         return False
 
