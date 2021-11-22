@@ -12,8 +12,6 @@
 
 # User.get_table_user() returns a dict with all the users
 
-
-
 import json
 
 class User():
