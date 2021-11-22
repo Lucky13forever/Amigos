@@ -20,16 +20,6 @@
         "avg_consumption": 300,
         "surface": 50
     },
-    "3": {
-        "name": "Bombastic",
-        "email": "bomba@hot.ro",
-        "password": "trouble",
-        "county": "Timis",
-        "city": "Timisoara",
-        "phone": "1234567890",
-        "avg_consumption": 300,
-        "surface": 50
-    },
     "4": {
         "name": "Andrei",
         "email": "andrei@gmail.com",
