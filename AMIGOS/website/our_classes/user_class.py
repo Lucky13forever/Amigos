@@ -1,3 +1,19 @@
+# Instructions
+
+# User.create_new_user() appends a new user in the database
+
+# User.check_if_in_database() return False if not found, returns user_id if it founds the user
+
+# User.change_attr() can change attr to a specific user by taking a dict with the attr that u want to change
+
+# User.delete_database() deletes all the users
+
+# USer.delete_user() deletes the user with a specific id
+
+# User.get_table_user() returns a dict with all the users
+
+
+
 import json
 
 class User():
