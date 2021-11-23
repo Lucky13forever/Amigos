@@ -3,7 +3,6 @@
         "name" : "Jarrett High Tech",
         "type" : "Plumb- acid: gel",
         "capacity" : 100,
-        "price" : 600,
-        "voltaj" :12
+        "price" : 600
     }
 }
