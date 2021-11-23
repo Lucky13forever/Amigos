@@ -12,7 +12,18 @@ auth = Blueprint('auth', __name__)
 def login():
     data = request.form
     if request.method == 'POST':
-        pass
+        email = data.get('email')
+        password = data.get('password')
+
+        my_user = User.query.filter_by(email= email).first()
+        if my_user:
+            if check_password_hash(my_user.password, password):
+                flash('Credentials are corect, redirecting to home page', category='success')
+            else:
+                flash('Your password is incorrect, please try again', category='error')
+        else:
+            flash('Your email is incorrect, please try again', category='error')
+
     return render_template("login.html", user="Emanuel", boolean=False)
 
 @auth.route('/logout')
