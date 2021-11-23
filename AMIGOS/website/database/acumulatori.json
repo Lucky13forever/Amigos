@@ -7,7 +7,7 @@
     },
     "2" : {
         "name" : "Pylontech",
-        "type" : "Litiu Li-Ion",
+        "type" : "Litiu-Ion",
         "capacity" : 50,
         "price" : 5304
     },
@@ -19,19 +19,19 @@
     },
     "6" : {
         "name" : "TED Electric",
-        "type" : "Plumb- acid: gel",
+        "type" : "Plumb- acid: GEL",
         "capacity" : 153,
         "price" : 1429
     },
     "7" : {
         "name" : "Mercedes-Benz Energiespeicher Home",
-        "type" : "Litiu Li-Ion",
+        "type" : "Litiu-Ion",
         "capacity" : 189,
         "price" : 10495
     },
     "8" : {
         "name" : "Rebelcell",
-        "type" : "Litiu Li-Ion",
+        "type" : "Litiu-Ion",
         "capacity" : 35,
         "price" : 2480
     },
@@ -40,5 +40,11 @@
         "type" : "Plumb- acid: GEL",
         "capacity" : 100,
         "price" : 1000
+    },
+    "10" : {
+        "name" : "Caranda",
+        "type" : "Plumb- acid: GEL",
+        "capacity" : 250,
+        "price" : 2300
     }
 }
