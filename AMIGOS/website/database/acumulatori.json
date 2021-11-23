@@ -7,7 +7,7 @@
     },
     "2" : {
         "name" : "Pylontech",
-        "type" : "Litiu",
+        "type" : "Litiu Li-Ion",
         "capacity" : 50,
         "price" : 5304
     },
@@ -22,5 +22,11 @@
         "type" : "Plumb- acid: gel",
         "capacity" : 153,
         "price" : 1429
+    },
+    "7" : {
+        "name" : "Mercedes-Benz Energiespeicher Home",
+        "type" : "Litiu Li-Ion",
+        "capacity" : 189,
+        "price" : 10495
     }
 }
