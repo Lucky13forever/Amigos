@@ -14,7 +14,7 @@
 
 import json
 
-class User():
+class User_json():
     def __init__(self, name, email, password, county, city, phone, avg_consumption, surface) -> None:
         self.name = name
         self.email = email
