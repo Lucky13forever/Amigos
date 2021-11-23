@@ -51,7 +51,7 @@ class User_json():
 
 
     def create_new_user(name, email, password, county, city, phone, avg_consumption, surface):
-        new_user = User(name, email, password, county, city, phone, avg_consumption, surface)
+        new_user = User_json(name, email, password, county, city, phone, avg_consumption, surface)
         
         
 
@@ -61,15 +61,15 @@ class User_json():
 
 
             # name should be unique
-            if User.unique_name(current, name) == False:
+            if User_json.unique_name(current, name) == False:
                 return 'Your username is taken'
 
             # email shoulb be unique
-            if User.unique_email(current, email) == False:
+            if User_json.unique_email(current, email) == False:
                 return 'There is already a user registered with this email'
 
             # password should have atleast a length of 4
-            if User.good_password(current, password) == False:
+            if User_json.good_password(current, password) == False:
                 return 'Password should have atleast a length of 4'
 
 
@@ -79,7 +79,7 @@ class User_json():
             # wrong city
 
             # phone should have 10 digits
-            if User.good_phone(current, phone) == False:
+            if User_json.good_phone(current, phone) == False:
                 return 'Phone number should have 10 digits'
 
             k = current['0']
