@@ -11,6 +11,14 @@ auth = Blueprint('auth', __name__)
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
     data = request.form
+
+    # delete entire User table
+    # while 1 == 1:
+    #     db.session.query(User).delete()
+    #     db.session.commit()
+    #     break
+
+
     if request.method == 'POST':
         email = data.get('email')
         password = data.get('password')
