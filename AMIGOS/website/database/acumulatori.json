@@ -11,6 +11,18 @@
         "capacity" : 50,
         "price" : 5304
     },
+    "3" : {
+        "name" : "Sungrow PowCube SBP4K8",
+        "type" : "Litiu Li-Ion",
+        "capacity" : 94,
+        "price" : 12670
+    },
+    "4" : {
+        "name" : "Tesla Powerwall 2",
+        "type" : "Litiu Li-Ion",
+        "capacity" : 50,
+        "price" : 50000
+    },
     "5" : {
         "name" : "TED Electric",
         "type" : "Plumb- acid: GEL",
