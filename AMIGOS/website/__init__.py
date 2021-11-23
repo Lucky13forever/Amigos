@@ -33,6 +33,7 @@ def create_app():
          return models.User.query.get(int(id))
       except:
          pass
+      
    return app
 
 def create_database(app):
