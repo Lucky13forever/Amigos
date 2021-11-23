@@ -28,5 +28,11 @@
         "type" : "Litiu Li-Ion",
         "capacity" : 189,
         "price" : 10495
+    },
+    "8" : {
+        "name" : "Rebelcell",
+        "type" : "Litiu Li-Ion",
+        "capacity" : 35,
+        "price" : 2480
     }
 }
