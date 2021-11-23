@@ -10,5 +10,17 @@
         "type" : "Litiu",
         "capacity" : 50,
         "price" : 5304
+    },
+    "5" : {
+        "name" : "TED Electric",
+        "type" : "Plumb- acid: gel",
+        "capacity" : 36,
+        "price" : 369
+    },
+    "6" : {
+        "name" : "TED Electric",
+        "type" : "Plumb- acid: gel",
+        "capacity" : 153,
+        "price" : 1429
     }
 }
