@@ -8,4 +8,4 @@ views = Blueprint('views', __name__)
 @login_required
 def home():
     
-    return render_template("home.html", table_user=User.query.all())
+    return render_template("home.html", table_user=User.query.all(), user=current_user)

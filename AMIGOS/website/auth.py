@@ -29,7 +29,7 @@ def login():
             if check_password_hash(my_user.password, password):
                 flash('Credentials are corect, redirecting to home page', category='success')
                 login_user(my_user, remember=True)
-                return redirect(url_for('views.home'))
+                return redirect(url_for('views.home', user=current_user))
             else:
                 flash('Your password is incorrect, please try again', category='error')
         else:
@@ -73,4 +73,4 @@ def sign_up():
 
             # return redirect(url_for('views.home'))
 
-    return render_template("sign-up.html")
+    return render_template("sign-up.html", user=current_user)
