@@ -4,5 +4,11 @@
         "type" : "Plumb- acid: gel",
         "capacity" : 100,
         "price" : 600
+    },
+    "2" : {
+        "name" : "Pylontech",
+        "type" : "Litiu",
+        "capacity" : 50,
+        "price" : 5304
     }
 }
