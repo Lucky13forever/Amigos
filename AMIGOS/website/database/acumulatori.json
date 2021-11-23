@@ -1,7 +1,7 @@
 {
     "1" : {
         "name" : "Jarrett High Tech",
-        "type" : "Plumb- acid: gel",
+        "type" : "Plumb- acid: GEL",
         "capacity" : 100,
         "price" : 600
     },
@@ -13,7 +13,7 @@
     },
     "5" : {
         "name" : "TED Electric",
-        "type" : "Plumb- acid: gel",
+        "type" : "Plumb- acid: GEL",
         "capacity" : 36,
         "price" : 369
     },
@@ -34,5 +34,11 @@
         "type" : "Litiu Li-Ion",
         "capacity" : 35,
         "price" : 2480
+    },
+    "9" : {
+        "name" : "Unibat",
+        "type" : "Plumb- acid: GEL",
+        "capacity" : 100,
+        "price" : 1000
     }
 }
