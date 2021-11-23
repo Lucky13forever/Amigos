@@ -2,6 +2,7 @@ from sys import flags
 from flask import Blueprint, render_template, request, redirect, url_for
 import flask
 from flask.helpers import flash
+from flask_login import login_user, login_required, logout_user, current_user
 
 from .models import *
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -27,6 +28,8 @@ def login():
         if my_user:
             if check_password_hash(my_user.password, password):
                 flash('Credentials are corect, redirecting to home page', category='success')
+                login_user(my_user, remember=True)
+                return render_template(url_for('views.home'))
             else:
                 flash('Your password is incorrect, please try again', category='error')
         else:
@@ -35,8 +38,10 @@ def login():
     return render_template("login.html", user="Emanuel", boolean=False)
 
 @auth.route('/logout')
+@login_required
 def logout():
-    return render_template("home.html")
+    logout_user()
+    return redirect(url_for('auth.login'))
 
 @auth.route('/sign-up', methods=['GET', 'POST'])
 def sign_up():
@@ -61,7 +66,7 @@ def sign_up():
             flash('Password must have a length of at least 6 characters', category='error')
         else:
             new_user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'))
-            
+            login_user(new_user, remember=True)
             db.session.add(new_user)
             db.session.commit()
             flash('Account created', category='succes')
