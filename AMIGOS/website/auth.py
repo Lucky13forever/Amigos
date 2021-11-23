@@ -11,7 +11,8 @@ auth = Blueprint('auth', __name__)
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
     data = request.form
-    print(data)
+    if request.method == 'POST':
+        pass
     return render_template("login.html", user="Emanuel", boolean=False)
 
 @auth.route('/logout')
@@ -27,6 +28,11 @@ def sign_up():
         password = data.get('password')
 
         flash = flask.flash
+
+        my_user = User.query.filter_by(email= email).first()
+
+        if my_user:
+            flash('This email is being used by another account, try a different one', category='error')
 
         if len(name) < 2:
             flash('Name must have atleast 4 characters', category='error')

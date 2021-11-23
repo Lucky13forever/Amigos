@@ -4,5 +4,7 @@
 
 {% block content %}
 <h1>This is the Home page</h1>
-{{table_user}}
+{% for user in table_user %}
+    <h4>This is {% print(user.name, user.email) %}</h4>
+    {% endfor %}
 {% endblock %}
