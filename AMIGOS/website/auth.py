@@ -3,8 +3,6 @@ from flask import Blueprint, render_template, request
 import flask
 from flask.helpers import flash
 
-from AMIGOS.website.our_classes.user_class import User
-
 from . import models
 
 auth = Blueprint('auth', __name__)
@@ -36,7 +34,6 @@ def sign_up():
         if len(password) < 6:
             flash('Password must have a length of at least 6 characters', category='error')
         else:
-            new_user = User()
+            
             flash('Account created', category='succes')
-        User.create_new_user(name, email, password, 'Timis', 'Timisoara', '1234567890', 300, 50)
     return render_template("sign-up.html")
