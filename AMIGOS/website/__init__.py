@@ -23,6 +23,7 @@ def create_app():
    create_database(app)
 
    login_manager = LoginManager()
+   # login_view, if user is not logged in then specify where to redirect them, in this case -> auth.login
    login_manager.login_view = 'auth.login'
    login_manager.init_app(app)
 
