@@ -35,7 +35,7 @@ def login():
         else:
             flash('Your email is incorrect, please try again', category='error')
 
-    return render_template("login.html", user="Emanuel", boolean=False)
+    return render_template("login.html")
 
 @auth.route('/logout')
 @login_required
