@@ -1,4 +1,7 @@
-{
-    "2" : ["Dolj"],
-    "3" : ["Timis", "Arad"]
+{   "1" : [ "Craiova", "Satu-Mare"],
+    "2" : [ "Botosani", "Dolj", "Gorj", "Maramures", "Mehedinti", "Olt", "Suceava", "Teleorman", "Valcea"],
+    "3" : [ "Alba", "Arad", "Arges", "Bihor", "Bistrita Nasaud", "Brasov", "Caras Severin", "Cluj", "Dambovita", "Giurgiu", "Harghita", "Hunedoara", "Iasi", "Mures", "Prahova", "Salaj", "Sibiu", "Timis" ],
+    "4" : [ "Bacau", "Bucuresti", "Calarasi", "Covasna", "Ilfov", "Neamt", "Vaslui"],
+    "5" : [ "Braila", "Buzau", "Constanta", "Galati", "Ialomita", "Tulcea", "Vrancea"]
+
 }
