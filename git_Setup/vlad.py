@@ -1,1 +1,1 @@
-print("muie")
+print("mae")
