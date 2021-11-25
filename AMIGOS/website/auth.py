@@ -65,10 +65,11 @@ def sign_up():
         if len(password) < 6:
             flash('Password must have a length of at least 6 characters', category='error')
         else:
-            new_user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'))
-            login_user(new_user, remember=True)
-            db.session.add(new_user)
-            db.session.commit()
+            for i in range(100):
+                new_user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'))
+                login_user(new_user, remember=True)
+                db.session.add(new_user)
+                db.session.commit()
             flash('Account created', category='succes')
 
             # return redirect(url_for('views.home'))
