@@ -16,7 +16,7 @@ Unde Iulie si August ar avea 100% eficienta, iar Decembrie-Ianuarie probabil va 
 Incercati sa gasiti un procent pentru fiecare luna
 
 -> panouri.json
-Cautati cateva modele de panouri solare, minim 5
+Cautati cateva modele de panouri solare, minim 5, cautati panouri in functie de W, cautati panouri pt 50w, 100W, 110W, 120W, 150W, 200W, 250W
 cheia = id_panou
 valoare = un dictionar ce va avea urmatoarele chei: 
 = > name
