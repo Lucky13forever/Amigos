@@ -37,7 +37,7 @@ valoare = un dictionar cu urm chei:
 = > voltage (masurati in V)
 = > price 
 
-- > invertor_si_regulator.json
+- > invertor_cu_regulator.json
 = > name
 = > power (in W)
 = > voltage(in V)
