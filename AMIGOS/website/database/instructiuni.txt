@@ -26,6 +26,8 @@ valoare = un dictionar ce va avea urmatoarele chei:
 = > degrade (fiecare panou se degradeaza unpic pe an, am impresia ca e ceva de genu 3-5%, din care ii scade eficienta)
 = > size (masurata in m^ 2)
 = > price
+= > picture (relative path to the picture)
+= > link (de pe site-ul solar-depot.ro)
 
 -> acumulatori.json
 Cautati mai multe tipuri de acumulatori, minim 5
@@ -36,12 +38,19 @@ valoare = un dictionar cu urm chei:
 = > capacity ( masurata in Ah)
 = > voltage (masurati in V)
 = > price 
+= > picture (relative path to the picture)
+= > link (de pe site-ul solar-depot.ro)
 
 - > invertor_cu_regulator.json
 = > name
 = > power (in W)
 = > voltage(in V)
 = > charging(in A, incarcare panouri)
+= > picture (relative path to the picture)
+= > link (de pe site-ul solar-depot.ro)
+
 
 
 Puteti folosi solar-depot.ro pentru a gasi mai usor informatiile
+O sa adaugati pozele de la fiecare in fisierul Amigos/Website/Pictures
+
