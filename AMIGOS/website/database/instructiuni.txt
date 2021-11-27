@@ -22,6 +22,7 @@ valoare = un dictionar ce va avea urmatoarele chei:
 = > name
 = > type (tip de celula fotovoltaica, cautati doar cele monocristale si policristale), 
 = > power (cati W poate produce pe ora in conditii optime, de obicei apare in numele modelului, daca zice ca e un panou solar 100W at are puterea de 100W), 
+= > voltage (masurat in V)
 = > degrade (fiecare panou se degradeaza unpic pe an, am impresia ca e ceva de genu 3-5%, din care ii scade eficienta)
 = > size (masurata in m^ 2)
 = > price
@@ -33,5 +34,6 @@ valoare = un dictionar cu urm chei:
 = > name
 = > type (tehnologia din spate)
 = > capacity ( masurata in Ah)
+= > voltage (masurati in V)
 = > price 
 
