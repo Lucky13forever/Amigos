@@ -42,3 +42,6 @@ valoare = un dictionar cu urm chei:
 = > power (in W)
 = > voltage(in V)
 = > charging(in A, incarcare panouri)
+
+
+Puteti folosi solar-depot.ro pentru a gasi mai usor informatiile
