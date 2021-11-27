@@ -16,13 +16,13 @@ Unde Iulie si August ar avea 100% eficienta, iar Decembrie-Ianuarie probabil va 
 Incercati sa gasiti un procent pentru fiecare luna
 
 -> panouri.json
-Cautati cateva modele de panouri solare, minim 5, cautati panouri in functie de W, cautati panouri pt 50w, 100W, 110W, 120W, 150W, 200W, 250W
+Cautati cateva modele de panouri solare, minim 5, cautati panouri in functie de W, cautati panouri pt 50w, 100W, 110W, 120W, 150W, 200W, 250W, 300W, 350W
 cheia = id_panou
 valoare = un dictionar ce va avea urmatoarele chei: 
 = > name
 = > type (tip de celula fotovoltaica, cautati doar cele monocristale si policristale), 
 = > power (cati W poate produce pe ora in conditii optime, de obicei apare in numele modelului, daca zice ca e un panou solar 100W at are puterea de 100W), 
-= > voltage (masurat in V)
+= > voltage (masurat in V, la un magazin valoarea asta s-ar gasi la tensiune maxima)
 = > degrade (fiecare panou se degradeaza unpic pe an, am impresia ca e ceva de genu 3-5%, din care ii scade eficienta)
 = > size (masurata in m^ 2)
 = > price
