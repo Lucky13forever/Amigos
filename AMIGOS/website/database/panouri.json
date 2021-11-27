@@ -4,6 +4,8 @@
         "power" : 1,
         "degrade" : 5,
         "size" : 1,
-        "price" : 2500 
+        "price" : 2500,
+        "picture" : "AMIGOS/website/pictures/panou_100.jpg",
+        "link" : 
     }
 }
