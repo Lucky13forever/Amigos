@@ -26,8 +26,8 @@
         "capacity" : 150,
         "voltage" : 12,
         "price" : 1529,
-        "picture" : ,
-        "link" :
+        "picture" : "AMIGOS/website/pictures/acumulator_3.jpg",
+        "link" : "https://www.solar-depot.ro/110/Baterie-solara-AGM-GEL-150Ah"
     },
     "4" : {
         "name" : "Baterie solara AGM GEL 250Ah",
@@ -36,7 +36,7 @@
         "capacity" : 250,
         "voltage" : 12,
         "price" : 2299,
-        "picture" : ,
-        "link" :
+        "picture" : "AMIGOS/website/pictures/acumulator_4.jpg",
+        "link" : "https://www.solar-depot.ro/111/Baterie-solara-AGM-GEL-250Ah"
     }
 }
