@@ -4,7 +4,7 @@
         "brand": "Caranda",
         "type" : "AGM GEL ",
         "capacity" : 55,
-        "volts" : 12,
+        "voltage" : 12,
         "price" : 710,
         "picture" : ,
         "link" :
@@ -14,7 +14,7 @@
         "brand": "Caranda",
         "type" : "AGM GEL ",
         "capacity" : 100,
-        "volts" : 12,
+        "voltage" : 12,
         "price" : 1040,
         "picture" : ,
         "link" :
@@ -24,7 +24,7 @@
         "brand" : "Caranda",
         "type" : "AGM GEL",
         "capacity" : 150,
-        "volts" : 12,
+        "voltage" : 12,
         "price" : 1529,
         "picture" : ,
         "link" :
@@ -34,7 +34,7 @@
         "brand" : "Caranda",
         "type" : "AGM GEL",
         "capacity" : 250,
-        "volts" : 12,
+        "voltage" : 12,
         "price" : 2299,
         "picture" : ,
         "link" :
