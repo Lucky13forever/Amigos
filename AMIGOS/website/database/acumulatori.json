@@ -1,62 +1,18 @@
 {
     "1" : {
-        "name" : "Jarrett High Tech",
-        "type" : "Plumb- acid: GEL",
-        "capacity" : 100,
-        "price" : 600
+        "name" : "Baterie solara AGM GEL 55Ah",
+        "brand": "Caranda",
+        "type" : "AGM GEL ",
+        "capacity" : 55,
+        "volts" : 12,
+        "price" : 710
     },
     "2" : {
-        "name" : "Pylontech",
-        "type" : "Litiu-Ion",
-        "capacity" : 50,
-        "price" : 5304
-    },
-    "3" : {
-        "name" : "Sungrow PowCube SBP4K8",
-        "type" : "Litiu Li-Ion",
-        "capacity" : 94,
-        "price" : 12670
-    },
-    "4" : {
-        "name" : "Tesla Powerwall 2",
-        "type" : "Litiu Li-Ion",
-        "capacity" : 50,
-        "price" : 50000
-    },
-    "5" : {
-        "name" : "TED Electric",
-        "type" : "Plumb- acid: GEL",
-        "capacity" : 36,
-        "price" : 369
-    },
-    "6" : {
-        "name" : "TED Electric",
-        "type" : "Plumb- acid: GEL",
-        "capacity" : 153,
-        "price" : 1429
-    },
-    "7" : {
-        "name" : "Mercedes-Benz Energiespeicher Home",
-        "type" : "Litiu-Ion",
-        "capacity" : 189,
-        "price" : 10495
-    },
-    "8" : {
-        "name" : "Rebelcell",
-        "type" : "Litiu-Ion",
-        "capacity" : 35,
-        "price" : 2480
-    },
-    "9" : {
-        "name" : "Unibat",
-        "type" : "Plumb- acid: GEL",
+        "name" : "Baterie solara AGM GEL 100Ah",
+        "brand": "Caranda",
+        "type" : "AGM GEL ",
         "capacity" : 100,
-        "price" : 1000
-    },
-    "10" : {
-        "name" : "Caranda",
-        "type" : "Plumb- acid: GEL",
-        "capacity" : 250,
-        "price" : 2300
+        "volts" : 12,
+        "price" : 1040
     }
 }
