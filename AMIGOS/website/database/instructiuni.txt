@@ -10,21 +10,24 @@ valoarea = lista cu judetele din acea regiunea
 cheia = judet
 valoare = lista cu orasele din judetul respectiv
 
--> eficienta_lunara.json
+-> eficienta_lunara.json, v-am adaugat o poza, eficienta_lunara.PNG si daca iulie este 100%, calculati procentele pt celelalte luni
 Cautati cam ce eficienta ar avea un panou solar in functie de fiecare lunar
 Unde Iulie si August ar avea 100% eficienta, iar Decembrie-Ianuarie probabil va fi undeva la 50% sau mai putin
 Incercati sa gasiti un procent pentru fiecare luna
 
 -> panouri.json
-Cautati cateva modele de panouri solare, minim 5, cautati panouri in functie de W, cautati panouri pt 50w, 100W, 110W, 120W, 150W, 200W, 250W
+Cautati cateva modele de panouri solare, minim 5, cautati panouri in functie de W, cautati panouri pt 50w, 100W, 110W, 120W, 150W, 200W, 250W, 300W, 350W
 cheia = id_panou
 valoare = un dictionar ce va avea urmatoarele chei: 
 = > name
-= > type (tip de celula fotovoltaica), 
+= > type (tip de celula fotovoltaica, cautati doar cele monocristale si policristale), 
 = > power (cati W poate produce pe ora in conditii optime, de obicei apare in numele modelului, daca zice ca e un panou solar 100W at are puterea de 100W), 
+= > voltage (masurat in V, la un magazin valoarea asta s-ar gasi la tensiune maxima)
 = > degrade (fiecare panou se degradeaza unpic pe an, am impresia ca e ceva de genu 3-5%, din care ii scade eficienta)
 = > size (masurata in m^ 2)
 = > price
+= > picture (relative path to the picture)
+= > link (de pe site-ul solar-depot.ro)
 
 -> acumulatori.json
 Cautati mai multe tipuri de acumulatori, minim 5
@@ -33,5 +36,21 @@ valoare = un dictionar cu urm chei:
 = > name
 = > type (tehnologia din spate)
 = > capacity ( masurata in Ah)
+= > voltage (masurati in V)
 = > price 
+= > picture (relative path to the picture)
+= > link (de pe site-ul solar-depot.ro)
+
+- > invertor_cu_regulator.json
+= > name
+= > power (in W)
+= > voltage(in V)
+= > charging(in A, incarcare panouri)
+= > picture (relative path to the picture)
+= > link (de pe site-ul solar-depot.ro)
+
+
+
+Puteti folosi solar-depot.ro pentru a gasi mai usor informatiile
+O sa adaugati pozele de la fiecare in fisierul Amigos/Website/Pictures
 

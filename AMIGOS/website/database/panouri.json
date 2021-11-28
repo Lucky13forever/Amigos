@@ -1,9 +1,82 @@
 {
-    "1" : {
-        "type" : "monocristal",
-        "power" : 1,
-        "degrade" : 5,
-        "size" : 1,
-        "price" : 2500 
-    }
+  "1": {
+    "name": "Panou fotovoltaic 55w",
+    "type": "policristalin",
+    "power": 55,
+    "voltage": 18.14,
+    "degrade": 0.8,
+    "size": 0.41416,
+    "price": 328,
+    "picture":
+  },
+  "2": {
+    "name": "Panou fotovoltaic 100w",
+    "type": "policristalin",
+    "power": 100,
+    "voltage": 18.40,
+    "degrade": 0.8,
+    "size": 0.66466,
+    "price": 435,
+    "picture":
+  },
+  "3": {
+    "name": "Panou Fotovoltaic 140w",
+    "type": "policristalin",
+    "power": 140,
+    "voltage": 18.40,
+    "degrade": 0.8,
+    "size": 1.00640,
+    "price": 604,
+    "picture":
+  },
+  "4": {
+    "name": "Panou fotovoltaic 260W",
+    "type": "policristalin",
+    "power": 260,
+    "voltage": 31.98,
+    "degrade": 0.8,
+    "size": 1.62855,
+    "price": 659,
+    "picture":
+  },
+  "5": {
+    "name": "Panou Fotovoltaic 160w",
+    "type": "monocristalin",
+    "power": 160,
+    "voltage": 19.29,
+    "degrade": 0.8,
+    "size": 0.99900,
+    "price": 659,
+    "picture":
+  },
+  "6": {
+    "name": "Panou fotovoltaic 270W",
+    "type": "policristalin",
+    "power": 270,
+    "voltage": 31.20,
+    "degrade": 0.8,
+    "size": 1.62360,
+    "price": 769,
+    "picture":
+  },
+  "7": {
+    "name": "Panou fotovoltaic monocristalin 300W",
+    "type": "monocristalin",
+    "power": 300,
+    "voltage": 32.80,
+    "degrade": 0.8,
+    "size": 1.62855,
+    "price": 1012,
+    "picture":
+  },
+  "8": {
+    "name": "Panou fotovoltaic monocristalin 360W",
+    "type": "monocristalin",
+    "power": 360,
+    "voltage": 38.51,
+    "degrade": 0.8,
+    "size": 1.94832,
+    "price": 1319,
+    "picture":
+  }
 }
