@@ -14,5 +14,21 @@
         "capacity" : 100,
         "volts" : 12,
         "price" : 1040
+    },
+    "3" : {
+        "name" : "Baterie solara AGM GEL 150Ah",
+        "brand" : "Caranda",
+        "type" : "AGM GEL",
+        "capacity" : 150,
+        "volts" : 12,
+        "price" : 1529
+    },
+    "4" : {
+        "name" : "Baterie solara AGM GEL 250Ah",
+        "brand" : "Caranda",
+        "type" : "AGM GEL",
+        "capacity" : 250,
+        "volts" : 12,
+        "price" : 2299
     }
 }
