@@ -1,6 +1,5 @@
 import json
 
-
 class Panels:
       
       def __init__(self, model, pret, suprafata, putere):
@@ -11,7 +10,6 @@ class Panels:
 
 all_panels = []
 def load_all_panels():
-      global all_panels
 
       with open("AMIGOS/website/database/panouri.json", "r") as pan_file:
             my_dict = json.load(pan_file)
@@ -22,4 +20,7 @@ def load_all_panels():
       return all_panels
 
 
+load_all_panels()
+
+print(all_panels[0].surface)
       
