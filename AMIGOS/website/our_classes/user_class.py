@@ -14,7 +14,7 @@
 
 import json
 
-class User():
+class User_json():
     def __init__(self, name, email, password, county, city, phone, avg_consumption, surface) -> None:
         self.name = name
         self.email = email
@@ -51,25 +51,25 @@ class User():
 
 
     def create_new_user(name, email, password, county, city, phone, avg_consumption, surface):
-        new_user = User(name, email, password, county, city, phone, avg_consumption, surface)
+        new_user = User_json(name, email, password, county, city, phone, avg_consumption, surface)
         
         
 
         # append the new_user
-        with open(r"website/database/tabel_users.json", 'r') as file:
+        with open(r"AMIGOS/website/database/tabel_users.json", 'r') as file:
             current = json.load(file)
 
 
             # name should be unique
-            if User.unique_name(current, name) == False:
+            if User_json.unique_name(current, name) == False:
                 return 'Your username is taken'
 
             # email shoulb be unique
-            if User.unique_email(current, email) == False:
+            if User_json.unique_email(current, email) == False:
                 return 'There is already a user registered with this email'
 
             # password should have atleast a length of 4
-            if User.good_password(current, password) == False:
+            if User_json.good_password(current, password) == False:
                 return 'Password should have atleast a length of 4'
 
 
@@ -79,7 +79,7 @@ class User():
             # wrong city
 
             # phone should have 10 digits
-            if User.good_phone(current, phone) == False:
+            if User_json.good_phone(current, phone) == False:
                 return 'Phone number should have 10 digits'
 
             k = current['0']
@@ -97,14 +97,14 @@ class User():
 
             current['0'] += 1
 
-            with open(r"website/database/tabel_users.json", 'w') as file:
+            with open(r"AMIGOS/website/database/tabel_users.json", 'w') as file:
                 json.dump(current, file, indent=4)
 
         return 'User has been added succesfully'
 
 
     def check_if_in_database(email_or_username, password):
-        with open(r"website/database/tabel_users.json", 'r') as file:
+        with open(r"AMIGOS/website/database/tabel_users.json", 'r') as file:
             current = json.load(file)
 
             for user_id, user_data in current.items():
@@ -122,40 +122,40 @@ class User():
     
     # change indent from None to 4 to pretty print
     def change_attr(user_id, my_dict):
-        with open(r"website/database/tabel_users.json", 'r') as file:
+        with open(r"AMIGOS/website/database/tabel_users.json", 'r') as file:
             current = json.load(file)
 
             for key, value in my_dict.items():
                 current[user_id][key] = value
 
-            with open(r"website/database/tabel_users.json", 'w') as file:
+            with open(r"AMIGOS/website/database/tabel_users.json", 'w') as file:
                 json.dump(current, file, indent=4)
 
     change_attr.__doc__ = "Attributes of a user are 'name', 'email', 'password', 'county', 'city', 'phone', 'avg_consumption', 'surface'"
 
     def delete_user(user_id):
-        with open(r"website/database/tabel_users.json", 'r') as file:
+        with open(r"AMIGOS/website/database/tabel_users.json", 'r') as file:
             current = json.load(file)
 
             del current[user_id]
 
-            with open(r"website/database/tabel_users.json", 'w') as file:
+            with open(r"AMIGOS/website/database/tabel_users.json", 'w') as file:
                 json.dump(current, file, indent=4)
 
     def delete_database():
-        with open(r"website/database/tabel_users.json", 'r') as file:
+        with open(r"AMIGOS/website/database/tabel_users.json", 'r') as file:
             current = {
                 "0" : 0,
             }
 
-            with open(r"website/database/tabel_users.json", 'w') as file:
+            with open(r"AMIGOS/website/database/tabel_users.json", 'w') as file:
                 json.dump(current, file, indent=4)
 
 
 
     def get_table_user():
         rez = {}
-        with open(r"website/database/tabel_users.json", 'r') as file:
+        with open(r"AMIGOS/website/database/tabel_users.json", 'r') as file:
             rez = json.load(file)
             
         return rez
@@ -164,9 +164,9 @@ class User():
 
 
     def pretty_print():
-        with open(r"website/database/tabel_users.json", 'r') as file:
+        with open(r"AMIGOS/website/database/tabel_users.json", 'r') as file:
             rez = json.load(file)
 
-            with open(r"website/database/tabel_users.json", 'w') as file:
+            with open(r"AMIGOS/website/database/tabel_users.json", 'w') as file:
                 json.dump(rez, file, indent=4)
 

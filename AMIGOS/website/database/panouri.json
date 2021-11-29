@@ -1,9 +1,90 @@
 {
-    "1" : {
-        "type" : "monocristal",
-        "power" : 1,
-        "degrade" : 5,
-        "size" : 1,
-        "price" : 2500 
-    }
+  "1": {
+    "name": "Panou fotovoltaic 55w",
+    "type": "policristalin",
+    "power": 55,
+    "voltage": 18.14,
+    "degrade": 0.8,
+    "size": 0.41416,
+    "price": 328,
+    "picture":"AMIGOS/website/pictures/panou_55w.jpg",
+    "link":"https://www.solar-depot.ro/134/Panou-fotovoltaic-55w"
+  },
+  "2": {
+    "name": "Panou fotovoltaic 100w",
+    "type": "policristalin",
+    "power": 100,
+    "voltage": 18.40,
+    "degrade": 0.8,
+    "size": 0.66466,
+    "price": 435,
+    "picture":"AMIGOS/website/pictures/panou100w.jpg",
+    "link":"https://www.solar-depot.ro/133/Panou-fotovoltaic-100w"
+  },
+  "3": {
+    "name": "Panou Fotovoltaic 140w",
+    "type": "policristalin",
+    "power": 140,
+    "voltage": 18.40,
+    "degrade": 0.8,
+    "size": 1.00640,
+    "price": 604,
+    "picture":"AMIGOS/website/pictures/panou140w.jpg",
+    "link":"https://www.solar-depot.ro/16/Panou-Fotovoltaic-140w"
+  },
+  "4": {
+    "name": "Panou fotovoltaic 260W",
+    "type": "policristalin",
+    "power": 260,
+    "voltage": 31.98,
+    "degrade": 0.8,
+    "size": 1.62855,
+    "price": 659,
+    "picture":"AMIGOS/website/pictures/panou260w.jpg",
+    "link":"https://www.solar-depot.ro/24/Panou-fotovoltaic-260W"
+  },
+  "5": {
+    "name": "Panou Fotovoltaic 160w",
+    "type": "monocristalin",
+    "power": 160,
+    "voltage": 19.29,
+    "degrade": 0.8,
+    "size": 0.99900,
+    "price": 659,
+    "picture":"AMIGOS/website/pictures/panou160w.jpg",
+    "link":"https://www.solar-depot.ro/102/Panou-Fotovoltaic-160w"
+  },
+  "6": {
+    "name": "Panou fotovoltaic 270W",
+    "type": "policristalin",
+    "power": 270,
+    "voltage": 31.20,
+    "degrade": 0.8,
+    "size": 1.62360,
+    "price": 769,
+    "picture":"AMIGOS/website/pictures/panou270w.jpg",
+    "link":"https://www.solar-depot.ro/161/Panou-fotovoltaic-270W"
+  },
+  "7": {
+    "name": "Panou fotovoltaic monocristalin 300W",
+    "type": "monocristalin",
+    "power": 300,
+    "voltage": 32.80,
+    "degrade": 0.8,
+    "size": 1.62855,
+    "price": 1012,
+    "picture":"AMIGOS/website/pictures/panou300w.jpg",
+    "link":"https://www.solar-depot.ro/178/Panou-fotovoltaic-monocristalin-300W"
+  },
+  "8": {
+    "name": "Panou fotovoltaic monocristalin 360W",
+    "type": "monocristalin",
+    "power": 360,
+    "voltage": 38.51,
+    "degrade": 0.8,
+    "size": 1.94832,
+    "price": 1319,
+    "picture":"AMIGOS/website/pictures/panou360w.jpg",
+    "link":"https://www.solar-depot.ro/183/Panou-fotovoltaic-monocristalin-360W"
+  }
 }

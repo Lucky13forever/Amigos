@@ -1,4 +1,14 @@
 {
-    "Ianuarie" : 50,
-    "Iulie" : 100
+  "Ianuarie": 47,
+  "Februarie": 56,
+  "Martie": 75,
+  "Aprilie": 87,
+  "Mai": 89,
+  "Iunie": 87,
+  "Iulie": 97,
+  "August": 90,
+  "Septembrie": 83,
+  "Octombrie": 70,
+  "Noiembrie": 54,
+  "Decembrie": 45
 }

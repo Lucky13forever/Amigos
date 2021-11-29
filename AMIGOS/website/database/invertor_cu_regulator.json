@@ -1,0 +1,105 @@
+{
+  "1" : {
+      "name": "Invertor MPPSOLAR 1012HSE tip hibrid",
+      "power": 1000,
+      "voltage": 40,
+      "charging": 50,
+      "picture": "AMIGOS/website/pictures/Invertor_1.jpg",
+      "link": "https://www.solar-depot.ro/159/Invertor-hibrid-unda-pura-1000W-cu-regulator-PWM-50A-MPPSOLAR"
+  },
+  "2" : {
+      "name": "Invertor MPPSOLAR 2424MSE1 tip hibrid" ,
+      "power": 2400 ,
+      "voltage": 12 ,
+      "charging": 50,
+      "picture": "AMIGOS/website/pictures/Invertor_2.jpg",
+      "link": "https://www.solar-depot.ro/204/Invertor-hibrid-unda-pura-2400W-cu-regulator-MPPT-40A-MPPSOLAR"
+
+  },
+  "3" : {
+      "name": "Invertor MPPSOLAR 3024MSE tip hibrid" ,
+      "power": 3000,
+      "voltage": 12,
+      "charging": 40,
+      "picture": "AMIGOS/website/pictures/Invertor_3.jpg",
+      "link": "https://www.solar-depot.ro/140/Invertor-hibrid-unda-pura-3000W-cu-regulator-MPPT-40A-MPPSOLAR"
+
+  },
+  "4": {
+      "name": "Invertor MPPSOLAR 3024MSXE tip hibrid" ,
+      "power": 3000 ,
+      "voltage": 12,
+      "charging": 60,
+      "picture": "AMIGOS/website/pictures/Invertor_4.jpg",
+      "link": "https://www.solar-depot.ro/145/Invertor-hibrid-unda-pura-3000W-cu-regulator-MPPT-60A-MPPSOLAR"
+
+  },
+  "5": {
+      "name": "Invertor MPPSOLAR 1624MSX tip hibrid" ,
+      "power": 4000 ,
+      "voltage": 12,
+      "charging": 80,
+      "picture": "AMIGOS/website/pictures/Invertor_5.jpg",
+      "link": "https://www.solar-depot.ro/141/Invertor-hibrid-unda-pura-4000W-cu-regulator-MPPT-80A-MPPSOLAR"
+  },
+  "6": {
+      "name": "Invertor MPPSOLAR 3024GK tip hibrid" ,
+      "power": 3000 ,
+      "voltage": 12,
+      "charging": 80,
+      "picture": "AMIGOS/website/pictures/Invertor_6.jpg",
+      "link": "https://www.solar-depot.ro/160/Invertor-hibrid-unda-pura-3000W-cu-regulator-MPPT-80A-fara-stocare"
+
+  },
+  "7": {
+      "name": "Invertor MPPSOLAR 5048MS tip hibrid",
+      "power": 5000,
+      "voltage": 12,
+      "charging": 80,
+      "picture": "AMIGOS/website/pictures/Invertor_7.jpg",
+      "link": "https://www.solar-depot.ro/158/Invertor-hibrid-unda-pura-5000W-cu-regulator-MPPT-80A-MPPSOLAR"
+
+  },
+  "8": {
+      "name":"Invertor MPPSOLAR 3024MK tip hibrid",
+      "power": 3000,
+      "voltage": 12,
+      "charging": 60,
+      "picture": "AMIGOS/website/pictures/Invertor_8.jpg",
+      "link": "https://www.solar-depot.ro/156/Invertor-hibrid-unda-pura-3000W-cu-regulator-MPPT-60A-si-transfer-0ms"
+
+
+  },
+  "9": {
+      "name": "Invertor  MPPSOLAR PIP 5048GK tip hibrid",
+      "power": 5000,
+      "voltage": 12,
+      "charging": 80,
+      "picture": "AMIGOS/website/pictures/Invertor_9.jpg",
+      "link": "https://www.solar-depot.ro/199/Invertor-hibrid-unda-pura-5000W-cu-regulator-MPPT-80A-MPPSOLAR"
+
+  },
+
+  "10": {
+      "name": "Invertor solar Victron EasySolar II GX",
+      "power": 3000,
+      "voltage": 12,
+      "charging": 35,
+      "picture": "AMIGOS/website/pictures/Invertor_10.jpg",
+      "link": "https://www.solar-depot.ro/212/Invertor-solar-Victron-Energy-EasySolar-II-GX-48-3000-MPPT-250-70"
+
+  },
+
+  "11": {
+      "name": "Invertor solar Victron EasySolar II GX",
+      "power": 5000,
+      "voltage": 12,
+      "charging": 35,
+      "picture": "AMIGOS/website/pictures/Invertor_11.jpg",
+      "link": "https://www.solar-depot.ro/182/Invertor-charger-solar-48V-5000W-Victron-Energy-EasySolar-48_5000_70-MPPT-150_100-Color-Control"
+
+  }
+
+
+    
+}
