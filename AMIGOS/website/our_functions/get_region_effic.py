@@ -6,6 +6,6 @@ def get_region_effic(region_dict,city):
 
 
 
-# -Iulia Popa
+# -Iulia Popa, Remus Porumb
 
 
