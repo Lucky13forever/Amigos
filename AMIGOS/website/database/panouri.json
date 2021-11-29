@@ -7,7 +7,8 @@
     "degrade": 0.8,
     "size": 0.41416,
     "price": 328,
-    "picture":
+    "picture":"AMIGOS/website/pictures/panou_55w.jpg",
+    "link":"https://www.solar-depot.ro/134/Panou-fotovoltaic-55w"
   },
   "2": {
     "name": "Panou fotovoltaic 100w",
@@ -17,7 +18,8 @@
     "degrade": 0.8,
     "size": 0.66466,
     "price": 435,
-    "picture":
+    "picture":"AMIGOS/website/pictures/panou100w.jpg",
+    "link":"https://www.solar-depot.ro/133/Panou-fotovoltaic-100w"
   },
   "3": {
     "name": "Panou Fotovoltaic 140w",
@@ -27,7 +29,8 @@
     "degrade": 0.8,
     "size": 1.00640,
     "price": 604,
-    "picture":
+    "picture":"AMIGOS/website/pictures/panou140w.jpg",
+    "link":"https://www.solar-depot.ro/16/Panou-Fotovoltaic-140w"
   },
   "4": {
     "name": "Panou fotovoltaic 260W",
@@ -37,7 +40,8 @@
     "degrade": 0.8,
     "size": 1.62855,
     "price": 659,
-    "picture":
+    "picture":"AMIGOS/website/pictures/panou260w.jpg",
+    "link":"https://www.solar-depot.ro/24/Panou-fotovoltaic-260W"
   },
   "5": {
     "name": "Panou Fotovoltaic 160w",
@@ -47,7 +51,8 @@
     "degrade": 0.8,
     "size": 0.99900,
     "price": 659,
-    "picture":
+    "picture":"AMIGOS/website/pictures/panou160w.jpg",
+    "link":"https://www.solar-depot.ro/102/Panou-Fotovoltaic-160w"
   },
   "6": {
     "name": "Panou fotovoltaic 270W",
@@ -57,7 +62,8 @@
     "degrade": 0.8,
     "size": 1.62360,
     "price": 769,
-    "picture":
+    "picture":"AMIGOS/website/pictures/panou270w.jpg",
+    "link":"https://www.solar-depot.ro/161/Panou-fotovoltaic-270W"
   },
   "7": {
     "name": "Panou fotovoltaic monocristalin 300W",
@@ -67,7 +73,8 @@
     "degrade": 0.8,
     "size": 1.62855,
     "price": 1012,
-    "picture":
+    "picture":"AMIGOS/website/pictures/panou300w.jpg",
+    "link":"https://www.solar-depot.ro/178/Panou-fotovoltaic-monocristalin-300W"
   },
   "8": {
     "name": "Panou fotovoltaic monocristalin 360W",
@@ -77,6 +84,7 @@
     "degrade": 0.8,
     "size": 1.94832,
     "price": 1319,
-    "picture":
+    "picture":"AMIGOS/website/pictures/panou360w.jpg",
+    "link":"https://www.solar-depot.ro/183/Panou-fotovoltaic-monocristalin-360W"
   }
 }
