@@ -5,7 +5,8 @@ import json
 class Load_All_Regulators:
     def load_region_dict(self, address: str):
         try:
-            data = json.load(address)
+            file = open(address)
+            data = json.load(file)
             return data
         except FileExistsError:
             raise "FileReadError"
