@@ -1,0 +1,1 @@
+print("Noi sa fim sanatosi")

@@ -27,12 +27,13 @@
       <div class="collapse navbar-collapse" id="navbar">
 
           <div class="navbar-nav">
-
-            <a class="nav-item nav-link" id="login" href="/login">Login</a>
-            <a class="nav-item nav-link" id="login" href="/sign-up">Sign Up</a>
-            <a class="nav-item nav-link" id="login" href="/logout">Logout</a>
+            {% if user.is_authenticated %}
+              <a class="nav-item nav-link" id="login" href="/logout">Logout</a>
+            {% else %}  
+              <a class="nav-item nav-link" id="login" href="/login">Login</a>
+              <a class="nav-item nav-link" id="login" href="/sign-up">Sign Up</a>
+            {% endif %}
             <a class="nav-item nav-link" id="login" href="/">Home</a>
-
           </div>
       </div>
   </nav>
