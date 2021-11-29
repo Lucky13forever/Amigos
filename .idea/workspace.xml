@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="frontend">
+    <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="1 si 2 url">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Profile/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Profile/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Profile/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Profile/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/SignUp/SignUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/SignUp/SignUp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/SignUp/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/SignUp/SignUp.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="21Hc4LfKKQsciDEXyiqY3tvXJDR" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
