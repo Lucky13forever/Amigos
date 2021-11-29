@@ -7,7 +7,7 @@ class Load_All_Regulators:
         try:
             data = json.load(address)
             return data
-        except FileReadError as e:
-            raise e
-        except FileNotFoundError as e:
-            raise e
+        except FileExistsError:
+            raise "FileReadError"
+        except FileNotFoundError:
+            raise "FileNotFound"
