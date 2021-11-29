@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="frontend img folder">
-      <change afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Profile/profile.css" afterDir="false" />
+    <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="frontend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Profile/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Profile/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Profile/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Profile/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638211099550</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="frontend">
+      <created>1638211397751</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1638211397751</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +212,7 @@
     <MESSAGE value="1 si 2 url" />
     <MESSAGE value="commit" />
     <MESSAGE value="frontend img folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend img folder" />
+    <MESSAGE value="frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend" />
   </component>
 </project>
