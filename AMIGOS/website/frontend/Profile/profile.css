@@ -1,0 +1,7 @@
+.Profile {
+  width: 1440px;
+  height: 1024px;
+  flex-grow: 0;
+  padding: 115px 102px 97px;
+  background-color: #e77e64;
+}
