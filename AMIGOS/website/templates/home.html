@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 
+
 {% block title %}Changed{% endblock %}
 
 {% block content %}
+
 <h1>This are the users:</h1>
 {% for user in table_user %}
     <h4>{% print(user.id, user.name, user.email) %}</h4>
     {% endfor %}
 <h1>Current: {% print(user) %}</h1>
+
 {% endblock %}

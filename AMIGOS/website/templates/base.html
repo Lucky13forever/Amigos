@@ -14,6 +14,9 @@
           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           crossorigin="anonymous"
         />
+
+        <!-- This is the format for importing a css file -->
+        <!-- <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/h1_color.css') }}"> -->
     
         <title>{% block title %}Home{% endblock %}</title>
       </head>
@@ -85,6 +88,11 @@
   <script
     type="text/javascript"
     src="{{ url_for('static', filename='index.js') }}"
+  ></script>
+
+  <script
+    type="text/textcss"
+    src="{{ url_for('static', filename='table_design.css') }}"
   ></script>
 
 </body>
