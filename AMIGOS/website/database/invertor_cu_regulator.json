@@ -4,6 +4,7 @@
       "power": 1000,
       "voltage": 40,
       "charging": 50,
+      "price": 2639,
       "picture": "AMIGOS/website/pictures/Invertor_1.jpg",
       "link": "https://www.solar-depot.ro/159/Invertor-hibrid-unda-pura-1000W-cu-regulator-PWM-50A-MPPSOLAR"
   },
@@ -12,6 +13,7 @@
       "power": 2400 ,
       "voltage": 12 ,
       "charging": 50,
+      "price": 2749,
       "picture": "AMIGOS/website/pictures/Invertor_2.jpg",
       "link": "https://www.solar-depot.ro/204/Invertor-hibrid-unda-pura-2400W-cu-regulator-MPPT-40A-MPPSOLAR"
 
@@ -21,6 +23,7 @@
       "power": 3000,
       "voltage": 12,
       "charging": 40,
+      "price": 3509,
       "picture": "AMIGOS/website/pictures/Invertor_3.jpg",
       "link": "https://www.solar-depot.ro/140/Invertor-hibrid-unda-pura-3000W-cu-regulator-MPPT-40A-MPPSOLAR"
 
@@ -30,6 +33,7 @@
       "power": 3000 ,
       "voltage": 12,
       "charging": 60,
+      "price": 3949,
       "picture": "AMIGOS/website/pictures/Invertor_4.jpg",
       "link": "https://www.solar-depot.ro/145/Invertor-hibrid-unda-pura-3000W-cu-regulator-MPPT-60A-MPPSOLAR"
 
@@ -39,6 +43,7 @@
       "power": 4000 ,
       "voltage": 12,
       "charging": 80,
+      "price": 4384,
       "picture": "AMIGOS/website/pictures/Invertor_5.jpg",
       "link": "https://www.solar-depot.ro/141/Invertor-hibrid-unda-pura-4000W-cu-regulator-MPPT-80A-MPPSOLAR"
   },
@@ -47,6 +52,7 @@
       "power": 3000 ,
       "voltage": 12,
       "charging": 80,
+      "price": 4399,
       "picture": "AMIGOS/website/pictures/Invertor_6.jpg",
       "link": "https://www.solar-depot.ro/160/Invertor-hibrid-unda-pura-3000W-cu-regulator-MPPT-80A-fara-stocare"
 
@@ -56,6 +62,7 @@
       "power": 5000,
       "voltage": 12,
       "charging": 80,
+      "price": 5169,
       "picture": "AMIGOS/website/pictures/Invertor_7.jpg",
       "link": "https://www.solar-depot.ro/158/Invertor-hibrid-unda-pura-5000W-cu-regulator-MPPT-80A-MPPSOLAR"
 
@@ -65,6 +72,7 @@
       "power": 3000,
       "voltage": 12,
       "charging": 60,
+      "price": 5279,
       "picture": "AMIGOS/website/pictures/Invertor_8.jpg",
       "link": "https://www.solar-depot.ro/156/Invertor-hibrid-unda-pura-3000W-cu-regulator-MPPT-60A-si-transfer-0ms"
 
@@ -75,6 +83,7 @@
       "power": 5000,
       "voltage": 12,
       "charging": 80,
+      "price": 5389,
       "picture": "AMIGOS/website/pictures/Invertor_9.jpg",
       "link": "https://www.solar-depot.ro/199/Invertor-hibrid-unda-pura-5000W-cu-regulator-MPPT-80A-MPPSOLAR"
 
@@ -85,6 +94,7 @@
       "power": 3000,
       "voltage": 12,
       "charging": 35,
+      "price": 13959,
       "picture": "AMIGOS/website/pictures/Invertor_10.jpg",
       "link": "https://www.solar-depot.ro/212/Invertor-solar-Victron-Energy-EasySolar-II-GX-48-3000-MPPT-250-70"
 
@@ -95,6 +105,7 @@
       "power": 5000,
       "voltage": 12,
       "charging": 35,
+      "price": 19789,
       "picture": "AMIGOS/website/pictures/Invertor_11.jpg",
       "link": "https://www.solar-depot.ro/182/Invertor-charger-solar-48V-5000W-Victron-Energy-EasySolar-48_5000_70-MPPT-150_100-Color-Control"
 
