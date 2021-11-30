@@ -16,5 +16,5 @@ def get_accumulator_system(all_accumulators:list,required_capacity:int):
     for keys,value in d.items():
         if value[3]<pret_min: 
             pret_min=value[3]
-            ind=key
+            ind=keys
     return (all_accumulators[ind], d[ind][2],d[ind][3])    
