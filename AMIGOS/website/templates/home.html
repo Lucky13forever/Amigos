@@ -4,13 +4,6 @@
 {% block title %}Changed{% endblock %}
 
 {% block content %}
-<head>
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/chart.css') }}">
-</head>
-
-<body>
-    <table></table>
-</body>
 
 <h1>This are the users:</h1>
 {% for user in table_user %}
