@@ -8,9 +8,34 @@
 
 
 body{
-min-width:1000px;
+
 background-color: var(--background--clr);
+
+}
+.wrapper{
+  width: 85.8%;
+  height: 812px;
+  margin: 10.4% 7.1%;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.left-hand-side{
+position: relative;
+background-color: var(--background--clr);
+width: 50%;
+height:100%
+}
+
+.right-hand-side{
+
+width:50%;
+height: 100%;
+background-color: pink;
+}
 
 
