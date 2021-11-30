@@ -112,3 +112,42 @@ font-size: 14px;
 margin-top: 12%;
 margin-left:38%;
 }
+
+.form-label {
+  font-size: 1.1em;
+  font-size: 20px;
+  color: var(--hr--color);
+  display: block;
+  opacity: 1;
+  transform: translateY(-1.25em);
+  transform-origin: 0 0;
+  transition: 0.3s;
+  margin-left: 4%;
+}
+
+.form-control::placeholder {
+  opacity: 0;
+  color: transparent;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: rgb(245, 50, 50);
+}
+
+.form-control:focus + .form-label {
+  transform: translateY(-3.05em) scale(0.95);;
+  color: red;
+}
+
+
+.form-control:not(:placeholder-shown) + .form-label {
+  transform: translateY(-3em) scale(0.9);
+}
+
+
+
+
+
+
+

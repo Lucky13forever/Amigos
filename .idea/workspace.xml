@@ -7,7 +7,6 @@
     <list default="true" id="6791dfd3-106a-4303-a6c3-449ddc84467d" name="Changes" comment="antetul 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/SignIn/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/SignIn/signin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/SignIn/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/SignIn/signin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638298122962</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="antetul 2">
+      <created>1638304598450</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638304598450</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
