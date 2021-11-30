@@ -1,7 +1,14 @@
+#Birla Alexandru si Puscasu Vlad
 import json
-from AMIGOS.website.our_classes.Regulator_with_invertor_class import Regulator_with_invertor
+from our_classes.Regulator_with_invertor_class import Regulator_with_invertor
 def load_all_regulators(address: str):
-    data = json.load(address,"r")
-    l=[]
-    for keys,value in data.items():
-        Regulator_with_invertor
+    try:
+        with open(address, "r") as file:
+            data = json.load(file)
+            l=[]
+            for keys,value in data.items():
+                panou=Regulator_with_invertor(value["name"],value["power"],value["charging"],value["price"],value["link"], value["picture"])
+                l.append(panou)
+        return l
+    except FileExistsError:
+        print("FileReadError")
