@@ -4,6 +4,9 @@
 
 :root{
 --background--clr: #0c2346;
+--hr--color: rgba(0, 0, 0, 0.5)
+
+
 }
 
 
@@ -32,10 +35,80 @@ height:100%
 }
 
 .right-hand-side{
-
+position: relative;
 width:50%;
 height: 100%;
-background-color: pink;
+background-color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
+.form-container{
+position: absolute;
+height: 76.5%;
+width: 56%;
+}
 
+.form-container h1{
+position:absolute;
+margin-left: 35%;
+
+}
+
+.all{
+margin-top: 20%;
+display:flex;
+flex-direction: row;
+justify-content: center;
+align-items:center;
+margin-right: 25%;
+}
+
+.all1{
+margin-top: 35%;
+}
+.all2{
+margin-top: 70px;
+}
+
+#image1{
+width:9%;
+height: 4.8%;
+color:
+}
+
+#image2{
+width: 9%;
+height: 4.8%;
+color:
+}
+
+.form-control{
+display: block;
+margin-left: 4%;
+margin-top: 5%;
+font-size: 20px;
+box-shadow: none;
+border: none;
+border-bottom: 2px solid var(--hr--color);
+padding: 4px 0;
+width: 130%;
+}
+
+.sign-in-btn{
+width: 80%;
+height: 6.9%;
+margin-top: 15%;
+margin-left: 8%;
+border-radius: 8px;
+background-color: #359bbb;
+}
+
+h4{
+color:#359bbb;
+font-size: 14px;
+margin-top: 12%;
+margin-left:38%;
+}
