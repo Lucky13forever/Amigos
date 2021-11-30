@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+:root{
+--background--clr: #0c2346;
+}
+
+
+body{
+min-width:1000px;
+background-color: var(--background--clr);
+}
+
