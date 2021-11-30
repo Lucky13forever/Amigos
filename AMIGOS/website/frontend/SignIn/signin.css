@@ -94,16 +94,21 @@ box-shadow: none;
 border: none;
 border-bottom: 2px solid var(--hr--color);
 padding: 4px 0;
-width: 130%;
+width: 140%;
 }
 
 .sign-in-btn{
-width: 80%;
-height: 6.9%;
+width: 85%;
+height: 8%;
 margin-top: 15%;
 margin-left: 8%;
 border-radius: 8px;
 background-color: #359bbb;
+border: none;
+color: #fff;
+font-size: 24px;
+font-weight: bold;
+padding-top: 7px;
 }
 
 h4{
