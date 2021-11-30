@@ -1,20 +1,37 @@
 .Profile {
+  position: relative;
   width: 1440px;
   height: 1024px;
-  flex-grow: 0;
-  padding: 115px 102px 97px;
   background-color: #e77e64;
 }
 .Rectangle-65 {
+  position: absolute;
   width: 1236px;
   height: 812px;
-  object-fit: contain;
+  left: 102px;
+  top: 115px;
   border-radius: 8px;
   box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #fff;
 }
-img {
+.Elipse-17 {
   padding: 528px 0px 0px 0px;
-  object-fit: contain;
+
   border-bottom-left-radius: 8px;
+}
+.Polygon-8 {
+  padding: 0px 0px 524px 554px;
+
+  border-top-right-radius: 8px;
+}
+
+.Rectangle-62 {
+  position: absolute;
+  width: 533px;
+  height: 736px;
+  left: 57px;
+  top: 38px;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
 }
