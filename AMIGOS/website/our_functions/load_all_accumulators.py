@@ -12,4 +12,7 @@ def load_all_accumulators(address: str):
         return l
     except FileExistsError:
         print("FileReadError")
+
+
+# print(load_all_accumulators('AMIGOS/website/database/acumulatori.json'))
     
