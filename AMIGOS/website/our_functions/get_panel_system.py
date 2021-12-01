@@ -22,7 +22,7 @@ def get_panel_system(all_panels,user_buget,user_length,user_width):
                 number_of_panels=contor
                 index_panel=i
     if index_panel!=-1:
-        return (all_panels[index_panel],number_of_panels,max_total_power,total_price)
+        return all_panels[index_panel],number_of_panels,max_total_power,total_price
     return None
 
 # Eduard Soreata , Iulia Popa
