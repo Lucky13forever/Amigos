@@ -106,9 +106,9 @@ def get_full_system(user_budget: int,
                     user_width: float,
                     user_length: float,
                     user_location: str,
-                    panel_list: Panels,
-                    accumulator_list: Accumulator,
-                    regulators_with_invertors_list: Regulator_with_invertor,
+                    panel_list: list,
+                    accumulator_list: list,
+                    regulators_with_invertors_list: list,
                     region_dict: dict):
     
     remaining_budget = user_budget
@@ -131,3 +131,5 @@ def get_full_system(user_budget: int,
     else:
         result = ((None, None, None, None), (None, None, None), None, None)
         return result
+
+print(get_full_system(3000, 10, 10, "Timis", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict()))
