@@ -65,7 +65,7 @@ def sign_up():
         if len(password) < 6:
             flash('Password must have a length of at least 6 characters', category='error')
         else:
-            new_user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'))
+            new_user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'), county=None, city=None, roof_length=None, roof_width=None, month=None, consumption=None)
 
             print(f'The name of the new user is {new_user}')
             login_user(new_user, remember=True)
