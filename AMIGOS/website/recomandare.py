@@ -17,11 +17,9 @@ def load_region_dict(address = "AMIGOS/website/database/regiuni.json"):
 
 
 
-def get_percent(x,y):
+def apply_percent(x,y):
     y=(y*x)//100
     return y
-
-
 
 def get_region_effic(region_dict,city):
     for i in range(1,6):
@@ -117,7 +115,7 @@ def get_full_system(user_budget: int,
     while remaining_budget >= 0.02 * user_budget: #verificam ca bugetul ramas > 2% din bugetul total
         ok = 1 #verificam ca exista macar un panou
         panels = get_panel_system(panel_list, int(user_budget * i), user_length, user_width)
-        power = get_percent(panels[2], get_region_effic(region_dict, user_location))
+        power = apply_percent(panels[2], get_region_effic(region_dict, user_location))
         accumulators = get_accumulator_system(accumulator_list, power)
         regulators = get_regulator_invertor_system(regulators_with_invertors_list, power)
         i += 0.02 #crestem procentul cu 2%
