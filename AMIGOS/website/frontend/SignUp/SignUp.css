@@ -30,15 +30,17 @@ html, body {
   top: 66.6%;
   right: 79%;
   object-fit: contain;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 .Polygon-7 {
   position: absolute;
   width: 28.5%;
   height: 38%;
   left: 74%;
-  bottom: 63%;
   object-fit: contain;
   border-radius: 8px;
+  margin-left: 0;
 }
 .Rectangle-3 {
   width: 50%;
