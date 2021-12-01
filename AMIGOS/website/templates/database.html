@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>This are all the users</h1>
+<br>
+<br>
+
+<h1>This is the current user:</h1>
+<h1>{{ user.id }}</h1>
+
+
+<br>
+<br>
+<br>
+
+
+
+<h1>This is the entire database</h1>
+
+{% for user in table_user %}
+
+<h1>____________________________________________________________________</h1>
+<h1 style="color: red;"> ID: {{user.id}} </h1>
+<h1>Name: {{user.name}}</h1>
+<h1>Email: {{user.email}}</h1>
+<h1>County: {{user.county}}</h1>
+<h1>City: {{user.city}}</h1>
+<h1>Roof_length: {{user.roof_length}}</h1>
+<h1>Roof_width: {{user.roof_width}}</h1>
+<h1>Month: {{user.month}}</h1>
+<h1>Consumption: {{user.consumption}}</h1>
+
+
+{% endfor %}
+{% endblock %}
