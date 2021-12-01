@@ -57,21 +57,32 @@ def get_panel_system(all_panels,user_buget,user_length,user_width):
     for i in range(len(all_panels)):
         if ((all_panels[i].length<=user_length and all_panels[i].width<=user_width) or (all_panels[i].width<=user_length and all_panels[i].length<=user_width)):
             if user_length//all_panels[i].length*user_width//all_panels[i].width>user_length//all_panels[i].width*user_width//all_panels[i].length:
+                # pozitie verticala
                 max_number_of_panel=user_length//all_panels[i].length*user_width//all_panels[i].width
             else:
+                # pozitie orizontala
+                
                 max_number_of_panel=user_length//all_panels[i].width*user_width//all_panels[i].length
+
             contor=0
             current_price=0
             current_power=0
-            while contor<=max_number_of_panel and current_price+all_panels[i].price<=user_buget:
+
+            while contor<max_number_of_panel and current_price+all_panels[i].price<=user_buget:
+
                 contor+=1
+                
+                
                 current_price+=all_panels[i].price
                 current_power+=all_panels[i].power
+
+            
             if (current_power>max_total_power) or (current_power==max_total_power and current_price<total_price):
                 max_total_power=current_power
                 total_price=current_price
                 number_of_panels=contor
                 index_panel=i
+
     if index_panel!=-1:
         return (all_panels[index_panel],number_of_panels,max_total_power,total_price)
     return None
@@ -112,20 +123,21 @@ def get_full_system(user_budget: int,
     remaining_budget = user_budget
     i = 0.2 #procentul 20%
     ok = 0
-    while remaining_budget >= 0.02 * user_budget: #verificam ca bugetul ramas > 2% din bugetul total
+    positive_result = ((None, None, None, None), (None, None, None), None, None)
+    while remaining_budget >= 0.02 * user_budget and i <= 1: #verificam ca bugetul ramas > 2% din bugetul total, si ca i nu depaseste 100%
         ok = 1 #verificam ca exista macar un panou
         panels = get_panel_system(panel_list, int(user_budget * i), user_length, user_width)
         power = apply_percent(panels[2], get_region_effic(region_dict, user_location))
         accumulators = get_accumulator_system(accumulator_list, power * 5 / 12) # daca am 300W putere, trebuie sa cacluez W per o zi, adica 300 * 5 = 1500, de acolo ca sa aflu amperii, impart la numarul de 12V, 1500/12V => A
-        regulators = get_regulator_invertor_system(regulators_with_invertors_list, power)
+        regulators = get_regulator_invertor_system(regulators_with_invertors_list, power + 1000) #I need to add extra 1000W for safe use
         i += 0.02 #crestem procentul cu 2%
+
+        # print(i)
         remaining_budget = user_budget - panels[3] - accumulators[2] - regulators.price
+
+        if remaining_budget > 0:
+            positive_result = (panels, accumulators, regulators, remaining_budget)
    
-    if ok == 1:
-        result = (panels, accumulators, regulators, remaining_budget)
-        return result
-    else:
-        result = ((None, None, None, None), (None, None, None), None, None)
-        return result
+    return positive_result
 
 print(get_full_system(3000, 10, 10, "Timis", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict()))
