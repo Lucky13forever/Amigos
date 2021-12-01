@@ -30,17 +30,15 @@ html, body {
   top: 66.6%;
   right: 79%;
   object-fit: contain;
-  margin-left: 0;
-  margin-bottom: 0;
 }
 .Polygon-7 {
   position: absolute;
   width: 28.5%;
   height: 38%;
-  left: 74%;
+  left: 71.5%;
+  margin-right: 0;
   object-fit: contain;
   border-radius: 8px;
-  margin-right: 0;
 }
 .Rectangle-3 {
   width: 50%;
@@ -172,13 +170,14 @@ html, body {
   object-fit: contain;
 }
 .Line-9 {
-  width: 30.4%;
+  width: 29.8%;
   height: 0.3%;
   top: 67.2%;
-  left: 11%;
+  left: 11.4%;
   position: absolute;
   object-fit: contain;
   background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
 }
 .key{
   width: 2.4%;
@@ -190,22 +189,24 @@ html, body {
   object-fit: contain;
 }
 .Line-10 {
-  width: 30.4%;
+  width: 29.8%;
   height: 0.3%;
   top: 54.2%;
-  left: 11%;
+  left: 11.4%;
   position: absolute;
   object-fit: contain;
   background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
 }
 .Line-11 {
-  width: 30.4%;
-  height: 0.2%;
+  width: 29.8%;
+  height: 0.3%;
   top: 41.2%;
-  left: 11%;
+  left: 11.4%;
   position: absolute;
   object-fit: contain;
   background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
 }
 .mail{
   width: 2.4%;
@@ -226,13 +227,14 @@ html, body {
   object-fit: contain;
 }
 .Line-12 {
-  width: 30.4%;
-  height: 0.2%;
+  width: 29.8%;
+  height: 0.3%;
   top: 28.3%;
-  left: 11%;
+  left: 11.4%;
   position: absolute;
   object-fit: contain;
   background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
 }
 .Rectangle-17 {
   width: 13.5%;
@@ -259,7 +261,7 @@ html, body {
 .County {
   width: 38.3%;
   height: 44.6%;
-  top: 25%;
+  top: 20%;
   left: 10%;
   opacity: 0.9;
   font-family: Outfit;
@@ -276,7 +278,7 @@ html, body {
 .City {
   width: 38.3%;
   height: 44.6%;
-  top: 25%;
+  top: 20%;
   left: 10%;
   opacity: 0.9;
   font-family: Outfit;
@@ -311,8 +313,8 @@ html, body {
 .username {
   width: 7%;
   height: 3.1%;
-  top: 24.5%;
-  left: 11%;
+  top: 24%;
+  left: 11.3%;
   opacity: 1;
   font-family: Outfit;
   font-size: 20px;
@@ -328,8 +330,8 @@ html, body {
 .email {
   width: 7%;
   height: 3.1%;
-  top: 37.5%;
-  left: 11%;
+  top: 36.8%;
+  left: 11.3%;
   opacity: 1;
   font-family: Outfit;
   font-size: 20px;
@@ -345,8 +347,8 @@ html, body {
 .password {
   width: 7%;
   height: 3.1%;
-  top: 50%;
-  left: 11%;
+  top: 49.8%;
+  left: 11.3%;
   opacity: 1;
   font-family: Outfit;
   font-size: 20px;
@@ -362,8 +364,8 @@ html, body {
 .number {
   width: 17%;
   height: 3.1%;
-  top: 63%;
-  left: 11%;
+  top: 62.7%;
+  left: 11.3%;
   opacity: 1;
   font-family: Outfit;
   font-size: 20px;
