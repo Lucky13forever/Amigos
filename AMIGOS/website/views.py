@@ -10,7 +10,9 @@ def home():
     
     # return render_template("home.html", user=current_user)
 
-    result = get_full_system(6700, 10, 10, "Timis", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
+    result = get_full_system(5200, 10, 10, "Timis", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
     panouri = result[0]
-    return render_template("home.html", panouri=panouri, user=current_user) #User.query.all()
+    acumulatori = result[1]
+    regulatori = result[2]
+    return render_template("home.html", panouri=panouri, acumulatori=acumulatori, regulatori=regulatori, user=current_user) #User.query.all()
 
