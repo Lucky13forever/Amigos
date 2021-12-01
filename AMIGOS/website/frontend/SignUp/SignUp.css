@@ -32,11 +32,19 @@ html, body {
 }
 .Polygon-7 {
   position: absolute;
-  width: 38.5%;
-  height: 51.7%;
-  left: 60%;
-  bottom:48.3%;
+  width: 28.5%;
+  height: 38%;
+  left: 74%;
+  bottom: 63%;
   object-fit: contain;
-  transform: rotate(-322.96deg);
   border-radius: 8px;
+}
+.Rectangle-3 {
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px 0 #00000040;
+  background-color: #d3f7ff;
 }
