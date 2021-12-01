@@ -147,7 +147,7 @@ html, body {
 .CREATE-ACCOUNT {
   width: 100%;
   height: 100%;
-  bottom: -25%;
+  bottom: -17.5%;
   left: 24%;
   font-family: Outfit;
   font-size: 200%;
@@ -164,7 +164,7 @@ html, body {
   width: 2.4%;
   height: 3.7%;
   opacity: 1;
-  top: 61.3%;
+  top: 62.5%;
   left: 8.3%;
   position: absolute;
   object-fit: contain;
@@ -231,4 +231,146 @@ html, body {
   position: absolute;
   object-fit: contain;
   background-color: rgba(0, 0, 0, 0.5);
+}
+.Rectangle-17 {
+  width: 13.5%;
+  height: 6.9%;
+  top: 72%;
+  left: 8.3%;
+  padding: 16px 13px 15px 15px;
+  border: solid 2px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.16);
+}
+.Rectangle-18 {
+  width: 16.8%;
+  height: 6.9%;
+  top: 72%;
+  left: 24.5%;
+  padding: 16px 13px 15px 15px;
+  border: solid 2px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.16);
+}
+.County {
+  width: 38.3%;
+  height: 44.6%;
+  top: 25%;
+  left: 10%;
+  opacity: 0.9;
+  font-family: Outfit;
+  font-size: 125%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  position: absolute;
+  object-fit: contain;
+  color: rgba(0, 0, 0, 0.5);
+}
+.City {
+  width: 38.3%;
+  height: 44.6%;
+  top: 25%;
+  left: 10%;
+  opacity: 0.9;
+  font-family: Outfit;
+  font-size: 125%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  position: absolute;
+  object-fit: contain;
+  color: rgba(0, 0, 0, 0.5);
+}
+.arrow{
+  width: 6.7%;
+  height: 26.8%;
+  opacity: 1;
+  top: 40%;
+  left: 83.8%;
+  position: absolute;
+  object-fit: contain;
+}
+.arrow2{
+  width: 6.7%;
+  height: 26.8%;
+  opacity: 1;
+  top: 40%;
+  left: 83.8%;
+  position: absolute;
+  object-fit: contain;
+}
+.username {
+  width: 7%;
+  height: 3.1%;
+  top: 24.5%;
+  left: 11%;
+  opacity: 1;
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  position: absolute;
+  object-fit: contain;
+  color: rgba(0, 0, 0, 0.5);
+}
+.email {
+  width: 7%;
+  height: 3.1%;
+  top: 37.5%;
+  left: 11%;
+  opacity: 1;
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  position: absolute;
+  object-fit: contain;
+  color: rgba(0, 0, 0, 0.5);
+}
+.password {
+  width: 7%;
+  height: 3.1%;
+  top: 50%;
+  left: 11%;
+  opacity: 1;
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  position: absolute;
+  object-fit: contain;
+  color: rgba(0, 0, 0, 0.5);
+}
+.number {
+  width: 17%;
+  height: 3.1%;
+  top: 63%;
+  left: 11%;
+  opacity: 1;
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  position: absolute;
+  object-fit: contain;
+  color: rgba(0, 0, 0, 0.5);
 }
