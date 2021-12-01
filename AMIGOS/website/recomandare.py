@@ -122,6 +122,9 @@ def get_full_system(user_budget: int,
         regulators = get_regulator_invertor_system(regulators_with_invertors_list, power)
         i += 0.02 #crestem procentul cu 2%
         remaining_budget = user_budget - panels[3] - accumulators[2] - regulators.price
+    
+    
+    return 'BABABUI'
     if ok == 1:
         result = (panels, accumulators, regulators, remaining_budget)
         return result
