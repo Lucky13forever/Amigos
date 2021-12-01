@@ -16,7 +16,6 @@
 <br>
 {% if ok == 1 %}
 
-
 <h1>Panou</h1>
 <!-- Panourile sunt in table_user[0] -->
 {% for i in range(4) %}
@@ -29,7 +28,6 @@
    <h1>Length: {% print(panouri[i].length) %} </h1> 
    <h1>Width: {% print(panouri[i].width) %} </h1> 
    <h1>Price: {% print(panouri[i].price) %} </h1> 
-
    <!-- <h1>Name: {% print(panouri[i].power) %} </h1>  -->
    <!-- <h1>Name: {% print(panouri[i].power) %} </h1>   -->
 {% endif %}  
@@ -89,12 +87,8 @@
     <h1>{% print(ramas) %}</h1>
 
 
-<br><br>
-
-<h1>Suma sistemului: {{system_price}}</h1>
-
-
     <!-- <h1>Current: {% print(user) %}</h1> -->
+
 
 {% endif %}
 
