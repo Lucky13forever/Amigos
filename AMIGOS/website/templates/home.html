@@ -16,9 +16,11 @@
 
 {%  if i == 0 %}
 
-{% print(table_user[0][i].id) %}
+    {% print(table_user[0][i].id) %}
 
+{% endif %}
 
+{% endfor %}
 
 <h1>Current: {% print(user) %}</h1>
 
