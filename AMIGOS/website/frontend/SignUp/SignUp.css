@@ -30,3 +30,13 @@ html, body {
   right: 79%;
   object-fit: contain;
 }
+.Polygon-7 {
+  position: absolute;
+  width: 38.5%;
+  height: 51.7%;
+  left: 60%;
+  bottom:48.3%;
+  object-fit: contain;
+  transform: rotate(-322.96deg);
+  border-radius: 8px;
+}
