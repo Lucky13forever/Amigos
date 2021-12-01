@@ -8,13 +8,13 @@ class Accumulator:
         self.link=link
         self.picture=picture
 
-nume=input()
-tip=input()
-capacitate=int(input())
-pret=int(input())
-linc=input()
-poza=input()
-obj=Accumulator(nume,tip,capacitate,pret,linc,poza)
-print(obj.name)
+# nume=input()
+# tip=input()
+# capacitate=int(input())
+# pret=int(input())
+# linc=input()
+# poza=input()
+# obj=Accumulator(nume,tip,capacitate,pret,linc,poza)
+# print(obj.name)
 
 #Cazan Dorin
