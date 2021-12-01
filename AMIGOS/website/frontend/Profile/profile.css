@@ -58,6 +58,47 @@ html, body {
   box-shadow: 0 4px 4px 4px #00000040;
   background-color: #fff;
 }
+ .Selected-county {
+  width: 40%;
+  position: absolute;
+  object-fit: contain;
+  height: 11.1%;
+  margin-top: 13.5%;
+  margin-right: 30.2%;
+  margin-bottom: 26.4%;
+  margin-left: 8.7%;
+  flex-grow: 0;
+  /*margin: 0 68px 84px 0;*/
+  font-family: Outfit;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+}
+ .Selected-city {
+  width: 181px;
+  position: absolute;
+  object-fit: contain;
+  height: 39px;
+  margin-top: 29%;
+  margin-right: 32.9%;
+  margin-bottom: 25.6%;
+  margin-left: 8.7%;
+  flex-grow: 0;
+  font-family: Outfit;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+}
 .Rectangle-64 {
   position: absolute;
   width: 44.5%;
