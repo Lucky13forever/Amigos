@@ -120,10 +120,6 @@ def get_full_system(user_budget: int,
                     regulators_with_invertors_list: list,
                     region_dict: dict):
     
-    print(f'User buget is {user_budget}')
-    print(f'user_length is {user_length}')
-    print(f'user_width is {user_width}')
-    
     remaining_budget = user_budget
     i = 0.2 #procentul 20%
     ok = 0
@@ -132,7 +128,7 @@ def get_full_system(user_budget: int,
         panels = get_panel_system(panel_list, int(user_budget * i), user_length, user_width)
         power = apply_percent(panels[2], get_region_effic(region_dict, user_location))
         accumulators = get_accumulator_system(accumulator_list, power * 5 / 12) # daca am 300W putere, trebuie sa cacluez W per o zi, adica 300 * 5 = 1500, de acolo ca sa aflu amperii, impart la numarul de 12V, 1500/12V => A
-        regulators = get_regulator_invertor_system(regulators_with_invertors_list, power)
+        regulators = get_regulator_invertor_system(regulators_with_invertors_list, power + 1000) #I need to add extra 1000W for safe use
         i += 0.02 #crestem procentul cu 2%
 
         # print(i)
