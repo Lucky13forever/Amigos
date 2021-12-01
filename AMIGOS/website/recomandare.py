@@ -106,9 +106,9 @@ def get_full_system(user_budget: int,
                     user_width: float,
                     user_length: float,
                     user_location: str,
-                    panel_list: Panels,
-                    accumulator_list: Accumulator,
-                    regulators_with_invertors_list: Regulator_with_invertor,
+                    panel_list: list,
+                    accumulator_list: list,
+                    regulators_with_invertors_list: list,
                     region_dict: dict):
     
     remaining_budget = user_budget
@@ -122,9 +122,12 @@ def get_full_system(user_budget: int,
         regulators = get_regulator_invertor_system(regulators_with_invertors_list, power)
         i += 0.02 #crestem procentul cu 2%
         remaining_budget = user_budget - panels[3] - accumulators[2] - regulators.price
+   
     if ok == 1:
         result = (panels, accumulators, regulators, remaining_budget)
         return result
     else:
         result = ((None, None, None, None), (None, None, None), None, None)
         return result
+
+print(get_full_system(3000, 10, 10, "Timis", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict()))
