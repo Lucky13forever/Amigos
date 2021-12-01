@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6791dfd3-106a-4303-a6c3-449ddc84467d" name="Changes" comment="antetul 2">
+    <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="1 si 2 url">
+      <change afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Get to know/Surface.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Get to know/surface.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/SignUp/SignUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/SignUp/SignUp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/SignUp/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/SignUp/SignUp.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,143 +14,161 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="21b87oMN6DeEFqynqsPY4bvVnfG" />
-  <component name="ProjectLevelVcsManager">
-    <OptionsSetting value="false" id="Update" />
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="21Hc4LfKKQsciDEXyiqY3tvXJDR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AMIGOS/website/our_functions" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Emil\PycharmProjects\Amigos\AMIGOS\website\our_functions" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Emil\PycharmProjects\Amigos\AMIGOS\website" />
-      <recent name="C:\Users\Emil\PycharmProjects\Amigos\AMIGOS\website\our_functions" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Amigos" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AMIGOS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AMIGOS/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.main" />
-      </list>
-    </recent_temporary>
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pythonProject" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6791dfd3-106a-4303-a6c3-449ddc84467d" name="Changes" comment="" />
-      <created>1638198262586</created>
+      <changelist id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="" />
+      <created>1637601261037</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1638198262586</updated>
+      <updated>1637601261037</updated>
+      <workItem from="1637601262193" duration="1873000" />
+      <workItem from="1637603938299" duration="569000" />
+      <workItem from="1637651543663" duration="3515000" />
+      <workItem from="1637655751082" duration="135000" />
+      <workItem from="1637834728576" duration="5000" />
+      <workItem from="1638000251888" duration="57000" />
+      <workItem from="1638025330530" duration="2000" />
+      <workItem from="1638124621649" duration="1026000" />
+      <workItem from="1638125660159" duration="1943000" />
+      <workItem from="1638201634066" duration="1213000" />
+      <workItem from="1638289514267" duration="627000" />
+      <workItem from="1638310146295" duration="2758000" />
+      <workItem from="1638355745412" duration="2659000" />
     </task>
-    <task id="LOCAL-00001" summary="antetul">
-      <created>1638219618435</created>
+    <task id="LOCAL-00001" summary="hello">
+      <created>1637602247788</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1638219618435</updated>
+      <updated>1637602247788</updated>
     </task>
-    <task id="LOCAL-00002" summary="antetul 2">
-      <created>1638221448794</created>
+    <task id="LOCAL-00002" summary="hello">
+      <created>1637651665769</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1638221448794</updated>
+      <updated>1637651665769</updated>
     </task>
-    <task id="LOCAL-00003" summary="antetul 2">
-      <created>1638288629872</created>
+    <task id="LOCAL-00003" summary="voltaj">
+      <created>1637651789658</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1638288629872</updated>
+      <updated>1637651789658</updated>
     </task>
-    <task id="LOCAL-00004" summary="antetul 2">
-      <created>1638294096554</created>
+    <task id="LOCAL-00004" summary="voltaj">
+      <created>1637652218044</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1638294096554</updated>
+      <updated>1637652218044</updated>
     </task>
-    <task id="LOCAL-00005" summary="antetul 2">
-      <created>1638294146186</created>
+    <task id="LOCAL-00005" summary="voltaj">
+      <created>1637653047331</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1638294146186</updated>
+      <updated>1637653047331</updated>
     </task>
-    <task id="LOCAL-00006" summary="antetul 2">
-      <created>1638298122962</created>
+    <task id="LOCAL-00006" summary="4,5">
+      <created>1637653718385</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1638298122962</updated>
+      <updated>1637653718385</updated>
     </task>
-    <task id="LOCAL-00007" summary="antetul 2">
-      <created>1638304598450</created>
+    <task id="LOCAL-00007" summary="7">
+      <created>1637654245144</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1638304598450</updated>
+      <updated>1637654245144</updated>
     </task>
-    <task id="LOCAL-00008" summary="antetul 2">
-      <created>1638305086569</created>
+    <task id="LOCAL-00008" summary="8">
+      <created>1637654542344</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1638305086569</updated>
+      <updated>1637654542344</updated>
     </task>
-    <task id="LOCAL-00009" summary="antetul 2">
-      <created>1638357432553</created>
+    <task id="LOCAL-00009" summary="9">
+      <created>1637654723682</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1638357432553</updated>
+      <updated>1637654723682</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="10">
+      <created>1637655018716</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637655018716</updated>
+    </task>
+    <task id="LOCAL-00011" summary="1 si 2">
+      <created>1638125680252</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1638125680252</updated>
+    </task>
+    <task id="LOCAL-00012" summary="pic">
+      <created>1638126200713</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1638126200713</updated>
+    </task>
+    <task id="LOCAL-00013" summary="v">
+      <created>1638126249844</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1638126249844</updated>
+    </task>
+    <task id="LOCAL-00014" summary="v">
+      <created>1638126523414</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1638126523414</updated>
+    </task>
+    <task id="LOCAL-00015" summary="1 si 2 url">
+      <created>1638126739731</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1638126739732</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -168,8 +183,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="antetul" />
-    <MESSAGE value="antetul 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="antetul 2" />
+    <MESSAGE value="hello" />
+    <MESSAGE value="voltaj" />
+    <MESSAGE value="2" />
+    <MESSAGE value="4,5" />
+    <MESSAGE value="7" />
+    <MESSAGE value="8" />
+    <MESSAGE value="9" />
+    <MESSAGE value="10" />
+    <MESSAGE value="1 si 2" />
+    <MESSAGE value="pic" />
+    <MESSAGE value="v" />
+    <MESSAGE value="1 si 2 url" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 si 2 url" />
   </component>
 </project>
