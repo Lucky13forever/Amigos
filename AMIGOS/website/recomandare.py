@@ -57,21 +57,32 @@ def get_panel_system(all_panels,user_buget,user_length,user_width):
     for i in range(len(all_panels)):
         if ((all_panels[i].length<=user_length and all_panels[i].width<=user_width) or (all_panels[i].width<=user_length and all_panels[i].length<=user_width)):
             if user_length//all_panels[i].length*user_width//all_panels[i].width>user_length//all_panels[i].width*user_width//all_panels[i].length:
+                # pozitie verticala
                 max_number_of_panel=user_length//all_panels[i].length*user_width//all_panels[i].width
             else:
+                # pozitie orizontala
+                
                 max_number_of_panel=user_length//all_panels[i].width*user_width//all_panels[i].length
+
             contor=0
             current_price=0
             current_power=0
-            while contor<=max_number_of_panel and current_price+all_panels[i].price<=user_buget:
+
+            while contor<max_number_of_panel and current_price+all_panels[i].price<=user_buget:
+
                 contor+=1
+                
+                
                 current_price+=all_panels[i].price
                 current_power+=all_panels[i].power
+
+            
             if (current_power>max_total_power) or (current_power==max_total_power and current_price<total_price):
                 max_total_power=current_power
                 total_price=current_price
                 number_of_panels=contor
                 index_panel=i
+
     if index_panel!=-1:
         return (all_panels[index_panel],number_of_panels,max_total_power,total_price)
     return None
@@ -109,16 +120,22 @@ def get_full_system(user_budget: int,
                     regulators_with_invertors_list: list,
                     region_dict: dict):
     
+    print(f'User buget is {user_budget}')
+    print(f'user_length is {user_length}')
+    print(f'user_width is {user_width}')
+    
     remaining_budget = user_budget
     i = 0.2 #procentul 20%
     ok = 0
-    while remaining_budget >= 0.02 * user_budget: #verificam ca bugetul ramas > 2% din bugetul total
+    while remaining_budget >= 0.02 * user_budget and i <= 1: #verificam ca bugetul ramas > 2% din bugetul total, si ca i nu depaseste 100%
         ok = 1 #verificam ca exista macar un panou
         panels = get_panel_system(panel_list, int(user_budget * i), user_length, user_width)
         power = apply_percent(panels[2], get_region_effic(region_dict, user_location))
         accumulators = get_accumulator_system(accumulator_list, power * 5 / 12) # daca am 300W putere, trebuie sa cacluez W per o zi, adica 300 * 5 = 1500, de acolo ca sa aflu amperii, impart la numarul de 12V, 1500/12V => A
         regulators = get_regulator_invertor_system(regulators_with_invertors_list, power)
         i += 0.02 #crestem procentul cu 2%
+
+        # print(i)
         remaining_budget = user_budget - panels[3] - accumulators[2] - regulators.price
    
     if ok == 1:
