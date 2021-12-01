@@ -1,7 +1,21 @@
-from our_classes.Regulator_with_invertor_class import *
+from .our_classes.Regulator_with_invertor_class import *
 import sys
-from our_classes.panou_class import *
-from our_classes.accumulator_class import *
+from .our_classes.panou_class import *
+from .our_classes.accumulator_class import *
+import json
+
+
+def load_region_dict(address = "website/database/regiuni.json"):
+    try:
+        file = open(address, "r")
+        data = json.load(file)
+        return data
+    except FileExistsError:
+        raise "FileReadError"
+    except FileNotFoundError:
+        raise "FileNotFound"
+
+
 
 def get_percent(x,y):
     y=(y*x)//100
@@ -109,8 +123,8 @@ def get_full_system(user_budget: int,
         i += 0.02 #crestem procentul cu 2%
         remaining_budget = user_budget - panels[3] - accumulators[2] - regulators.price
     if ok == 1:
-        result = set(panels, accumulators, regulators, remaining_budget)
+        result = (panels, accumulators, regulators, remaining_budget)
         return result
     else:
-        result = ((None, None, None), (None, None, None), None, None)
+        result = ((None, None, None, None), (None, None, None), None, None)
         return result
