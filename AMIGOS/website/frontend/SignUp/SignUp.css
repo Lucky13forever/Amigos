@@ -1,12 +1,23 @@
-.Sign-Up {
-  width: 1440px;
-  height: 1024px;
-  background-color: #d3f7ff;
+* {
+  box-sizing: border-box;
+}
+* {
+	margin:0;
+	padding:0;
+}
+html, body {
+	min-width:1000px;
+}
+.wrapper{
+  position: relative;
+  padding-bottom: 56.25%;
 }
 .Rectangle-1 {
-  width: 1236px;
-  height: 812px;
-  margin: 100px;
+  position: absolute;
+  width: 85.8%;
+  height: 79.3%;
+  left: 7.1%;
+  top: 10.4%;
   box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #fff;
 }
