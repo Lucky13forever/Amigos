@@ -123,6 +123,7 @@ def get_full_system(user_budget: int,
     remaining_budget = user_budget
     i = 0.2 #procentul 20%
     ok = 0
+    positive_result = ((None, None, None, None), (None, None, None), None, None)
     while remaining_budget >= 0.02 * user_budget and i <= 1: #verificam ca bugetul ramas > 2% din bugetul total, si ca i nu depaseste 100%
         ok = 1 #verificam ca exista macar un panou
         panels = get_panel_system(panel_list, int(user_budget * i), user_length, user_width)
@@ -133,12 +134,10 @@ def get_full_system(user_budget: int,
 
         # print(i)
         remaining_budget = user_budget - panels[3] - accumulators[2] - regulators.price
+
+        if remaining_budget > 0:
+            positive_result = (panels, accumulators, regulators, remaining_budget)
    
-    if ok == 1:
-        result = (panels, accumulators, regulators, remaining_budget)
-        return result
-    else:
-        result = ((None, None, None, None), (None, None, None), None, None)
-        return result
+    return positive_result
 
 print(get_full_system(3000, 10, 10, "Timis", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict()))

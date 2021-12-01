@@ -5,10 +5,13 @@
 
 {% block content %}
 
-<h1>This are the users:</h1>
+<!-- <h1>This are the users:</h1> -->
 <!-- {% for user in table_user %}
     <h4>{% print(user.id, user.name, user.email) %}</h4>
     {% endfor %} -->
+
+
+{% if ok == 1 %}
 
 <h1>Panou</h1>
 <!-- Panourile sunt in table_user[0] -->
@@ -82,4 +85,14 @@
 
 
     <!-- <h1>Current: {% print(user) %}</h1> -->
+
+
+{% endif %}
+
+
+{% if ok == 0%}
+
+    <h1>Buget is too low</h1>
+
+{%endif%}
 {% endblock %}
