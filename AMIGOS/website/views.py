@@ -50,4 +50,4 @@ def test():
     acumulatori = result[1]
     regulatori = result[2]
     ramas_din_buget = result[3]
-    return render_template("home.html", panouri=panouri, acumulatori=acumulatori, regulatori=regulatori, ramas=ramas_din_buget, ok = ok, user=current_user) #User.query.all()
+    return render_template("test.html", panouri=panouri, acumulatori=acumulatori, regulatori=regulatori, ramas=ramas_din_buget, ok = ok, user=current_user) #User.query.all()
