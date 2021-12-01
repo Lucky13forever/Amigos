@@ -37,5 +37,43 @@
 
 {% endfor %}
 
+
+<br>
+<br>
+<h1>Acumulatori</h1>
+
+{% for i in range(3) %}
+
+{% if i == 0%}
+
+    <h1>Nume: {% print(acumulatori[i].name)%}</h1>
+
+{% endif%}
+
+{% if i == 1%}
+
+    <h1>Numar acumulatori: {% print(acumulatori[i])%}</h1>
+
+{% endif%}
+
+{% if i == 2%}
+
+    <h1>Pret total: {% print(acumulatori[i])%}</h1>
+
+{% endif%}
+
+
+{%endfor%}
+
+
+
+<br>
+<br>
+<h1>Regulator</h1>
+
+    <h1>Nume: {% print(regulatori.name)%}</h1>
+    <h1>Pret total: {% print(regulatori.price) %}</h1>
+
+
     <!-- <h1>Current: {% print(user) %}</h1> -->
 {% endblock %}
