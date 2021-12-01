@@ -90,9 +90,35 @@
   },
 
   "10": {
-      "name":,
-      "power":,
-      "voltage":,
+      "name": "Invertor hibrid OnGrid MPI 5.5K",
+      "power":6500,
+      "voltage":12,
+      "charging":60,
+      "price":9790,
+      "picture":,
+      "link": "https://www.solar-depot.ro/157/Invertor-hibrid-unda-pura-5500W-cu-regulator-MPPT-60A",
+
+  },
+
+  "11": {
+      "name":"Invertor hibrid OnGrid MPI 5k",
+      "power":10000,
+      "voltage":12,
+      "charging":100,
+      "price":11659,
+      "picture":,
+      "link":"https://www.solar-depot.ro/143/Invertor-hibrid-unda-pura-5000W-cu-regulator-MPPT-100A-MPPSOLAR",
+
+  },
+
+  "12": {
+      "name": "Invertor hibrid OnGrid MPI 10K",
+      "power": 15000,
+      "voltage":12,
+      "charging":200,
+      "price":18666,
+      "picture":,
+      "link":"https://www.solar-depot.ro/146/Invertor-hibrid-trifazic-unda-pura-10kW-cu-regulator-MPPT-200A",
   }
 
 
