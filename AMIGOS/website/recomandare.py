@@ -68,7 +68,8 @@ def get_panel_system(all_panels,user_buget,user_length,user_width):
             current_price=0
             current_power=0
 
-            while contor<max_number_of_panel and current_price+all_panels[i].price<=user_buget:
+            # check current power not to overpass 14000W, because i dont have bigger invertors then 15kW
+            while contor<max_number_of_panel and current_price+all_panels[i].price<=user_buget and current_power + all_panels[i].power <= 14000:
 
                 contor+=1
                 
