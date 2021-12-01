@@ -1,3 +1,4 @@
+#Birla Alexandru si Puscasu Vlad
 def maxim_liste(l1:list,l2:list):
     l1.sort()
     l2.sort()
@@ -28,4 +29,3 @@ class Graph:
         self.yaxis_values=yaxis(self.max_point)
         self.colums1=colums(self.max_point,data1)
         self.colums2=colums(self.max_point,data2)
-        
