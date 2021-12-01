@@ -4,6 +4,7 @@ from flask_login import UserMixin
 
 # id, name, email, password, county, city, phone, avg_consumption, surface
 # UserMixin is used for flask-login -> current_user
+# when adding new columns, i need to delete database.db
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(150))
