@@ -87,29 +87,8 @@
       "picture": "AMIGOS/website/pictures/Invertor_9.jpg",
       "link": "https://www.solar-depot.ro/199/Invertor-hibrid-unda-pura-5000W-cu-regulator-MPPT-80A-MPPSOLAR"
 
-  },
-
-  "10": {
-      "name": "Invertor solar Victron EasySolar II GX",
-      "power": 3000,
-      "voltage": 12,
-      "charging": 35,
-      "price": 13959,
-      "picture": "AMIGOS/website/pictures/Invertor_10.jpg",
-      "link": "https://www.solar-depot.ro/212/Invertor-solar-Victron-Energy-EasySolar-II-GX-48-3000-MPPT-250-70"
-
-  },
-
-  "11": {
-      "name": "Invertor solar Victron EasySolar II GX",
-      "power": 5000,
-      "voltage": 12,
-      "charging": 35,
-      "price": 19789,
-      "picture": "AMIGOS/website/pictures/Invertor_11.jpg",
-      "link": "https://www.solar-depot.ro/182/Invertor-charger-solar-48V-5000W-Victron-Energy-EasySolar-48_5000_70-MPPT-150_100-Color-Control"
-
   }
+
 
 
     
