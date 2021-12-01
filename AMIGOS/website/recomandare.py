@@ -112,7 +112,7 @@ def get_full_system(user_budget: int,
                     region_dict: dict):
     
     remaining_budget = user_budget
-    i = 0.2 #procentul 20%
+    i = 1 #procentul 20%
     ok = 0
     while remaining_budget >= 0.02 * user_budget: #verificam ca bugetul ramas > 2% din bugetul total
         ok = 1 #verificam ca exista macar un panou
