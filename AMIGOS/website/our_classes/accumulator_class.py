@@ -11,7 +11,7 @@ class Accumulator:
         self.link=link
         self.picture=picture
 
-def load_all_accumulators(address = "website/database/acumulatori.json"):
+def load_all_accumulators(address = "AMIGOS/website/database/acumulatori.json"):
     try:
         with open(address, "r") as file:
             data = json.load(file)
