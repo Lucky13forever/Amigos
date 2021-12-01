@@ -24,16 +24,15 @@
    <h1>Price: {% print(panouri[i].price) %} </h1> 
    <!-- <h1>Name: {% print(panouri[i].power) %} </h1>  -->
    <!-- <h1>Name: {% print(panouri[i].power) %} </h1>   -->
-   
+{% endif %}  
 {% if i == 1%}
     <h1>Numar panouri: {% print(panouri[i]) %}</h1>
-
+{% endif %}
 {% if i == 2%}
     <h1>Putere totala: {% print(panouri[i]) %}</h1>
-
+{% endif %}
 {% if i == 3%}
     <h1>Pret total: {% print(panouri[i]) %}</h1>
-
 {% endif %}
 
 {% endfor %}
