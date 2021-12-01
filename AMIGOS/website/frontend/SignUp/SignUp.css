@@ -10,7 +10,7 @@ html, body {
 }
 .wrapper{
   position: relative;
-  padding-bottom: 60%;
+  padding-bottom: 56.25%;
 }
 .Rectangle-1 {
   position: absolute;
@@ -94,4 +94,69 @@ html, body {
   color: #359bbb;
   position: absolute;
   object-fit: contain;
+}
+.SIGN-UP {
+  width: 15.9%;
+  height: 7.8%;
+  top: 10%;
+  left: 19%;
+  opacity: 0.9;
+  font-family: Outfit;
+  font-size: 300%;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  position: absolute;
+  object-fit: contain;
+  color: #000;
+}
+.terms{
+  width: 20%;
+  height: 5.3%;
+  bottom: 2.2%;
+  left: 15%;
+  font-family: Outfit;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  position: absolute;
+  object-fit: contain;
+  color: #000;
+}
+
+.terms1{
+  color: #359bbb;
+}
+.Rectangle-13 {
+  width: 33.7%;
+  height: 6.9%;
+  bottom: 10.2%;
+  left: 7.7%;
+  padding: 13px 101px;
+  border-radius: 8px;
+  position: absolute;
+  object-fit: contain;
+  background-color: #f7c889;
+}
+.CREATE-ACCOUNT {
+  width: 100%;
+  height: 100%;
+  bottom: -25%;
+  left: 24%;
+  font-family: Outfit;
+  font-size: 200%;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  position: absolute;
+  object-fit: contain;
+  color: #ffffff;
 }
