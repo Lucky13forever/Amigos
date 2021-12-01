@@ -11,7 +11,7 @@ class Regulator_with_invertor :
         self.link=link
         self.picture=picture
 
-def load_all_regulators(address = "website/database/invertor_cu_regulator.json"):
+def load_all_regulators(address = "AMIGOS/website/database/invertor_cu_regulator.json"):
     try:
         with open(address, "r") as file:
             data = json.load(file)

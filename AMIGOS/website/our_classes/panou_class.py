@@ -15,7 +15,7 @@ class Panels:
 
 def load_all_panels():
       all_panels = []
-      with open("website/database/panouri.json", "r") as pan_file:
+      with open("AMIGOS/website/database/panouri.json", "r") as pan_file:
             my_dict = json.load(pan_file)
 
       for pan in my_dict.values():

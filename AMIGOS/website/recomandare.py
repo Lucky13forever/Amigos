@@ -5,7 +5,7 @@ from .our_classes.accumulator_class import *
 import json
 
 
-def load_region_dict(address = "website/database/regiuni.json"):
+def load_region_dict(address = "AMIGOS/website/database/regiuni.json"):
     try:
         file = open(address, "r")
         data = json.load(file)
