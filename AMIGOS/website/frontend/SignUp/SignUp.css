@@ -23,22 +23,41 @@ html, body {
   border-radius: 8px;
   overflow: hidden;
 }
+/*.Ellipse-13 {*/
+/*  position: absolute;*/
+/*  width: 23.8%;*/
+/*  height: 33.5%;*/
+/*  top: 66.6%;*/
+/*  right: 79%;*/
+/*  object-fit: contain;*/
+/*}*/
+/*.Polygon-7 {*/
+/*  position: absolute;*/
+/*  width: 28.5%;*/
+/*  height: 38%;*/
+/*  left: 71.5%;*/
+/*  margin-right: 0;*/
+/*  object-fit: contain;*/
+/*  border-radius: 8px;*/
+/*}*/
 .Ellipse-13 {
-  position: absolute;
-  width: 23.8%;
+  width: 23.9%;
   height: 33.5%;
-  top: 66.6%;
-  right: 79%;
+  border-bottom-left-radius: 8px;
+  position: fixed;
+  top: 66.5%;
   object-fit: contain;
+  margin-left:0;
+  margin-bottom:0;
+  right:81%;
 }
 .Polygon-7 {
-  position: absolute;
-  width: 28.5%;
-  height: 38%;
-  left: 71.5%;
-  margin-right: 0;
-  object-fit: contain;
+  width: 30%;
+  height: 40.2%;
+  position: fixed;
+  left: 74%;
   border-radius: 8px;
+  margin-right:0;
 }
 .Rectangle-3 {
   width: 50%;
