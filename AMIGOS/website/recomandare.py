@@ -120,10 +120,6 @@ def get_full_system(user_budget: int,
                     regulators_with_invertors_list: list,
                     region_dict: dict):
     
-    print(f'User buget is {user_budget}')
-    print(f'user_length is {user_length}')
-    print(f'user_width is {user_width}')
-    
     remaining_budget = user_budget
     i = 0.2 #procentul 20%
     ok = 0
