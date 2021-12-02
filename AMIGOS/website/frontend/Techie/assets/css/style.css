@@ -9,22 +9,22 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Outfit", sans-serif;
   color: #444444;
 }
 
 a {
-  color: #5846f9;
+  color: #30849E;
   text-decoration: none;
 }
 
 a:hover {
-  color: #8577fb;
+  color: #E77E64;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5846f9;
+  background: #30849E;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #7b27d8;
+  background: #E77E64;
   color: #fff;
 }
 .back-to-top.active {
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #5846f9;
+  border: 6px solid #E77E64;
   border-top-color: #e7e4fe;
   border-radius: 50%;
   width: 60px;
@@ -119,7 +119,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0;
 }
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(24, 6, 185, 0.8);
+  background: white; /* !!!!!!!!!!!!!!!!!!!!!!! rgba(24, 6, 185, 0.8) ; */
+  opacity: 0.8%;
   padding: 12px 0;
 }
 #header .logo {
