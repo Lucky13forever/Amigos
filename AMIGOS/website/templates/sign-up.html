@@ -14,16 +14,25 @@
     <div class = 'form-group'>
 
         <label for="name">Username</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Enter username">
+        <input type="text" class="form-control" id="name" name="name" value="{{old_info[0]}}" placeholder='Enter username'>
+
 
         <label for="email">Email Address</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+        <input type="email" class="form-control" id="email" name="email" value="{{old_info[1]}}" placeholder="Enter email">
 
         <label for="password">Password</label>
         <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+        
+        <label for="county">County</label>
+        <select name="county" id="county">
+            {% for county in orase.keys()%}
+                <option value="{{county}}">{{county}}</option>
+            {% endfor %}
+        </select>
     </div>
     <br>
-    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <button type="submit" class="btn btn-primary" >Submit</button>
 </form>
 
 {% endblock %}
