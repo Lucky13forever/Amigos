@@ -39,7 +39,7 @@ def test():
     # result = get_full_system(2000, 10, 10, "Constanta", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
     # Suma ramasa din buget e -1727, deci as pune userul sa plateasca aproape dublu
     # ToDo: daca nu reusim sa gasim niciun sistem, fix la return
-    result = get_full_system(500_000, 200, 100, "Constanta", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
+    result = get_full_system(10000, 200, 100, "Constanta", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
     
     print(result)
 
