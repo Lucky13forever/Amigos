@@ -96,7 +96,7 @@ def sign_up():
         print(f"AICI BA {data.get('refresh')}")
 
 
-        old_info.extend([name, email, password, county, city, roof_length, roof_width, month, consumption])
+        old_info = [name, email, password, county, city, roof_length, roof_width, month, consumption]
 
         flash = flask.flash
 
@@ -116,6 +116,17 @@ def sign_up():
             if len(password) < 6:
                 flash('Password must have a length of at least 6 characters', category='error')
                 error = 1
+
+            if roof_length == "":
+                flash('Please enter a roof length', category='error')
+                error = 1
+            if roof_width == "":
+                flash('Please enter a roof width', category='error')
+                error = 1
+            if consumption == "":
+                flash("Please enter a consumption", category='error')
+                error = 1
+
             if error == 0:
                 new_user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'), county=county, city=city, roof_length=roof_length, roof_width=roof_width, month=month, consumption=consumption)
 
