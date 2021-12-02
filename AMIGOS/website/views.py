@@ -3,6 +3,7 @@ from sqlalchemy.orm.query import Query
 from .models import *
 from flask_login import login_required, current_user
 from .recomandare import *
+import json
 
 views = Blueprint('views', __name__)
 
@@ -40,7 +41,12 @@ def test():
     # Suma ramasa din buget e -1727, deci as pune userul sa plateasca aproape dublu
     # ToDo: daca nu reusim sa gasim niciun sistem, fix la return
     result = get_full_system(10000, 200, 100, "Constanta", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
-    
+
+
+    orase = {}
+    with open('AMIGOS/website/database/orase.json', 'r') as file:
+        orase = json.load(file)
+
     print(result)
 
     ok = 1
@@ -53,7 +59,7 @@ def test():
     ramas_din_buget = result[3]
 
     pret_sistem = result[0][3] + result[1][2] + result[2].price
-    return render_template("test.html", panouri=panouri, acumulatori=acumulatori, regulatori=regulatori, ramas=ramas_din_buget, pret_sistem = pret_sistem, ok = ok, user=current_user) #User.query.all()
+    return render_template("test.html", orase = orase, panouri=panouri, acumulatori=acumulatori, regulatori=regulatori, ramas=ramas_din_buget, pret_sistem = pret_sistem, ok = ok, user=current_user) #User.query.all()
 
 
 @views.route('/database')

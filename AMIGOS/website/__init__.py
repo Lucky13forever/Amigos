@@ -2,6 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_login import LoginManager, login_manager
+import json
 
 db = SQLAlchemy()
 DB_NAME = "database.db"
@@ -42,3 +43,9 @@ def create_database(app):
    if not path.exists('website/' + DB_NAME):
       db.create_all(app= app)
       print('Created Database!')
+
+def load_cities():
+   orase = {}
+   with open('AMIGOS/website/database/orase.json', 'r') as file:
+      orase = json.load(file)
+   return orase

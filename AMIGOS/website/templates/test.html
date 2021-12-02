@@ -102,4 +102,31 @@
     <h1>Buget is too low</h1>
 
 {%endif%}
+
+
+<br>
+<br>
+
+<h1>Here i have the select</h1>
+
+<label for="county">County</label>
+<select name="county" id="county">
+    {% for county in orase.keys()%}
+        <option value="">{{county}}</option>
+    {% endfor %}
+</select>
+<br>
+<label for="city">City</label>
+<select name="city" id="city">
+    {% for county in orase.keys()%}
+        <option value="">{{county}}</option>
+    {% endfor %}
+</select>
+
+<br>
+<br>
+<br>
+<br>
+
+
 {% endblock %}
