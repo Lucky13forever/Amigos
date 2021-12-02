@@ -30,3 +30,4 @@ class Graph:
         self.colums1=colums(self.max_point,data1)
         self.colums2=colums(self.max_point,data2)
         
+        
