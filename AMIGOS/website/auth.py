@@ -21,10 +21,13 @@ def login():
     #     db.session.commit()
     #     break
 
+    old_info = []
 
     if request.method == 'POST':
         email = data.get('email')
         password = data.get('password')
+
+        old_info.append(email)
 
         my_user = User.query.filter_by(email= email).first()
         if my_user:
@@ -37,7 +40,7 @@ def login():
         else:
             flash('Your email is incorrect, please try again', category='error')
 
-    return render_template("login.html", user=current_user)
+    return render_template("login.html", old_info=old_info, user=current_user)
 
 @auth.route('/logout')
 @login_required
@@ -117,12 +120,12 @@ def sign_up():
                 new_user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'), county=county, city=city, roof_length=roof_length, roof_width=roof_width, month=month, consumption=consumption)
 
                 print(f'The name of the new user is {new_user.name}')
-                # login_user(new_user, remember=True)
+                login_user(new_user, remember=True)
                 db.session.add(new_user)
                 db.session.commit()
                 flash('Account created', category='succes')
 
-                # return redirect(url_for('views.home'))
+                return redirect(url_for('views.home'))
 
 
     return render_template("sign-up.html", months=months, orase=orase, old_info=old_info, user=current_user)
