@@ -1,62 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cc28d6-ea11-4adc-8b51-5a9bacd5fb48" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Techie/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Techie/index.html" afterDir="false" />
+    <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/img/Ellipse 12.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Get to know/GetToKnow.css" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Get to know/GetToKnow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Get to know/consumption.css" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Get to know/consumption.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Get to know/consumption.html" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Get to know/consumption.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Get to know/surface.css" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Get to know/surface.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="21HdINgudUNzaK9TVYYUPvOo9pJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="21Hc4LfKKQsciDEXyiqY3tvXJDR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AMIGOS/website/frontend/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Danut\PycharmProjects\amigos\AMIGOS\website\frontend\img" />
-      <recent name="C:\Users\Danut\PycharmProjects\amigos\AMIGOS\website\frontend\Techie\assets\img" />
-      <recent name="C:\Users\Danut\PycharmProjects\amigos\AMIGOS\website\frontend\Techie\assets\img\testimonials" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\manu\project\Amigos\AMIGOS\website\frontend\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="19cc28d6-ea11-4adc-8b51-5a9bacd5fb48" name="Changes" comment="" />
-      <created>1637601866023</created>
+      <changelist id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="" />
+      <created>1637601261037</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1637601866023</updated>
+      <updated>1637601261037</updated>
+      <workItem from="1637601262193" duration="1873000" />
+      <workItem from="1637603938299" duration="569000" />
+      <workItem from="1637651543663" duration="3515000" />
+      <workItem from="1637655751082" duration="135000" />
+      <workItem from="1637834728576" duration="5000" />
+      <workItem from="1638000251888" duration="57000" />
+      <workItem from="1638025330530" duration="2000" />
+      <workItem from="1638124621649" duration="1026000" />
+      <workItem from="1638125660159" duration="1943000" />
+      <workItem from="1638201634066" duration="1213000" />
+      <workItem from="1638289514267" duration="627000" />
+      <workItem from="1638310146295" duration="2758000" />
+      <workItem from="1638355745412" duration="3709000" />
+      <workItem from="1638453934054" duration="2251000" />
     </task>
-    <task id="LOCAL-00001" summary="update">
-      <created>1637602250344</created>
+    <task id="LOCAL-00001" summary="hello">
+      <created>1637602247788</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1637602250344</updated>
+      <updated>1637602247788</updated>
     </task>
-    <task id="LOCAL-00002" summary="update">
-      <created>1638459784889</created>
+    <task id="LOCAL-00002" summary="hello">
+      <created>1637651665769</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1638459784889</updated>
+      <updated>1637651665769</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="voltaj">
+      <created>1637651789658</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637651789658</updated>
+    </task>
+    <task id="LOCAL-00004" summary="voltaj">
+      <created>1637652218044</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637652218044</updated>
+    </task>
+    <task id="LOCAL-00005" summary="voltaj">
+      <created>1637653047331</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637653047331</updated>
+    </task>
+    <task id="LOCAL-00006" summary="4,5">
+      <created>1637653718385</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637653718385</updated>
+    </task>
+    <task id="LOCAL-00007" summary="7">
+      <created>1637654245144</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637654245144</updated>
+    </task>
+    <task id="LOCAL-00008" summary="8">
+      <created>1637654542344</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637654542344</updated>
+    </task>
+    <task id="LOCAL-00009" summary="9">
+      <created>1637654723682</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637654723682</updated>
+    </task>
+    <task id="LOCAL-00010" summary="10">
+      <created>1637655018716</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637655018716</updated>
+    </task>
+    <task id="LOCAL-00011" summary="1 si 2">
+      <created>1638125680252</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1638125680252</updated>
+    </task>
+    <task id="LOCAL-00012" summary="pic">
+      <created>1638126200713</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1638126200713</updated>
+    </task>
+    <task id="LOCAL-00013" summary="v">
+      <created>1638126249844</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1638126249844</updated>
+    </task>
+    <task id="LOCAL-00014" summary="v">
+      <created>1638126523414</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1638126523414</updated>
+    </task>
+    <task id="LOCAL-00015" summary="1 si 2 url">
+      <created>1638126739731</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1638126739732</updated>
+    </task>
+    <task id="LOCAL-00016" summary="1 si 2 url">
+      <created>1638366399663</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1638366399663</updated>
+    </task>
+    <task id="LOCAL-00017" summary="1 si 2 url">
+      <created>1638459569235</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1638459569235</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -71,7 +210,23 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="hello" />
+    <MESSAGE value="voltaj" />
+    <MESSAGE value="2" />
+    <MESSAGE value="4,5" />
+    <MESSAGE value="7" />
+    <MESSAGE value="8" />
+    <MESSAGE value="9" />
+    <MESSAGE value="10" />
+    <MESSAGE value="1 si 2" />
+    <MESSAGE value="pic" />
+    <MESSAGE value="v" />
+    <MESSAGE value="1 si 2 url" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 si 2 url" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Amigos$Bulzan_Nicola.coverage" NAME="Bulzan_Nicola Coverage Results" MODIFIED="1637667223496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/git_Setup" />
+    <SUITE FILE_PATH="coverage/Amigos$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1637667208336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Amigos$Fofiu_George.coverage" NAME="Fofiu_George Coverage Results" MODIFIED="1637667433404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/git_Setup" />
   </component>
 </project>
