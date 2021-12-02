@@ -1,3 +1,4 @@
+#Puscasu Vlad si Birla Alexandru
 def calculate_surplus_gain(price_per_kW :float, user_consumption :list, energy_production :list):
     l=[]
     for i in range(len(user_consumption)):
