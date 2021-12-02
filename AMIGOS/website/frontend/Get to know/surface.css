@@ -108,31 +108,6 @@ input[type=text] {
   margin-bottom: 36px;
   align-self: center;
 }
-.Ellipse-15 {
-  width: 17px;
-  height: 17px;
-  margin: auto;
-  border-radius: 50%;
-  background-color: #fff;
-  display: inline-block;
-}
-.Rectangle-57 {
-  width: 48px;
-  height: 17px;
-  margin: auto;
-  border-radius: 24.5px;
-  background-color: #fff;
-  display: inline-block;
-  float: center;
-}
-.Ellipse-16 {
-  width: 17px;
-  height: 17px;
-  margin: auto;
-  border-radius: 50%;
-  background-color: #fff;
-  display: inline-block;
-}
 .Rectangle-58 {
   width: 17.9%;
   height: 8.2%;
@@ -162,5 +137,59 @@ input[type=text] {
   margin-bottom: auto;
   color: #30849e;
 }
+a.lnext:link, a.lnext:visited {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 17.9%;
+  height: 8.2%;
+  margin-top:auto;
+  margin-right:auto;
+  margin-bottom: auto;
+  align-content: center;
+  padding: 0 34px 0;
+  border-radius: 42px;
+  background-color: #fff;
+  margin-left: 41%;
+  font-family: Outfit;
+  font-size: 380%;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #30849e;
+}
 
+a.lnext:hover, a.lnext:active {
+  background-color: #DBDBDB;
+}
+a.left:link, a.left:visited {
+  width: 17px;
+  height: 17px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+}
+a.middle:link, a.middle:visited {
+  width: 48px;
+  height: 17px;
+  margin: auto;
+  border-radius: 24.5px;
+  background-color: #fff;
+  display: inline-block;
+  float: center;
+}
+a.right:link, a.right:visited {
+  width: 17px;
+  height: 17px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+}
+a.left:hover, a.left:active, a.middle:hover, a.middle:active, a.right:hover, a.right:active {
+  background-color: #DBDBDB;
+}
 
