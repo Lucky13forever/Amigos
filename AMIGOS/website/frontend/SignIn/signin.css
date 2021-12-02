@@ -4,7 +4,7 @@
 
 :root{
 --background--clr: #0c2346;
---hr--color: rgba(0, 0, 0, 0.5)
+--hr--color: rgba(0, 0, 0, 0.5);
 
 
 }
@@ -15,16 +15,25 @@ body{
 background-color: var(--background--clr);
 
 }
+
 .wrapper{
-  width: 85.8%;
-  height: 812px;
-  margin: 10.4% 7.1%;
-  border-radius: 8px;
-  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+position:relative;
+padding-bottom: 56.4%;
+border-radius: 8px;
+}
+
+
+.rectangle{
+position:absolute;
+width: 85.8%;
+height: 79.3%;
+left: 7.1%;
+top:10.4%;
+background-color: #fff;
+display: flex;
+flex-direction: row;
+box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
 }
 
 .left-hand-side{
@@ -32,74 +41,100 @@ position: relative;
 background-color: var(--background--clr);
 width: 50%;
 height:100%
+border-top-left-radius: 8px;
+
 }
 
 .right-hand-side{
-position: relative;
+position:relative;
 width:50%;
-height: 100%;
 background-color: #fff;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+border-top-right-radius:8px;
+border-bottom-right-radius:8px;
+
 }
+
+
 
 .form-container{
 position: absolute;
 height: 76.5%;
 width: 56%;
+margin-top:7%;
 }
 
 .form-container h1{
 position:absolute;
-margin-left: 35%;
-
+margin-left:29%;
+font-weight: bold;
+font-size: 50px;
 }
 
 .all{
-margin-top: 20%;
 display:flex;
 flex-direction: row;
 justify-content: center;
 align-items:center;
-margin-right: 25%;
+margin-right: 48%;
 }
 
 .all1{
-margin-top: 35%;
+margin-top: 45%;
 }
+
 .all2{
-margin-top: 70px;
+margin-top: 23%;
+
+}
+
+.all2 label{
+margin-left:-45%;
 }
 
 #image1{
-width:9%;
-height: 4.8%;
+position: absolute;
+width:30px;
+height: 30px;
+margin-right: 47%;
+opacity: 0.5;
+margin-bottom: 1%;
 }
 
 #image2{
-width: 9%;
-height: 4.8%;
+position: absolute;
+width:30px;
+height: 30px;
+margin-right: 47%;
+opacity: 0.5;
+margin-bottom: 1%;
+}
+
+.password-input{
+right:0;
+left:0;
+margin-left: 9%;
 }
 
 .form-control{
-display: block;
-margin-left: 4%;
-margin-top: 5%;
+position: absolute;
 font-size: 20px;
 box-shadow: none;
 border: none;
 border-bottom: 2px solid var(--hr--color);
-padding: 4px 0;
-width: 140%;
+opacity: 0.5;
+width: 90%;
 }
 
 .sign-in-btn{
-width: 85%;
+position: absolute;
+width: 100%;
 height: 8%;
 margin-top: 15%;
-margin-left: 8%;
+margin-left: 0%;
 border-radius: 8px;
 background-color: #359bbb;
 border: none;
@@ -109,23 +144,23 @@ font-weight: bold;
 padding-top: 7px;
 }
 
+
 h4{
+position:absolute;
 color:#359bbb;
 font-size: 14px;
-margin-top: 12%;
+margin-top: 40%;
 margin-left:38%;
 }
 
 .form-label {
-  font-size: 1.1em;
   font-size: 20px;
   color: var(--hr--color);
   display: block;
   opacity: 1;
-  transform: translateY(-1.25em);
   transform-origin: 0 0;
   transition: 0.3s;
-  margin-left: 4%;
+  transform: translateY(-0.2em);
 }
 
 .form-control::placeholder {
@@ -136,21 +171,39 @@ margin-left:38%;
 .form-control:focus {
   outline: none;
   border-color: rgb(245, 50, 50);
+
 }
 
 .form-control:focus + .form-label {
-  transform: translateY(-3.05em) scale(0.95);;
+  transform: translateY(-1.5em) scale(0.95);;
   color: red;
 }
 
-
 .form-control:not(:placeholder-shown) + .form-label {
-  transform: translateY(-3em) scale(0.9);
+  transform: translateY(-1.5em) scale(0.9);
 }
 
+.circle{
+    width: 23.9%;
+    height: 33.5%;
+    border-bottom-left-radius: 8px;
+    bottom: 66.5%;
+    position: fixed;
+    object-fit: contain;
+    right: 81%;
+    transform: rotate(90deg);
+}
 
+.triangle{
+width: 23.9%;
+height: 40.5%;
+object-fit: contain;
+border-bottom-left-radius: 8px;
+position: fixed;
+bottom: 0;
+left:79.3%;
 
-
+}
 
 
 

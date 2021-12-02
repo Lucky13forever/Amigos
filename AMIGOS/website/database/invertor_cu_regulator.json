@@ -90,27 +90,36 @@
   },
 
   "10": {
-      "name": "Invertor solar Victron EasySolar II GX",
-      "power": 3000,
-      "voltage": 12,
-      "charging": 35,
-      "price": 13959,
-      "picture": "AMIGOS/website/pictures/Invertor_10.jpg",
-      "link": "https://www.solar-depot.ro/212/Invertor-solar-Victron-Energy-EasySolar-II-GX-48-3000-MPPT-250-70"
+      "name": "Invertor hibrid OnGrid MPI 5.5K",
+      "power":6500,
+      "voltage":12,
+      "charging":60,
+      "price":9790,
+      "picture":"AMIGOS/website/pictures/Invertor_10.jpg",
+      "link": "https://www.solar-depot.ro/157/Invertor-hibrid-unda-pura-5500W-cu-regulator-MPPT-60A"
+
+    
 
   },
 
   "11": {
-      "name": "Invertor solar Victron EasySolar II GX",
-      "power": 5000,
-      "voltage": 12,
-      "charging": 35,
-      "price": 19789,
-      "picture": "AMIGOS/website/pictures/Invertor_11.jpg",
-      "link": "https://www.solar-depot.ro/182/Invertor-charger-solar-48V-5000W-Victron-Energy-EasySolar-48_5000_70-MPPT-150_100-Color-Control"
-
+      "name":"Invertor hibrid OnGrid MPI 5k",
+      "power":10000,
+      "voltage":12,
+      "charging":100,
+      "price":11659,
+      "picture":"AMIGOS/website/pictures/Invertor_11.jpg",
+      "link":"https://www.solar-depot.ro/143/Invertor-hibrid-unda-pura-5000W-cu-regulator-MPPT-100A-MPPSOLAR"
+      
+  },
+  "12": {
+      "name": "Invertor hibrid OnGrid MPI 10K",
+      "power": 15000,
+      "voltage":12,
+      "charging":200,
+      "price":18666,
+      "picture":"AMIGOS/website/pictures/Invertor_12.jpg",
+      "link":"https://www.solar-depot.ro/146/Invertor-hibrid-trifazic-unda-pura-10kW-cu-regulator-MPPT-200A"
   }
 
-
-    
 }
