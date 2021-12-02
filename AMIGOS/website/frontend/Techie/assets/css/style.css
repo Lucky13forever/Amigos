@@ -119,10 +119,36 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0;
 }
 #header.header-scrolled, #header.header-inner-pages {
-  background: white; /* !!!!!!!!!!!!!!!!!!!!!!! rgba(24, 6, 185, 0.8) ; */
-  opacity: 0.8%;
+  /*background: blue;  !!!!!!!!!!!!!!!!!!!!!!! rgba(24, 6, 185, 0.8) ; */
+  background: linear-gradient(45deg, #D3F7FF, #4694a6);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
   padding: 12px 0;
+
+
 }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  animation: gradient 1s ease infinite;
+  height: 100vh;
+}
+
+
 #header .logo {
   font-size: 32px;
   margin: 0;
@@ -166,10 +192,10 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0 3px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", Outfit;
   font-size: 15px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.7);
+  color: black; /*rgba(255, 255, 255, 0.7); */
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -196,6 +222,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+
   color: #fff;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
@@ -267,6 +294,7 @@ h1, h2, h3, h4, h5, h6 {
     left: -100%;
   }
 }
+
 
 /**
 * Mobile Navigation 
@@ -400,10 +428,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 52px;
   font-weight: 700;
   line-height: 64px;
-  color: #fff;
+  color: black;
 }
 #hero h2 {
-  color: rgba(255, 255, 255, 0.8);
+  color:  black; /* rgba(255, 255, 255, 0.8); */
   margin: 10px 0 0 0;
   font-size: 20px;
 }
@@ -417,12 +445,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   transition: 0.5s;
   margin-top: 30px;
-  color: #fff;
-  border: 2px solid #fff;
+  color: black;
+  border: 2px solid black;
 }
 #hero .btn-get-started:hover {
-  background: #fff;
-  color: #5846f9;
+  background: white;
+  color: black;
 }
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -430,8 +458,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero2 {
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(45deg, #ffffff, #000000);
+  height: 100%;
+
+}
+ /* background: linear-gradient(45deg, #ffffff, #000000);
   background-size: 400% 400%;
   -webkit-animation: AnimationName 10s ease infinite;
     -moz-animation: AnimationName 10s ease infinite;
@@ -454,7 +484,10 @@ h1, h2, h3, h4, h5, h6 {
     100%{background-position:0% 50%}
   animation: gradient 1s ease infinite;
   height: 100vh;
+
 }
+ */
+  */
 
 #hero2 .container, #hero2 .container-fluid {
   padding-top: 84px;
@@ -564,7 +597,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f9f8ff;
+  background-color: #ffffff; /* BG PESTE TOT */
 }
 
 .section-title {
@@ -585,7 +618,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #5846f9;
+  background: #47aeff;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -602,7 +635,7 @@ section {
 .about .content h3 {
   font-weight: 600;
   font-size: 32px;
-  color: #2c4964;
+  color: #E77E64;
 }
 .about .content ul {
   list-style: none;
@@ -614,13 +647,13 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #5846f9;
+  color: #E77E64;
 }
 .about .content p:last-child {
   margin-bottom: 0;
 }
 .about .content .read-more {
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -802,7 +835,7 @@ section {
 .features .icon-box i {
   font-size: 48px;
   float: left;
-  color: #5846f9;
+  color: #47aeff;
 }
 .features .icon-box p {
   font-size: 15px;
@@ -839,15 +872,15 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
-  color: #2c4964;
+  color: #ff5828;
 }
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: #000000;
   margin: 0 0 0 45px;
 }
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: #b1a9fc;
+  color: #47aeff;
   font-size: 26px;
 }
 .testimonials .testimonial-item .quote-icon-left {
@@ -881,10 +914,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #5846f9;
+  border: 1px solid #ff5828;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5846f9;
+  background-color: #47aeff;
 }
 @media (max-width: 767px) {
   .testimonials {
@@ -1155,14 +1188,17 @@ section {
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
+
+
+
 .faq {
-  background: linear-gradient(42deg, #5846f9 0%, #7b27d8 100%);
+  background: powderblue/*linear-gradient(42deg, #5846f9 0%, #7b27d8 100%)*/;
 }
 .faq .section-title h2, .faq .section-title p {
-  color: #fff;
+  color: black;
 }
 .faq .section-title h2::after {
-  background: rgba(255, 255, 255, 0.6);
+  background: black /*rgba(255, 255, 255, 0.6)*/;
 }
 .faq .faq-list {
   padding: 0 100px;
@@ -1196,7 +1232,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #8577fb;
+  color: #ff5828;
 }
 .faq .faq-list .icon-show, .faq .faq-list .icon-close {
   font-size: 24px;
@@ -1212,10 +1248,10 @@ section {
   display: none;
 }
 .faq .faq-list a.collapsed {
-  color: #2c4964;
+  color: #ff5828;
 }
 .faq .faq-list a.collapsed:hover {
-  color: #5846f9;
+  color: #ff5828;
 }
 .faq .faq-list a.collapsed .icon-show {
   display: inline-block;
@@ -1241,7 +1277,7 @@ section {
 }
 .contact .info-box i {
   font-size: 32px;
-  color: #5846f9;
+  color: #ff5828;
   border-radius: 50%;
   padding: 8px;
 }
