@@ -65,7 +65,7 @@ def load_months():
 @auth.route('/sign-up', methods=['GET', 'POST'])
 def sign_up():
     data = request.form
-    old_info = []
+    old_info = ["", "", "", 'Alba', "", "", "", 'Ianuarie', ""]
     error = 0
 
     orase = load_cities()
