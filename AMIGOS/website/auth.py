@@ -67,9 +67,10 @@ def sign_up():
         email = data.get('email')
         password = data.get('password')
         county = data.get('county')
+        city = data.get('city')
         print(f'This is the county {county}')
 
-        old_info.extend([name, email])
+        old_info.extend([name, email, county, city])
 
         flash = flask.flash
 

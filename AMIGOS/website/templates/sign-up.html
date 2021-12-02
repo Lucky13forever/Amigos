@@ -24,15 +24,43 @@
         <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
         
         <label for="county">County</label>
-        <select name="county" id="county">
+
+
+        <select name="county" id="county" onchange="refresh()">
             {% for county in orase.keys()%}
-                <option value="{{county}}">{{county}}</option>
+
+                {% if county == old_info[2] %}
+                    <option value="{{county}}" selected="selected">{{county}}</option>
+
+                {% else %}
+                    <option value="{{county}}" >{{county}}</option>  
+                {% endif %}  
             {% endfor %}
         </select>
+
+        <label for="city">City</label>
+        <select name="city" id="city">
+            {% for city in orase[old_info[2] ]%}
+                {% if city == old_info[3]%}
+                    <option value="{{city}}" selected>{{city}}</option>
+                {% else %}
+                    <option value="{{city}}">{{city}}</option>
+                {% endif %}
+            {% endfor %}
+        </select>
+
+
+        <script>
+            function refresh(){
+                
+                document.getElementById('submit').click();
+            }
+        </script>
+
     </div>
     <br>
 
-    <button type="submit" class="btn btn-primary" >Submit</button>
+    <button type="submit" id = "submit" class="btn btn-primary" >Submit</button>
 </form>
 
 {% endblock %}

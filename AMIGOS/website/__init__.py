@@ -48,4 +48,6 @@ def load_cities():
    orase = {}
    with open('AMIGOS/website/database/orase.json', 'r') as file:
       orase = json.load(file)
+      for key in orase.keys():
+         orase[key] = orase[key].sort()
    return orase
