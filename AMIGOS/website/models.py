@@ -12,8 +12,8 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(150))
     county = db.Column(db.String(150))
     city = db.Column(db.String(150))
-    roof_length = db.Column(db.Integer)
-    roof_width = db.Column(db.Integer)
+    roof_length = db.Column(db.Float)
+    roof_width = db.Column(db.Float)
     month = db.Column(db.String(150))
     consumption = db.Column(db.Integer)
     

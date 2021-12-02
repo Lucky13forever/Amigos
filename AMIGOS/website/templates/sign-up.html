@@ -14,25 +14,88 @@
     <div class = 'form-group'>
 
         <label for="name">Username</label>
-        <input type="text" class="form-control" id="name" name="name" value="{{old_info[0]}}" placeholder='Enter username'>
+        <input type="text" class="form-control" id="name" name="name" value="{{old_info[0]}}" placeholder='Enter username' >
 
 
         <label for="email">Email Address</label>
-        <input type="email" class="form-control" id="email" name="email" value="{{old_info[1]}}" placeholder="Enter email">
+        <input type="email" class="form-control" id="email" name="email" value="{{old_info[1]}}" placeholder="Enter email" >
 
         <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+        <input type="password" class="form-control" id="password" name="password" value="{{old_info[2]}}" placeholder="Enter password" >
         
+
+        <input style="display: none;" type="text" id="refresh" name="refresh" value="submit">
+
+
         <label for="county">County</label>
-        <select name="county" id="county">
+
+        <br>
+        <select name="county" id="county" onchange="refresh_func()">
             {% for county in orase.keys()%}
-                <option value="{{county}}">{{county}}</option>
+
+                {% if county == old_info[3] %}
+                    <option value="{{county}}" selected="selected">{{county}}</option>
+
+                {% else %}
+                    <option value="{{county}}" >{{county}}</option>  
+                {% endif %}  
             {% endfor %}
         </select>
+
+        <br>
+        <label for="city">City</label>
+        <br>
+        <select name="city" id="city">
+            {% for city in orase[ old_info[3] ]%}
+                {% if city == old_info[4]%}
+                    <option value="{{city}}" selected>{{city}}</option>
+                {% else %}
+                    <option value="{{city}}">{{city}}</option>
+                {% endif %}
+            {% endfor %}
+        </select>
+
+        <script>
+            function refresh_func(){
+
+                document.getElementById("refresh").value = "refresh"
+                document.getElementById("submit").click()
+                
+            }
+        </script>
+
+        <br>
+        <br>
+        <label for="roof_length">Roof Length</label>
+        <input type="text" class="form-control" id="roof_length" name="roof_length" value="{{old_info[5]}}" placeholder="Enter roof length" >
+
+
+        <label for="roof_width">Roof Width</label>
+        <input type="text" class="form-control" id="roof_width" name="roof_width" value="{{old_info[6]}}" placeholder="Enter roof width" >
+
+
+        <label for="month">Month</label>
+        <br>
+        <select name="month" id="month">
+
+            {% for month in months %}
+
+                {% if month == old_info[7] %}
+                    <option value="{{month}}" selected>{{month}}</option>
+                {% else %}
+                    <option value="{{month}}">{{month}}</option>
+                {% endif %}
+            {% endfor %}
+        </select>    
+    
+        <br>
+        <label for="consumption">Consumption</label>
+        <input type="text" class="form-control" id="consumption" name="consumption" value="{{old_info[8]}}" placeholder="Enter consumption" >
+
     </div>
     <br>
 
-    <button type="submit" class="btn btn-primary" >Submit</button>
+    <button type="submit" id = "submit" class="btn btn-primary">Submit</button>
 </form>
 
 {% endblock %}

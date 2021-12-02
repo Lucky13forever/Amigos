@@ -21,10 +21,13 @@ def login():
     #     db.session.commit()
     #     break
 
+    old_info = []
 
     if request.method == 'POST':
         email = data.get('email')
         password = data.get('password')
+
+        old_info.append(email)
 
         my_user = User.query.filter_by(email= email).first()
         if my_user:
@@ -37,7 +40,7 @@ def login():
         else:
             flash('Your email is incorrect, please try again', category='error')
 
-    return render_template("login.html", user=current_user)
+    return render_template("login.html", old_info=old_info, user=current_user)
 
 @auth.route('/logout')
 @login_required
@@ -50,16 +53,23 @@ def load_cities():
    orase = {}
    with open('AMIGOS/website/database/orase.json', 'r') as file:
       orase = json.load(file)
+      for key in orase.keys():
+          orase[key] = sorted(orase[key])
+
    return orase
+
+def load_months():
+    return ['Ianuarie', 'Februarie', 'Martie', 'Aprilie', 'Mai', 'Iunie', 'Iulie', 'August', 'Septembrie', 'Octombrie', 'Noiembrie', 'Decembrie']
 
 
 @auth.route('/sign-up', methods=['GET', 'POST'])
 def sign_up():
     data = request.form
-    old_info = []
+    old_info = ["", "", "", 'Alba', "", "", "", 'Ianuarie', ""]
     error = 0
 
     orase = load_cities()
+    months = load_months()
 
 
     if request.method == 'POST':
@@ -67,36 +77,66 @@ def sign_up():
         email = data.get('email')
         password = data.get('password')
         county = data.get('county')
-        print(f'This is the county {county}')
+        city = data.get('city')
+        roof_length = data.get('roof_length')
+        roof_width = data.get('roof_width')
+        month = data.get('month')
+        consumption = data.get('consumption')
+        
+        
+        
+        refresh = data.get('refresh')
 
-        old_info.extend([name, email])
+
+
+
+        print(f'This is the county {county}')
+        
+        
+        print(f"AICI BA {data.get('refresh')}")
+
+
+        old_info = [name, email, password, county, city, roof_length, roof_width, month, consumption]
 
         flash = flask.flash
 
         my_user = User.query.filter_by(email= email).first()
 
-        if len(name) < 2:
-            flash('Name must have atleast 2 characters', category='error')
-            error = 1
-        if len(email) < 4:
-            flash('Email must have at least 4 characters', category='error')
-            error = 1
-        if my_user:
-            flash('This email is being used by another account, try a different one', category='error')
-            error = 1
-        if len(password) < 6:
-            flash('Password must have a length of at least 6 characters', category='error')
-            error = 1
-        if error == 0:
-            new_user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'), county=county, city='Timisoara', roof_length=10, roof_width=3, month='Ianuarie', consumption=300)
+        if refresh != 'refresh':
 
-            print(f'The name of the new user is {new_user.name}')
-            # login_user(new_user, remember=True)
-            db.session.add(new_user)
-            db.session.commit()
-            flash('Account created', category='succes')
+            if len(name) < 2:
+                flash('Name must have atleast 2 characters', category='error')
+                error = 1
+            if len(email) < 4:
+                flash('Email must have at least 4 characters', category='error')
+                error = 1
+            if my_user:
+                flash('This email is being used by another account, try a different one', category='error')
+                error = 1
+            if len(password) < 6:
+                flash('Password must have a length of at least 6 characters', category='error')
+                error = 1
 
-            # return redirect(url_for('views.home'))
+            if roof_length == "":
+                flash('Please enter a roof length', category='error')
+                error = 1
+            if roof_width == "":
+                flash('Please enter a roof width', category='error')
+                error = 1
+            if consumption == "":
+                flash("Please enter a consumption", category='error')
+                error = 1
+
+            if error == 0:
+                new_user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'), county=county, city=city, roof_length=roof_length, roof_width=roof_width, month=month, consumption=consumption)
+
+                print(f'The name of the new user is {new_user.name}')
+                login_user(new_user, remember=True)
+                db.session.add(new_user)
+                db.session.commit()
+                flash('Account created', category='succes')
+
+                return redirect(url_for('views.home'))
 
 
-    return render_template("sign-up.html", orase=orase, old_info=old_info, user=current_user)
+    return render_template("sign-up.html", months=months, orase=orase, old_info=old_info, user=current_user)
