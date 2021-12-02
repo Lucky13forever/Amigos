@@ -367,9 +367,31 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
-  background-size: cover;
+  background: linear-gradient(45deg, #D3F7FF, #4694a6);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
 }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  animation: gradient 1s ease infinite;
+  height: 100vh;
+}
+
 #hero .container, #hero .container-fluid {
   padding-top: 84px;
 }
@@ -403,6 +425,70 @@ h1, h2, h3, h4, h5, h6 {
   color: #5846f9;
 }
 #hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+#hero2 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #ffffff, #000000);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  animation: gradient 1s ease infinite;
+  height: 100vh;
+}
+
+#hero2 .container, #hero2 .container-fluid {
+  padding-top: 84px;
+}
+#hero2 h1 {
+  margin: 0;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #fff;
+}
+#hero2 h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+#hero2 .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+#hero2 .btn-get-started:hover {
+  background: #fff;
+  color: #5846f9;
+}
+#hero2 .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 @media (min-width: 1200px) {
@@ -560,7 +646,29 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: linear-gradient(90deg, rgba(88, 70, 249, 0.5) 0%, rgba(123, 39, 216, 0.5) 100%), url("../img/counts-bg.png") center center no-repeat;
+  background: linear-gradient(45deg, #4663a6, #4694a6);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  animation: gradient 1s ease infinite;
+  height: 100vh;
   padding: 80px 0 60px 0;
 }
 .counts .counters span {
@@ -568,7 +676,7 @@ section {
   display: block;
   color: #fff;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", Outfit;
 }
 .counts .counters p {
   padding: 0;
@@ -972,7 +1080,7 @@ section {
   font-size: 36px;
   color: #5846f9;
   font-weight: 600;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Outfit;
   margin-bottom: 20px;
 }
 .pricing h4 sup {
