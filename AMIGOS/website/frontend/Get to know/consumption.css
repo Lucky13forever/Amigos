@@ -193,7 +193,7 @@ a.lnext:link, a.lnext:visited {
 }
 
 a.lnext:hover, a.lnext:active {
-  background-color: #000000CC;
+  background-color: #474747;
 }
 a.left:link, a.left:visited {
   width: 17px;
@@ -221,5 +221,5 @@ a.right:link, a.right:visited {
   display: inline-block;
 }
 a.left:hover, a.left:active, a.middle:hover, a.middle:active, a.right:hover, a.right:active {
-  background-color: #DBDBDB;
+  background-color: #474747;
 }
