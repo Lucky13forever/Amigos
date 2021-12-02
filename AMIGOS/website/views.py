@@ -60,3 +60,8 @@ def test():
 def database():
 
     return render_template('database.html', user=current_user, table_user=User.query.all())
+
+@views.route('/graf_test')
+def graf_test():
+
+    return render_template('graf_test.html', user=current_user)
