@@ -25,37 +25,81 @@
     <br>
     <br>
     <div class="custom-select" style="margin-left: -82%;">
-        <select style="width:200%; height: 200%;" required>
-          <option value="0">County:</option>
-          <option value="1">Audi</option>
-          <option value="2">BMW</option>
-          <option value="3">Citroen</option>
-          <option value="4">Ford</option>
-          <option value="5">Honda</option>
-          <option value="6">Jaguar</option>
-          <option value="7">Land Rover</option>
-          <option value="8">Mercedes</option>
-          <option value="9">Mini</option>
-          <option value="10">Nissan</option>
-          <option value="11">Toyota</option>
-          <option value="12">Volvo</option>
+        <select style="width:200%; height: 200%;" required id="counties" onchange="cities_func('')">
+
+
+            <script>
+
+                function counties(){
+
+                    keys = Object.keys(orase)
+                    console.log(keys.length)
+                    console.log('here')
+                    var min = 12,
+                    max = 100,
+                    select = document.getElementById('counties');
+                
+                    for (var i = 0; i<keys.length; i++){
+                        var opt = document.createElement('option');
+                        opt.value = keys[i];
+                        opt.innerHTML = keys[i];
+                        
+                        select.appendChild(opt);
+                    }
+
+                    
+  
+                }
+            </script>
+
         </select>
     </div>
+
+
     <div class="custom-select2" style="margin-left: 20%; margin-top: -4%;">
-        <select style="width:275%; height:200%;" required>
-          <option value="0">City:</option>
-          <option value="1">Audi</option>
-          <option value="2">BMW</option>
-          <option value="3">Citroen</option>
-          <option value="4">Ford</option>
-          <option value="5">Honda</option>
-          <option value="6">Jaguar</option>
-          <option value="7">Land Rover</option>
-          <option value="8">Mercedes</option>
-          <option value="9">Mini</option>
-          <option value="10">Nissan</option>
-          <option value="11">Toyota</option>
-          <option value="12">Volvo</option>
+        <select style="width:200%; height:200%;" required id="cities">
+          
+            <script>
+            
+                window.onload = function(){
+                    counties();
+                    cities_func('Alba');
+                };
+              function cities_func(county_param){
+
+                  selected_county = document.getElementById('counties').selectedOptions[0];
+                  
+                  county = selected_county.value;
+
+                  if (county_param == 'Alba'){
+                        county = 'Alba'   
+                  } 
+
+                  
+
+                  console.log('BOOM')
+                  console.log(county_param)
+  
+                  cities = orase[county];
+                  
+  
+                  select = document.getElementById('cities');
+                  while (select.firstChild) {
+                      select.removeChild(select.firstChild)
+                  }
+                  for(let i=0; i<cities.length; i++){
+                      var opt = document.createElement('option');
+                          opt.value = cities[i];
+                          opt.innerHTML = cities[i];
+                          select.appendChild(opt);
+                  }
+              }
+          
+            </script>
+          
+          
+
+          
         </select>
       </div>
     <br>
@@ -104,7 +148,7 @@
             <img src="../img/casazi3.0.png" class="casazi">
             <div class="bottom-right">
 			    <p>Already have an account?</p>
-			    <button value="#0c2346" class="ghostin" id="signIn" onclick="myfunc()">SIGN IN</button>
+			    <button value="#0c2346" class="ghostin" id="signIn">SIGN IN</button>
             </div>
 		</div>
 	</div>
@@ -130,7 +174,8 @@
     
     function myfunc(){
 
-        
+        keys = Object.keys(orase)
+        console.log(keys)
     }
 
 </script>
