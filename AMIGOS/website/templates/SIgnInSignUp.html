@@ -136,16 +136,16 @@
 <div class="overlay-container">
 	<div class="overlay">
 		<div class="overlay-panel overlay-left">
-            <img src="../img/Frame.svg" class="logo">
-            <img src="../img/casanoapte3.0.png" class="casanoapte">
+            <img class="logo" src = "{{ url_for('static',filename='assets/img/Frame.svg') }}">
+            <img class="casanoapte" src = "{{ url_for('static',filename='assets/img/casanoapte3.0.png') }}">
             <div class="bottom-left">
 			    <p class="sign">Don't have an account?</p>
 			    <button value="#d3f7ff" class="ghostup" id="signUp">SIGN UP</button>
 		    </div>
         </div>
 		<div class="overlay-panel overlay-right">
-            <img src="../img/Group%2011.svg" class="logo">
-            <img src="../img/casazi3.0.png" class="casazi">
+            <img class="logo"  src = "{{ url_for('static',filename='assets/img/Group%2011.svg') }}">
+            <img class="casazi" src = "{{ url_for('static',filename='assets/img/casazi3.0.png') }}">
             <div class="bottom-right">
 			    <p>Already have an account?</p>
 			    <button value="#0c2346" class="ghostin" id="signIn">SIGN IN</button>
