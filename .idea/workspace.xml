@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="Recommendations page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Techie/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Techie/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="1 si 2 url" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -279,8 +276,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="Recommendations page" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Amigos$Bulzan_Nicola.coverage" NAME="Bulzan_Nicola Coverage Results" MODIFIED="1637667223496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/git_Setup" />
     <SUITE FILE_PATH="coverage/Amigos$Fofiu_George.coverage" NAME="Fofiu_George Coverage Results" MODIFIED="1637667433404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/git_Setup" />
     <SUITE FILE_PATH="coverage/Amigos$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1637667208336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Amigos$Bulzan_Nicola.coverage" NAME="Bulzan_Nicola Coverage Results" MODIFIED="1637667223496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/git_Setup" />
   </component>
 </project>
