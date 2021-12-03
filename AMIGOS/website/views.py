@@ -91,4 +91,8 @@ def graf_test():
 
     consumption_graph = create_consumption_graph(result)
 
-    return render_template('graf_test.html', consumption_graph=consumption_graph ,user=current_user)
+
+    price_per_kW = 0.4
+    cost_graph = create_cost_graph(result, price_per_kW)
+
+    return render_template('graf_test.html', consumption_graph=consumption_graph, cost_graph=cost_graph, user=current_user)

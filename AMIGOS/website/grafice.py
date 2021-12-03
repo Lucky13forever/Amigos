@@ -34,13 +34,39 @@ def calculate_energy_production(power: int, region_dict: dict, county: str, mont
         result.append(int(apply_percent(apply_percent(power, region_effic), each_month)))
     return result
 
+def calculate_monthly_cost_without_system(price_per_kW: float, monthly_user_consumption: list):
+    monthly_price = []
+    for each_month in monthly_user_consumption:
+        monthly_price.append(int(each_month * price_per_kW))
+    return monthly_price
+
+def calculate_montly_cost_with_system(price_per_kW :float, user_consumption :list, energy_production :list):
+    month_cost=[0]*12 #initializez lista
+    for i in range(12):
+        if energy_production[i] <= user_consumption[i]:
+            month_cost[i]= int((user_consumption[i] - energy_production[i])* price_per_kW)
+    return month_cost 
+
+def calculate_annual_savings (monthly_cost_without_system: list, monthly_cost_with_system: list):
+    s=int(0)
+    for i in range(0, 12):
+        s += monthly_cost_without_system[i] - monthly_cost_with_system[i]
+    return s
+
+
+
+
+
 
 # result is the recommended system
+user_consumption = 0
+energy_production = 0
 def create_consumption_graph(result) -> Graph:
     user = current_user
     annual_consumption = calculate_annual_consumption(monthly_consumption, user.month, user.consumption)
     
     # column 1
+    global user_consumption
     user_consumption = calculate_user_consumption(monthly_consumption, annual_consumption)
     
     print(f'Consumul anual este {annual_consumption}')
@@ -49,6 +75,7 @@ def create_consumption_graph(result) -> Graph:
     print(f'This is optimal: {optimal_power}')
     
     # column 2
+    global energy_production
     energy_production = calculate_energy_production(optimal_power, load_region_dict(), user.county, monthly_effic)
     print(f'Energy produced is {energy_production}')
 
@@ -62,3 +89,24 @@ def create_consumption_graph(result) -> Graph:
     print(f'This is the second column : {consumption_graph.colums2}')
 
     return consumption_graph
+
+
+annual_savings = 0
+def create_cost_graph(result, price_per_kW):
+    monthly_cost_without_system = calculate_monthly_cost_without_system(price_per_kW, user_consumption)
+
+    monthly_cost_with_system = calculate_montly_cost_with_system(price_per_kW, user_consumption, energy_production)
+
+
+    annual_savings = calculate_annual_savings(monthly_cost_without_system, monthly_cost_with_system)
+
+
+    cost_graph = Graph(monthly_cost_without_system, monthly_cost_with_system)
+    cost_graph.annual_savings = annual_savings
+
+
+    print(f'This is monthly_cost_without: {monthly_cost_without_system}')
+    print(f'This is monthly_cost_wit_system: {monthly_cost_with_system}')
+    print(f'This is annual savings : {annual_savings}')
+    
+    return cost_graph
