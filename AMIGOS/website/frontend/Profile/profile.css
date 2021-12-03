@@ -10,7 +10,7 @@ html, body {
 }
 .wrapper{
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 56.4%;
 }
 
 .Rectangle-65 {
@@ -23,7 +23,6 @@ html, body {
   box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #fff;
   overflow: hidden;
-
 }
 .Elipse-17 {
   width: 24.9%;
