@@ -14,7 +14,11 @@ auth = Blueprint('auth', __name__)
 
 
 
-new_user = {
+new_user = {}
+
+def reset_new_user():
+    global new_user
+    new_user = {
     'name' : "",
     'email' : "",
     'password' : "",
@@ -27,9 +31,11 @@ new_user = {
     'consumption' : 0,
 }
 
+
 @auth.route('/SIgnInSignUp', methods=['GET', 'POST'])
 def SIgnInSignUp():
     data = request.form
+    reset_new_user()
 
     if request.method == 'POST':
 
@@ -54,6 +60,9 @@ def SIgnInSignUp():
 
             print(new_user)
             print(f'STATE ____________ {state}')
+            
+
+            return redirect(url_for('auth.GetToKnow', user=current_user))
         else:
             print(f'STATE_____________ {state}')
 
@@ -65,6 +74,10 @@ def SIgnInSignUp():
     return render_template('SIgnInSignUp.html', user=current_user)
 
 
+@auth.route('/GetToKnow')
+def GetToKnow():
+    
+    return render_template('GetToKnow.html', user=current_user)
 
 
 
