@@ -9,6 +9,12 @@ import json
 
 views = Blueprint('views', __name__)
 
+
+@views.route('/header_footer_general')
+def header_footer_general():
+
+    return render_template('header_footer_general.html', user=current_user)
+
 @views.route('/')
 def home():
     
