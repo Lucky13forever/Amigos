@@ -53,12 +53,29 @@ def calculate_annual_savings (monthly_cost_without_system: list, monthly_cost_wi
         s += monthly_cost_without_system[i] - monthly_cost_with_system[i]
     return s
 
+def calculate_surplus_gain(price_per_kW :float, user_consumption :list, energy_production :list):
+    l=[]
+    for i in range(len(user_consumption)):
+        if user_consumption[i]>energy_production[i]:
+            l.append(0)
+        else:
+            val=int( (energy_production[i]-user_consumption[i]) * price_per_kW)
+            l.append(val)
+    return l
+
+def calculate_surplus_profit(price_per_kW,monthly_profit):
+    s=0
+    for i in monthly_profit:
+        s=s+i
+    return s
+
 
 
 
 
 
 # result is the recommended system
+#this are measured in kW
 user_consumption = 0
 energy_production = 0
 def create_consumption_graph(result) -> Graph:
@@ -110,3 +127,15 @@ def create_cost_graph(result, price_per_kW):
     print(f'This is annual savings : {annual_savings}')
     
     return cost_graph
+
+def create_surplus_graph(result, price_per_kW):
+    surplus_gain = calculate_surplus_gain(price_per_kW, user_consumption, energy_production)
+
+    surplus_profit = calculate_surplus_profit(price_per_kW, surplus_gain)
+
+    surplus_graph = Graph(surplus_gain, surplus_gain)
+    surplus_graph.annual_profit = surplus_profit
+
+    print(f'This is surplus: {surplus_gain}')
+
+    return surplus_graph

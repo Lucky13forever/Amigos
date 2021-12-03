@@ -13,7 +13,10 @@ def yaxis(maxim):
     return l
 
 def get_percent(x,y):
-    val=y*100/x
+    try: 
+        val=y*100/x
+    except:
+        val = 0
     return int(val)
 
 def colums(max_point:int, data:list):
