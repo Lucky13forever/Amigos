@@ -11,21 +11,21 @@
 <img class="Polygon-7" src = "{{ url_for('static',filename='assets/img/Polygon 7.svg') }}">
 <div class="container" id="container">
 <div class="form-container sign-up-container">
-<form action="">
+<form method="POST">
 	<h1>Sign Up</h1>
     <br>
     <br>
-    <input type="username" name="username" placeholder="Username" required>
+    <input type="username" name="name" placeholder="Username" required>
     <br>
 	<input type="email" name="email" placeholder="Email" required>
     <br>
 	<input type="password" name="password" placeholder="Password" required>
     <br>
-    <input type="phonenumber" name="phonenumber" placeholder="Phone Number" required>
+    <input type="text" name="phone" placeholder="Phone Number" required>
     <br>
     <br>
     <div class="custom-select" style="margin-left: -82%;">
-        <select style="width:200%; height: 200%;" required id="counties" onchange="cities_func('')">
+        <select style="width:200%; height: 200%;" required id="counties" onchange="cities_func('')" name="county">
 
 
             <script>
@@ -57,7 +57,7 @@
 
 
     <div class="custom-select2" style="margin-left: 20%; margin-top: -4%;">
-        <select style="width:200%; height:200%;" required id="cities">
+        <select style="width:200%; height:200%;" required id="cities" name="city">
           
             <script>
             
@@ -105,14 +105,14 @@
     <br>
     <br>
     <br>
-    <button>Create Account</button>
+    <button name="state" value="create">Create Account</button>
     <br>
     <p style="font-size: 12px;">By creating an account, you agree to Solar Solutions’</p>
     <p class="up">Terms and Conditions & Privacy Policy</p>
 </form>
 </div>
 <div class="form-container sign-in-container">
-<form action="#">
+<form method="POST">
 	<h1>Sign In</h1>
     <br>
     <br>
@@ -129,7 +129,7 @@
     <br>
     <br>
     <br>
-	<button class="in">Sign In</button>
+	<button class="in" name="state" value="login" type="submit">Sign In</button>
     <a href="#">Forgot Your Password</a>
 </form>
 </div>

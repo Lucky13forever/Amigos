@@ -1,5 +1,7 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request, redirect, url_for
+import flask
 from sqlalchemy.orm.query import Query
+from werkzeug.wrappers import request
 from .models import *
 from flask_login import login_required, current_user
 from .recomandare import *
@@ -8,16 +10,6 @@ import json
 
 
 views = Blueprint('views', __name__)
-
-
-@views.route('/SIgnInSignUp')
-def SIgnInSignUp():
-
-    # while 1 == 1:
-    #     db.session.query(User).delete()
-    #     db.session.commit()
-    #     break
-    return render_template('SIgnInSignUp.html', user=current_user)
 
 
 @views.route('/header_footer_general')

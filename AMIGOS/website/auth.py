@@ -1,5 +1,6 @@
 from os import error
 from sys import flags
+from types import new_class
 from flask import Blueprint, render_template, request, redirect, url_for
 import flask
 from flask.helpers import flash
@@ -10,6 +11,63 @@ from .models import *
 from werkzeug.security import generate_password_hash, check_password_hash
 
 auth = Blueprint('auth', __name__)
+
+
+
+new_user = {
+    'name' : "",
+    'email' : "",
+    'password' : "",
+    'phone' : "",
+    'county' : "",
+    'city' : "",
+    'roof_length' : 0.0,
+    'roof_width' : 0.0,
+    'month' : "",  
+    'consumption' : 0,
+}
+
+@auth.route('/SIgnInSignUp', methods=['GET', 'POST'])
+def SIgnInSignUp():
+    data = request.form
+
+    if request.method == 'POST':
+
+        state = data.get('state')
+        if state == 'create':
+        
+            global new_user
+            
+            name = data.get('name')
+            email = data.get('email')
+            password = data.get('password')
+            phone = data.get('phone')
+            county = data.get('county')
+            city = data.get('city')
+
+            new_user['name'] = name
+            new_user['email'] = email
+            new_user['password'] = password
+            new_user['phone'] = phone
+            new_user['county'] = county
+            new_user['city'] = city
+
+            print(new_user)
+            print(f'STATE ____________ {state}')
+        else:
+            print(f'STATE_____________ {state}')
+
+
+    # while 1 == 1:
+    #     db.session.query(User).delete()
+    #     db.session.commit()
+    #     break
+    return render_template('SIgnInSignUp.html', user=current_user)
+
+
+
+
+
 
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
