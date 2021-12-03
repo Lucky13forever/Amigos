@@ -1,15 +1,15 @@
 #Puscasu Vlad si Birla Alexandru
 def maxim_liste(l1:list,l2:list):
-    l1.sort()
-    l2.sort()
-    maxim=max(l1[-1],l2[-1])
-    return maxim+(0.25*maxim)
+    unu = sorted(l1)
+    doi = sorted(l2)
+    maxim=max(unu[-1],doi[-1])
+    return int(maxim+(0.25*maxim))
 
 def yaxis(maxim):
     buc=maxim//10
     l=[]
     for i in range(11):
-        l.append(i*buc)
+        l.append(int(i*buc))
     return l
 
 def get_percent(x,y):

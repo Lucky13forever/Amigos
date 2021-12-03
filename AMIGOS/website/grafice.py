@@ -44,10 +44,21 @@ def create_consumption_graph(result) -> Graph:
     user_consumption = calculate_user_consumption(monthly_consumption, annual_consumption)
     
     print(f'Consumul anual este {annual_consumption}')
-    print(f'From grafice I have this\n {user_consumption}')
+    print(f'From grafice I have this\nUser consumption: {user_consumption}')
     optimal_power = calculate_optimal_power_per_month(result[0][2])
     print(f'This is optimal: {optimal_power}')
     
     # column 2
     energy_production = calculate_energy_production(optimal_power, load_region_dict(), user.county, monthly_effic)
     print(f'Energy produced is {energy_production}')
+
+
+    # now let's create the consumption graph
+
+    consumption_graph = Graph(user_consumption, energy_production)
+    print(f'This is max_point {consumption_graph.max_point}')
+    print(f'This is the y_axis: {consumption_graph.yaxis_values}')
+    print(f'This is the first column : {consumption_graph.colums1}')
+    print(f'This is the second column : {consumption_graph.colums2}')
+
+    return consumption_graph

@@ -45,8 +45,6 @@ def buget():
 
 @views.route('/test')
 def test():
-
-    create_consumption_graph(result)
     
     # return render_template("home.html", user=current_user)
 
@@ -54,9 +52,9 @@ def test():
     # result = get_full_system(2000, 10, 10, "Constanta", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
     # Suma ramasa din buget e -1727, deci as pune userul sa plateasca aproape dublu
     # ToDo: daca nu reusim sa gasim niciun sistem, fix la return
-    # user = current_user
-    # result = get_full_system(10000, user.width , user.length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
+    user = current_user
 
+    result = get_full_system(30000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
 
 
     orase = {}
@@ -86,4 +84,11 @@ def database():
 @views.route('/graf_test')
 def graf_test():
 
-    return render_template('graf_test.html', user=current_user)
+    global result
+    user = current_user
+    
+    result = get_full_system(30000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
+
+    consumption_graph = create_consumption_graph(result)
+
+    return render_template('graf_test.html', consumption_graph=consumption_graph ,user=current_user)
