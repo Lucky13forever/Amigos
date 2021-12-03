@@ -1,10 +1,10 @@
 # Despina Cojocaru
 import json
-def load_region_dict(self, address: str):
+def load_region_dict():
     try:
-        file = open(address)
-        data = json.load(file)
-        return data
+        with open('AMIGOS/website/database/regiuni.json', 'r') as file:
+            data = json.load(file)
+            return data
     except FileExistsError:
         raise "FileReadError"
     except FileNotFoundError:

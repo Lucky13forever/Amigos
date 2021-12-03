@@ -3,7 +3,9 @@ from sqlalchemy.orm.query import Query
 from .models import *
 from flask_login import login_required, current_user
 from .recomandare import *
+from .grafice import *
 import json
+
 
 views = Blueprint('views', __name__)
 
@@ -16,23 +18,35 @@ def home():
     # result = get_full_system(2000, 10, 10, "Constanta", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
     # Suma ramasa din buget e -1727, deci as pune userul sa plateasca aproape dublu
     # ToDo: daca nu reusim sa gasim niciun sistem, fix la return
-    result = get_full_system(10000, 10, 10, "Satu-Mare", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
+    # result = get_full_system(10000, 10, 10, "Satu-Mare", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
     
-    print(result)
+    # print(result)
 
-    ok = 1
-    if result[0][0] == None:
-        ok = 0
+    # ok = 1
+    # if result[0][0] == None:
+    #     ok = 0
     
-    panouri = result[0]
-    acumulatori = result[1]
-    regulatori = result[2]
-    ramas_din_buget = result[3]
-    return render_template("home.html", panouri=panouri, acumulatori=acumulatori, regulatori=regulatori, ramas=ramas_din_buget, ok = ok, user=current_user) #User.query.all()
+    # panouri = result[0]
+    # acumulatori = result[1]
+    # regulatori = result[2]
+    # ramas_din_buget = result[3]
+    return render_template("home.html", user=current_user) #User.query.all()
 
+
+result = ((None, None, None, None), (None, None, None), None, None)
+@views.route("/buget")
+def buget():
+    global result
+    user = current_user
+    
+    result = get_full_system(10000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
+
+    return render_template("buget.html", user=current_user)
 
 @views.route('/test')
 def test():
+
+    create_consumption_graph(result)
     
     # return render_template("home.html", user=current_user)
 
@@ -40,7 +54,9 @@ def test():
     # result = get_full_system(2000, 10, 10, "Constanta", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
     # Suma ramasa din buget e -1727, deci as pune userul sa plateasca aproape dublu
     # ToDo: daca nu reusim sa gasim niciun sistem, fix la return
-    result = get_full_system(10000, 0.99, 1.968, "Constanta", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
+    # user = current_user
+    # result = get_full_system(10000, user.width , user.length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
+
 
 
     orase = {}
