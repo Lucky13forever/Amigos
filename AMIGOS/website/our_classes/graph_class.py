@@ -2,7 +2,7 @@
 def maxim_liste(l1:list,l2:list):
     unu = sorted(l1)
     doi = sorted(l2)
-    maxim=max(unu[-1],doi[-1])
+    maxim=max(unu[-1],doi[-1])    
     return int(maxim+(0.25*maxim))
 
 def yaxis(maxim):
