@@ -10,6 +10,12 @@ import json
 views = Blueprint('views', __name__)
 
 
+@views.route('/SIgnInSignUp')
+def SIgnInSignUp():
+
+    return render_template('SIgnInSignUp.html', user=current_user)
+
+
 @views.route('/header_footer_general')
 def header_footer_general():
 

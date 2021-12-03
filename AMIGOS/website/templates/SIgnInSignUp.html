@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SolarSolutions</title>
+	<link rel="stylesheet" type="text/css"  href = "{{ url_for('static',filename='assets/css/Sign_Up.css') }}">
+    <link rel="icon"  href = "{{ url_for('static',filename='assets/img/favicon.png') }}">
+  <link rel="apple-touch-icon" href = "{{ url_for('static',filename='assets/img/apple-touch-icon.png') }}">
+</head>
+<body>
+<img class="Ellipse-13" src = "{{ url_for('static',filename='assets/img/Ellipse%2013.svg') }}">
+<img class="Polygon-7" src = "{{ url_for('static',filename='assets/img/Polygon%207.svg') }}">
+<div class="container" id="container">
+<div class="form-container sign-up-container">
+<form action="">
+	<h1>Sign Up</h1>
+    <br>
+    <br>
+    <input type="username" name="username" placeholder="Username" required>
+    <br>
+	<input type="email" name="email" placeholder="Email" required>
+    <br>
+	<input type="password" name="password" placeholder="Password" required>
+    <br>
+    <input type="phonenumber" name="phonenumber" placeholder="Phone Number" required>
+    <br>
+    <br>
+    <div class="custom-select" style="margin-left: -82%;">
+        <select style="width:200%; height: 200%;" required>
+          <option value="0">County:</option>
+          <option value="1">Audi</option>
+          <option value="2">BMW</option>
+          <option value="3">Citroen</option>
+          <option value="4">Ford</option>
+          <option value="5">Honda</option>
+          <option value="6">Jaguar</option>
+          <option value="7">Land Rover</option>
+          <option value="8">Mercedes</option>
+          <option value="9">Mini</option>
+          <option value="10">Nissan</option>
+          <option value="11">Toyota</option>
+          <option value="12">Volvo</option>
+        </select>
+    </div>
+    <div class="custom-select2" style="margin-left: 20%; margin-top: -4%;">
+        <select style="width:275%; height:200%;" required>
+          <option value="0">City:</option>
+          <option value="1">Audi</option>
+          <option value="2">BMW</option>
+          <option value="3">Citroen</option>
+          <option value="4">Ford</option>
+          <option value="5">Honda</option>
+          <option value="6">Jaguar</option>
+          <option value="7">Land Rover</option>
+          <option value="8">Mercedes</option>
+          <option value="9">Mini</option>
+          <option value="10">Nissan</option>
+          <option value="11">Toyota</option>
+          <option value="12">Volvo</option>
+        </select>
+      </div>
+    <br>
+    <br>
+    <br>
+    <button>Create Account</button>
+    <br>
+    <p style="font-size: 12px;">By creating an account, you agree to Solar Solutions’</p>
+    <p class="up">Terms and Conditions & Privacy Policy</p>
+</form>
+</div>
+<div class="form-container sign-in-container">
+<form action="#">
+	<h1>Sign In</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+	<input type="email" name="email" placeholder="Email" required>
+    <br>
+    <br>
+    <br>
+	<input type="password" name="password" placeholder="Password" required>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+	<button class="in">Sign In</button>
+    <a href="#">Forgot Your Password</a>
+</form>
+</div>
+<div class="overlay-container">
+	<div class="overlay">
+		<div class="overlay-panel overlay-left">
+            <img src="../img/Frame.svg" class="logo">
+            <img src="../img/casanoapte3.0.png" class="casanoapte">
+            <div class="bottom-left">
+			    <p class="sign">Don't have an account?</p>
+			    <button value="#d3f7ff" class="ghostup" id="signUp">SIGN UP</button>
+		    </div>
+        </div>
+		<div class="overlay-panel overlay-right">
+            <img src="../img/Group%2011.svg" class="logo">
+            <img src="../img/casazi3.0.png" class="casazi">
+            <div class="bottom-right">
+			    <p>Already have an account?</p>
+			    <button value="#0c2346" class="ghostin" id="signIn" onclick="myfunc()">SIGN IN</button>
+            </div>
+		</div>
+	</div>
+</div>
+</div>
+
+<script type="text/javascript">
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+
+	signInButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+	signUpButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+</script>
+
+<script>
+    function myfunc(){
+
+        var my_dict = {
+            "unu" : 1,
+            "doi" : 501,
+        };
+        console.log(my_dict["unu"])
+        console.log(5)
+
+    }
+</script>
+
+</body>
+</html>
