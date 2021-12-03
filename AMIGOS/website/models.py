@@ -10,6 +10,7 @@ class User(db.Model, UserMixin):
     name = db.Column(db.String(150))
     email = db.Column(db.String(150), unique=True)
     password = db.Column(db.String(150))
+    phone = db.Column(db.String(150))
     county = db.Column(db.String(150))
     city = db.Column(db.String(150))
     roof_length = db.Column(db.Float)

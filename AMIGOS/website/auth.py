@@ -82,6 +82,7 @@ def sign_up():
         roof_width = data.get('roof_width')
         month = data.get('month')
         consumption = data.get('consumption')
+        phone = data.get('phone')
         
         
         
@@ -96,7 +97,7 @@ def sign_up():
         print(f"AICI BA {data.get('refresh')}")
 
 
-        old_info = [name, email, password, county, city, roof_length, roof_width, month, consumption]
+        old_info = [name, email, password, county, city, roof_length, roof_width, month, consumption, phone]
 
         flash = flask.flash
 
@@ -128,7 +129,7 @@ def sign_up():
                 error = 1
 
             if error == 0:
-                new_user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'), county=county, city=city, roof_length=roof_length, roof_width=roof_width, month=month, consumption=consumption)
+                new_user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'), phone=phone, county=county, city=city, roof_length=roof_length, roof_width=roof_width, month=month, consumption=consumption)
 
                 print(f'The name of the new user is {new_user.name}')
                 login_user(new_user, remember=True)
