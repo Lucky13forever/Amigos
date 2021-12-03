@@ -65,7 +65,7 @@ html, body {
   height: 11.1%;
   margin-top: 13.5%;
   margin-right: 30.2%;
-  margin-bottom: 26.4%;
+  margin-bottom: auto;
   margin-left: 8.7%;
   flex-grow: 0;
   /*margin: 0 68px 84px 0;*/
@@ -84,7 +84,7 @@ html, body {
   position: absolute;
   object-fit: contain;
   height: 39px;
-  margin-top: 29%;
+  margin-top: 14%;
   margin-right: 32.9%;
   margin-bottom: 25.6%;
   margin-left: 8.7%;
@@ -282,27 +282,177 @@ img.key-svgrepo-com-1 {
   opacity: 0.5;
 }
 
-.Rectangle-13 {
-  width: 25%;
-  height: 10%;
-  flex-grow: 0;
-  margin-top: 7%;
-  margin-bottom: 0%;
+a.save:link, a.save:visited {
+  margin-top: 4%;
+  margin-bottom: auto;
   margin-left: 8%;
-  margin-right: 0%;
+  margin-right: auto;
   border-radius: 8px;
   background-color: #f7c889;
+  display:inline-block;
+  width: 35%;
+  height: 30%;
+  padding: 1.8% 3% 1%;
+  flex-grow: 0;
+  font-family: Outfit;
+  font-size: 200%;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  align-content: center;
+  color: white;
+  text-decoration: none;
+}
+a.save:hover, a.save:active {
+  background-color: #E5A95A;
+}
+.check {
+  width: 14.6%;
+  height: 50%;
+  flex-grow: 0;
+  margin-top: auto;
+  margin-left: 6%;
+  object-fit: contain;
 }
 
-.Rectangle-14 {
-  position:absolute;
-  width: 25%;
-  height: 10%;
+a.logout:link, a.logout:visited {
+  width: 35%;
+  height: 30%;
   flex-grow: 0;
-  margin-top: -11.2%;
-  margin-bottom: 0%;
-  margin-left: 68%;
-  margin-right: 0%;
   border-radius: 8px;
-  background-color: #000000;
+  background-color: #000000CC;
+  display: inline-block;
+  font-family: Outfit;
+  font-size: 200%;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 4%;
+  margin-bottom: auto;
+  margin-left: 8%;
+  margin-right: auto;
+  align-content: center;
+  color: white;
+  padding: 1.8% 3% 1%;
+}
+a.logout:hover, a.logout:active{
+  background-color: #5D5A56;
+}
+.log {
+  width: 20%;
+  height: 50%;
+  flex-grow: 0;
+  margin-top: auto;
+  margin-left: 0;
+  object-fit: contain;
+}
+.block {
+  margin-left: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-self: center;
+  height: 30%;
+}
+select {
+  width: 30%;
+  height: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 1%;
+  overflow-y: scrollbar;
+  text-align: center;
+  font-family: Lato;
+  color: #ffffff;
+  font-size: 150%;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-left: 60%;
+  margin-top: 12.5%;
+  margin-bottom: auto;
+  margin-right: 20.6%;
+  border: none;
+  border-radius: 4px;
+  background-color: #f7c889;
+}
+input[type=text] {
+        outline: none;
+        width: 170px;
+        font-size: 30px;
+        font-family: Outfit;
+        color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 2px 12px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        resize:vertical;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid color: rgba(0, 0, 0, 0.5);
+        background-color: #ffffff;
+}
+.Text-Style-21 {
+  opacity: 0.9;
+  font-family: Outfit;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+  display: inline;
+  margin-left: 8.7%;
+}
+.Text-Style-22 {
+  opacity: 0.9;
+  font-family: Outfit;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+  display: inline;
+  margin-left: 0;
+}
+.Text-Style-23 {
+  opacity: 0.9;
+  font-family: Outfit;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+  display: inline;
+  margin-left: 8.7%;
+  margin-right: 2%;
+}
+.inputtext {
+  display:inline;
+}
+.XMLID_27_ {
+  width: 16px;
+  height: 16px;
+  flex-grow: 0;
+  margin: 27px 6px 9px 120px;
+  padding: 0 0 3.6px 3.6px;
+  background-color: #6aa6b9;
 }

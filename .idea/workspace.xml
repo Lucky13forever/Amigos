@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="1 si 2 url" />
+    <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="1 si 2 url">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +36,9 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\danbo\PycharmProjects\Amigos\AMIGOS\website\frontend\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\danbo\PycharmProjects\Amigos\AMIGOS\website\frontend\Get to know" />
     </key>
@@ -240,7 +245,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638549337027</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="1 si 2 url">
+      <created>1638569394694</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1638569394694</updated>
+    </task>
+    <task id="LOCAL-00027" summary="1 si 2 url">
+      <created>1638569428858</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1638569428858</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,10 +289,10 @@
     <MESSAGE value="1 si 2" />
     <MESSAGE value="pic" />
     <MESSAGE value="v" />
-    <MESSAGE value="1 si 2 url" />
     <MESSAGE value="site" />
     <MESSAGE value="Recommendations page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recommendations page" />
+    <MESSAGE value="1 si 2 url" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 si 2 url" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Amigos$Bulzan_Nicola.coverage" NAME="Bulzan_Nicola Coverage Results" MODIFIED="1637667223496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/git_Setup" />

@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Profile | SolarSolutions</title>
+    <title>Profile | Solar Solutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../img/favicon.png" rel="icon">
-    <link href="profile.css" rel="stylesheet">
+    <link href="profile.css" rel="stylesheet" type="text/css" />
 </head>
 <body style=background:#e77e64;>
     <div class="wrapper">
         <div class="Rectangle-65">
             <img src="../img/Ellipse 17.svg" class="Elipse-17">
             <img src="../img/Polygon 8.svg" class="Polygon-8">
-            <img src="../img/cancel-svgrepo-com%201.svg" class="Exit">
+            <a href="Home.html"><img src="../img/cancel-svgrepo-com%201.svg" class="Exit"></a>
             <div class="Rectangle-62">
-                <img src="../img/frame.svg" class="Frame">
+                <img src="../img/Frame.svg" class="Frame">
                 <span class="profile2">
                   Profile
                 </span>
@@ -28,11 +28,9 @@
                 <img src="../img/key-svgrepo-com%201.svg" class="key-svgrepo-com-1">
                 <div class="Line-9"></div>
 
-                <div class="Rectangle-13">
-                    <span class="profile3">Save</span>
-                </div>
-                <div class="Rectangle-14">
-                    <span class="profile4">Log out</span>
+                <div class="block">
+            <a href="Save.html" class="save">SAVE<img src="../img/check-svgrepo-com%201.svg" class="check"></a>
+            <a href="Home-not-logged.html" class="logout">LOG OUT<img src="../img/log-out-svgrepo-com%201.svg" class="log"></a>
                 </div>
 
             </div>
@@ -40,11 +38,65 @@
                 <span class="Selected-county">
                   Selected county
                 </span>
+                <form>
+            <select class="s1" name="select">
+                <option value="Timiș">Timiș</option>
+                <option value="fe">February</option>
+                <option value="mar">March</option>
+                <option value="ap">April</option>
+                <option value="may">May</option>
+                <option value="jun">June</option>
+                <option value="jul">July</option>
+                <option value="au">August</option>
+                <option value="se">September</option>
+                <option value="oc">October</option>
+                <option value="no">November</option>
+                <option value="de">December</option>
+            </select>
+        </form>
                 <span class="Selected-city">
                   Selected city
                 </span>
+                <form>
+            <select class="s1" name="select2">
+                <option value="Timișoara">Timișoara</option>
+                <option value="fe">February</option>
+                <option value="mar">March</option>
+                <option value="ap">April</option>
+                <option value="may">May</option>
+                <option value="jun">June</option>
+                <option value="jul">July</option>
+                <option value="au">August</option>
+                <option value="se">September</option>
+                <option value="oc">October</option>
+                <option value="no">November</option>
+                <option value="de">December</option>
+            </select>
+        </form>
             </div>
-            <div class="Rectangle-64"></div>
+            <div class="Rectangle-64">
+                <br><br>
+                <span class="Surface Text-Style-21">Length:</span>
+            <form class="inputtext">
+                <label for="surface"></label>
+                <input type="text" id="surface" name="surface">
+            </form>
+            <span class="Text-Style-22">m</span>
+                <br><br><br>
+                <span class="Surface Text-Style-23">Width:</span>
+            <form class="inputtext">
+                <label for="surface"></label>
+                <input type="text" id="surface" name="surface">
+            </form>
+            <span class="Text-Style-22">m</span>
+                <br><br><br>
+                <span class="Surface Text-Style-21">Monthly consumption:</span>
+            <form class="inputtext">
+                <label for="surface"></label>
+                <input type="text" id="surface" name="surface">
+            </form>
+            <span class="Text-Style-22">kW</span>
+            </div>
         </div>
     </div>
 </body>
