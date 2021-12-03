@@ -1185,6 +1185,21 @@ section {
   color: #fff;
 }
 
+
+/*--------------------------------------------------------------
+# Input budget text
+--------------------------------------------------------------*/
+
+.input_budget{
+
+  border:none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
@@ -1219,7 +1234,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: "Roboto", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -1430,7 +1445,7 @@ section {
 #footer {
   color: #fff;
   font-size: 14px;
-  background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+  background: #efbfca; /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;*/
   background-size: cover;
 }
 #footer .footer-top {
@@ -1524,17 +1539,17 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: rgba(123, 39, 216, 0.8);
+  background: #ffffff;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 5px 5px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #5846f9;
+  background: #ffffff;
 }
 #footer .copyright-wrap {
-  border-top: 1px solid #8577fb;
+  border-top: 1px solid #ffffff;
 }
 #footer .credits {
   padding-top: 5px;
