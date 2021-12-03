@@ -89,7 +89,7 @@ def create_consumption_graph(result) -> Graph:
     print(f'Consumul anual este {annual_consumption}')
     print(f'From grafice I have this\nUser consumption: {user_consumption}')
     optimal_power = calculate_optimal_power_per_month(result[0][2])
-    print(f'This is optimal: {optimal_power}')
+    print(f'This is optimal: {optimal_power} from {result[0][2]}')
     
     # column 2
     global energy_production

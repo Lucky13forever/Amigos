@@ -54,7 +54,7 @@ def test():
     # ToDo: daca nu reusim sa gasim niciun sistem, fix la return
     user = current_user
 
-    result = get_full_system(30000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
+    result = get_full_system(40000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
 
 
     orase = {}
@@ -87,7 +87,7 @@ def graf_test():
     global result
     user = current_user
     
-    result = get_full_system(30000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
+    result = get_full_system(40000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
 
     consumption_graph = create_consumption_graph(result)
 
