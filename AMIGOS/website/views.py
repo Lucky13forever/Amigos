@@ -48,6 +48,10 @@ def home():
     return render_template("home.html", user=current_user) #User.query.all()
 
 
+@views.route('/calculator')
+def calculator():
+    return render_template('calculator.html', user=current_user)
+
 result = ((None, None, None, None), (None, None, None), None, None)
 @views.route("/buget")
 def buget():

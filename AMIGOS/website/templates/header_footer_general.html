@@ -57,10 +57,16 @@
         <ul>
 
 
-          <li><a class="nav-link scrollto" href="#contact">Profile</a></li>
+
           
-          <li><a class="nav-link scrollto" href="/SIgnInSignUp">Sign In</a></li>
-          <!--<li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+          
+          {% if user.is_authenticated %}
+              <li><a class="nav-link scrollto" href="/profile">Profile</a></li>
+              <li><a class="nav-link scrollto" href="/calculator">Calculator</a></li>
+          {% else %}
+              <li><a class="nav-link scrollto" href="/SIgnInSignUp">Sign In</a></li>
+          {% endif %}
+            <!--<li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
         </ul>
 
         <i class="bi bi-list mobile-nav-toggle"></i>
