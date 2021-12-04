@@ -281,8 +281,8 @@ img.key-svgrepo-com-1 {
   object-fit: contain;
   opacity: 0.5;
 }
-
-a.save:link, a.save:visited {
+/* to remove href, i removed save:link */
+a.save, a.save:visited {
   margin-top: 4%;
   margin-bottom: auto;
   margin-left: 8%;
