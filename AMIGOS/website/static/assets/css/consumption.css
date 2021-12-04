@@ -94,6 +94,45 @@ input[type=text] {
         border-bottom: 2px solid #463827;
         background-color: #f7c889;
     }
+
+button {
+  position: absolute;
+  /* border-radius: 8px; */
+  /* border: 1px solid #f7c889; */
+  /* background-color: #f7c889; */
+  /* color: #FFFFFF; */
+  /* font-size: 24px; */
+  /* font-weight: bold; */
+  /* padding: 12px 45px; */
+  /* letter-spacing: 1px; */
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  width: 20%;
+  margin-left: 8%;
+  display: block;
+
+  padding: 0 34px 0;
+  border-radius: 42px;
+  background-color: #fff;
+  /* margin-left: 41%; */
+  font-family: Outfit;
+  font-size: 380%;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #30849e;
+
+}
+
+button:active {
+transform: scale(0.95);
+}
+
+button:focus {
+outline: none;
+}
 .block2 {
   margin-top: 4%;
   margin-left: 32%;
@@ -209,7 +248,7 @@ a.middle:link, a.middle:visited {
   border-radius: 50%;
   background-color: #000000CC;
   display: inline-block;
-  float: center;
+  /* float: center; */
 }
 a.right:link, a.right:visited {
   width: 48px;

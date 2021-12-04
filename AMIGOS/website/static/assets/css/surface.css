@@ -90,6 +90,7 @@ input[type=text] {
 }
 .inputtext {
   display:inline;
+
 }
 .Text-Style-21 {
   opacity: 0.9;
@@ -105,7 +106,8 @@ input[type=text] {
   display: inline;
 }
 .block {
-  margin-left: 47.2%;
+  margin-top: 10%;
+  margin-left: 0;
   margin-top: auto;
   margin-bottom: 36px;
   align-self: center;
@@ -122,7 +124,46 @@ input[type=text] {
   background-color: #fff;
   margin-left: 41%;
 }
+button {
+  position: absolute;
+	/* border-radius: 8px; */
+	/* border: 1px solid #f7c889; */
+	/* background-color: #f7c889; */
+	/* color: #FFFFFF; */
+	/* font-size: 24px; */
+	/* font-weight: bold; */
+	/* padding: 12px 45px; */
+	/* letter-spacing: 1px; */
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+  width: 20%;
+  margin: auto;
+  display: block;
+
+  padding: 0 34px 0;
+  border-radius: 42px;
+  background-color: #fff;
+  /* margin-left: 41%; */
+  font-family: Outfit;
+  font-size: 380%;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #30849e;
+
+}
+
+button:active {
+transform: scale(0.95);
+}
+
+button:focus {
+outline: none;
+}
 .NEXT {
+  position: absolute;
   width: 73.6%;
   height: 88.1%;
   font-family: Outfit;
@@ -181,7 +222,7 @@ a.middle:link, a.middle:visited {
   border-radius: 24.5px;
   background-color: #fff;
   display: inline-block;
-  float: center;
+  /* float: center; */
 }
 a.right:link, a.right:visited {
   width: 17px;

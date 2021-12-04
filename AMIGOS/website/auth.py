@@ -35,8 +35,21 @@ def reset_new_user():
 def consumption():
     return render_template('consumption.html', user=current_user)
 
-@auth.route('/Surface')
+@auth.route('/Surface', methods=['GET', 'POST'])
 def Surface():
+    data = request.form
+
+    if request.method == 'POST':
+        roof_length = data.get('length')
+        roof_width = data.get('width')
+
+        new_user['roof_length'] = roof_length
+        new_user['roof_width'] = roof_width
+
+        print(roof_length, roof_width)
+
+        return redirect(url_for('auth.consumption', user=current_user))
+
     return render_template('Surface.html', user=current_user)
 
 @auth.route('/SIgnInSignUp', methods=['GET', 'POST'])
@@ -67,6 +80,8 @@ def SIgnInSignUp():
 
             print(new_user)
             print(f'STATE ____________ {state}')
+
+
             
 
             return redirect(url_for('auth.GetToKnow', user=current_user))
@@ -83,7 +98,7 @@ def SIgnInSignUp():
 
 @auth.route('/GetToKnow')
 def GetToKnow():
-    
+
     return render_template('GetToKnow.html', user=current_user)
 
 

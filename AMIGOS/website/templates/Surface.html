@@ -17,26 +17,61 @@
         </p>
         <div class="block2">
             <span class="Surface Text-Style-21">Length:</span>
-            <form class="inputtext">
+            <form class="inputtext" method='POST' id='surface_form' align="center">
                 <label for="surface"></label>
-                <input type="text" id="surface" name="surface">
-            </form>
+                <input type="text" id="surface" name="length">
+            <!-- </form> -->
             <span class="Text-Style-21">m</span>
             <br><br>
             <span class="Surface Text-Style-21">&nbsp;&nbsp;Width:</span>
-            <form class="inputtext">
+            <!-- <form class="inputtext"> -->
                 <label for="surface"></label>
-                <input type="text" id="surface" name="surface">
-            </form>
-            <span class="Text-Style-21">m</span>
-        </div>
-        <div class="block">
-            <a href="/GetToKnow" class="left"></a>
-            <a href="/Surface" class="middle"></a>
-            <a href="/consumption" class="right"></a>
-        </div>
-        <a href="/consumption" class="lnext">NEXT</a>
+                <input type="text" id="surface" name="width">
+                <span class="Text-Style-21">m</span>
 
+
+                <div class="block">
+                    <br>
+                    <br>
+                    <br>
+                    <a href="/GetToKnow" class="left"></a>
+                    <a href="/Surface" class="middle"></a>
+                    <a href="/consumption" class="right"></a>
+                </div>
+                
+                
+                <button type="submit" class="btn btn-info lnext" id="send_info">Next</button>
+                <!-- <a href="/Surface" class="lnext" type="submit" onclick="send_info()">NEXT</a> -->
+                
+                
+                <!-- <input type="submit" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;"> -->
+                
+                <!-- <button type="submit" class="btn btn-info lnext" id="send_info">Info</button> -->
+                
+            </form>
+            
+            
+        </div>
+            
+            <form name="form">
+                
+                <!-- inputs and stuff -->
+                
+                <input type="submit" onclick="javascript: form.action='/submit';">
+                <input type="submit" onclick="javascript: form.action='/submit-2';"> 
+                
+              </form>
+            <script>
+                
+                function send_info(){
+                    button = document.getElementById('send_info');
+                    button.click();                    
+                    alert(button.innerText);
+                }
+
+            </script>
+            
+        
     </div>
 
 </body>
