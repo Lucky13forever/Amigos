@@ -32,6 +32,21 @@ def reset_new_user():
     'consumption' : 0,
 }
 
+def reset_old_info():
+    global old_info
+    old_info = {
+    'name' : "",
+    'email' : "",
+    'password' : "",
+    'phone' : "",
+    'county' : "",
+    'city' : "",
+    'roof_length' : 0.0,
+    'roof_width' : 0.0,
+    'month' : "",  
+    'consumption' : 0,
+}
+
 @auth.route('/consumption',  methods=['GET', 'POST'])
 def consumption():
     data = request.form
@@ -54,10 +69,11 @@ def consumption():
 
 
         user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'), phone=phone, county=county, city=city, roof_length=roof_length, roof_width=roof_width, month=month, consumption=consumption)
-
-        login_user(user, remember=True)
         db.session.add(user)
         db.session.commit()
+
+        login_user(user, remember=True)
+        
 
         return redirect(url_for('views.home', user=current_user))
     
@@ -84,10 +100,12 @@ def Surface():
 def SIgnInSignUp():
     data = request.form
     reset_new_user()
+    reset_old_info()
 
     if request.method == 'POST':
 
         state = data.get('state')
+        old_info['state'] = state
         if state == 'create':
         
             global new_user
@@ -106,13 +124,27 @@ def SIgnInSignUp():
             new_user['county'] = county
             new_user['city'] = city
 
+            old_info['name'] = name
+            old_info['email'] = email
+            old_info['password'] = password
+            old_info['phone'] = phone
+            old_info['county'] = county
+            old_info['city'] = city
+
             print(new_user)
             print(f'STATE ____________ {state}')
 
 
-            
+            search = User.query.filter_by(email=email).first()
+            errors = []
+            if search:
+                flash('This email is already being used by another account, please try another one')
+                errors.append('email')
 
-            return redirect(url_for('auth.GetToKnow', user=current_user))
+            if error == 0:
+                return redirect(url_for('auth.GetToKnow', user=current_user))
+            else:
+                return render_template('SIgnInSignUp.html', user=current_user, errors=errors, old_info=old_info)
         else:
             print(f'STATE_____________ {state}')
 
@@ -137,7 +169,7 @@ def SIgnInSignUp():
     #     db.session.query(User).delete()
     #     db.session.commit()
     #     break
-    return render_template('SIgnInSignUp.html', user=current_user)
+    return render_template('SIgnInSignUp.html', user=current_user, errors=[], old_info=old_info)
 
 
 @auth.route('/GetToKnow')

@@ -12,19 +12,50 @@
 <img class="Polygon-7" src = "{{ url_for('static',filename='assets/img/Polygon 7.svg') }}">
 <div class="container" id="container">
 <div class="form-container sign-up-container">
+
 <form method="POST">
 	<h1>Sign Up</h1>
     <br>
     <br>
-    <input type="username" name="name" placeholder="Username" required>
+
+    {% if errors != [] %}
+        <style>
+            .display_red::placeholder{
+                color: red;
+                opacity: 1;
+            }
+            
+
+        </style>
+    {% endif %}
+
+    <input type="username" name="name" placeholder="Username" value="{{old_info['name']}}" required>
     <br>
-	<input type="email" name="email" placeholder="Email" required>
+
+    {% if 'email' in errors %}
+
+        <input class="display_red" type="email" name="email" placeholder="This email is taken" required>
+
+    {% else %}
+	<input type="email" name="email" placeholder="Email" value="{{ old_info['email'] }}" required>
+    
+    {% endif %}
+    
     <br>
-	<input type="password" name="password" placeholder="Password" required>
+	
+    
+    <input type="password" name="password" placeholder="Password" required>
     <br>
-    <input type="text" name="phone" placeholder="Phone Number" required>
+    <input type="text" name="phone" placeholder="Phone Number" value="{{ old_info['phone'] }}" required>
     <br>
     <br>
+
+
+    <!-- retrieve old county, old city, and old state -> login or sign up -->
+    <input id="get_county" style="display: none;" value="{{old_info['county']}}">
+    <input id="get_city" style="display: none;" value="{{ old_info['city'] }}" >
+    <input id="get_state" style="display: none;" value="{{ old_info['state'] }}">
+
     <div class="custom-select" style="margin-left: -82%;">
         <select style="width:200%; height: 200%;" required id="counties" onchange="cities_func('')" name="county">
 
@@ -40,11 +71,16 @@
                     max = 100,
                     select = document.getElementById('counties');
                 
+                    old_county = document.getElementById('get_county').value;
+
                     for (var i = 0; i<keys.length; i++){
                         var opt = document.createElement('option');
                         opt.value = keys[i];
                         opt.innerHTML = keys[i];
                         
+                        if (opt.value == old_county){
+                            opt.selected = true
+                        }
                         select.appendChild(opt);
                     }
 
@@ -63,13 +99,24 @@
             <script>
             
                 window.onload = function(){
+                    const container = document.getElementById('container');
+
+                    old_state = document.getElementById('get_state').value
+                    if (old_state == 'create'){
+
+                    }
+                    else{
+                        container.classList.add("right-panel-active");
+                    }
                     counties();
-                    cities_func('Alba');
+                    cities_func('');
                 };
               function cities_func(county_param){
 
                   selected_county = document.getElementById('counties').selectedOptions[0];
                   
+                  old_city = document.getElementById('get_city').value
+
                   county = selected_county.value;
 
                   if (county_param == 'Alba'){
@@ -79,7 +126,7 @@
                   
 
                   console.log('BOOM')
-                  console.log(county_param)
+                  console.log("selected ", county)
   
                   cities = orase[county];
                   
@@ -92,6 +139,10 @@
                       var opt = document.createElement('option');
                           opt.value = cities[i];
                           opt.innerHTML = cities[i];
+
+                          if (opt.value == old_city){
+                              opt.selected = true
+                          }
                           select.appendChild(opt);
                   }
               }
@@ -110,6 +161,7 @@
     <br>
     <p style="font-size: 12px;">By creating an account, you agree to Solar Solutions’</p>
     <p class="up">Terms and Conditions & Privacy Policy</p>
+    <br>
 </form>
 </div>
 <div class="form-container sign-in-container">
@@ -155,6 +207,8 @@
 	</div>
 </div>
 </div>
+
+
 
 <script type="text/javascript">
 	const signUpButton = document.getElementById('signUp');
