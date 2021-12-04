@@ -1,4 +1,5 @@
 from os import error
+import re
 from sys import flags
 from types import new_class
 from flask import Blueprint, render_template, request, redirect, url_for
@@ -31,8 +32,35 @@ def reset_new_user():
     'consumption' : 0,
 }
 
-@auth.route('/consumption')
+@auth.route('/consumption',  methods=['GET', 'POST'])
 def consumption():
+    data = request.form
+
+    if request.method == 'POST':
+        month = data.get('month')
+        consumption = data.get('consumption')
+
+        # new_user['month'] = month
+        # new_user['consumption'] = consumption
+
+        name = new_user['name']
+        email = new_user['email']
+        password = new_user['password']
+        phone = new_user['phone']
+        county = new_user['county']
+        city = new_user['city']
+        roof_length = new_user['roof_length']
+        roof_width = new_user['roof_width']
+
+
+        user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'), phone=phone, county=county, city=city, roof_length=roof_length, roof_width=roof_width, month=month, consumption=consumption)
+
+        login_user(user, remember=True)
+        db.session.add(user)
+        db.session.commit()
+
+        return redirect(url_for('views.home', user=current_user))
+    
     return render_template('consumption.html', user=current_user)
 
 @auth.route('/Surface', methods=['GET', 'POST'])
@@ -87,6 +115,22 @@ def SIgnInSignUp():
             return redirect(url_for('auth.GetToKnow', user=current_user))
         else:
             print(f'STATE_____________ {state}')
+
+            email = data.get('email')
+            password = data.get('password')
+
+            my_user = User.query.filter_by(email= email).first()
+
+            if my_user:
+                if check_password_hash(my_user.password, password):
+                    # flash('Credentials are corect, redirecting to home page', category='success')
+                    login_user(my_user, remember=True)
+                    return redirect(url_for('views.home', user=current_user))
+                else:
+                    flash('Your password is incorrect, please try again', category='error')
+            else:
+                flash('Your email is incorrect, please try again', category='error')
+
 
 
     # while 1 == 1:
