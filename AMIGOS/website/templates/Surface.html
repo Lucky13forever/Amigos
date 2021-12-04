@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href = "{{ url_for('static',filename='assets/css/surface.css') }}" />
+    <meta charset="UTF-8">
+    <link rel="icon" href = "{{ url_for('static',filename='assets/img/favicon.png') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surface | Solar Solutions</title>
+</head>
+
+<body style=background:#30849e;>
+    <div class="d">
+        <img class="Ellipse-13" src = "{{ url_for('static',filename='assets/img/Ellipse 13.svg') }}">
+        <img class="Polygon-6" src = "{{ url_for('static',filename='assets/img/Polygon 6.svg') }}">
+        <p class="Text-Style-20">
+        What are the dimensions of your roof?
+        </p>
+        <div class="block2">
+            <span class="Surface Text-Style-21">Length:</span>
+            <form class="inputtext">
+                <label for="surface"></label>
+                <input type="text" id="surface" name="surface">
+            </form>
+            <span class="Text-Style-21">m</span>
+            <br><br>
+            <span class="Surface Text-Style-21">&nbsp;&nbsp;Width:</span>
+            <form class="inputtext">
+                <label for="surface"></label>
+                <input type="text" id="surface" name="surface">
+            </form>
+            <span class="Text-Style-21">m</span>
+        </div>
+        <div class="block">
+            <a href="/GetToKnow" class="left"></a>
+            <a href="/Surface" class="middle"></a>
+            <a href="/consumption" class="right"></a>
+        </div>
+        <a href="/consumption" class="lnext">NEXT</a>
+
+    </div>
+
+</body>
+</html>

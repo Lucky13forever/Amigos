@@ -31,6 +31,13 @@ def reset_new_user():
     'consumption' : 0,
 }
 
+@auth.route('/consumption')
+def consumption():
+    return render_template('consumption.html', user=current_user)
+
+@auth.route('/Surface')
+def Surface():
+    return render_template('Surface.html', user=current_user)
 
 @auth.route('/SIgnInSignUp', methods=['GET', 'POST'])
 def SIgnInSignUp():
