@@ -63,7 +63,7 @@ html, body {
   position: absolute;
   object-fit: contain;
   height: 11.1%;
-  margin-top: 13.5%;
+  margin-top: 7.5%;
   margin-right: 30.2%;
   margin-bottom: auto;
   margin-left: 8.7%;
@@ -84,7 +84,7 @@ html, body {
   position: absolute;
   object-fit: contain;
   height: 39px;
-  margin-top: 14%;
+  margin-top: 8%;
   margin-right: 32.9%;
   margin-bottom: 25.6%;
   margin-left: 8.7%;
@@ -378,7 +378,7 @@ select {
   line-height: normal;
   letter-spacing: normal;
   margin-left: 60%;
-  margin-top: 12.5%;
+  margin-top: 7%;
   margin-bottom: auto;
   margin-right: 20.6%;
   border: none;

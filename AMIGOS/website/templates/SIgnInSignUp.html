@@ -29,7 +29,7 @@
     <input type="username" name="name" placeholder="Username" value="{{old_info['name']}}" required>
     <br>
 
-    {% if 'email' in errors %}
+    {% if 'email_sign_up' in errors %}
 
         <input class="display_red" type="email" name="email" placeholder="This email is taken" required>
 
@@ -166,7 +166,7 @@
     <br>
     <br>
     <br>
-    {% if 'email' in errors %}
+    {% if 'email_login' in errors %}
         <input class="display_red" type="email" name="email" placeholder="Your email is wrong" required>
     {% else %}
 	    <input type="email" name="email" placeholder="Email" value="{{old_info['email_login']}}" required>
@@ -217,6 +217,7 @@
 	const signUpButton = document.getElementById('signUp');
 	const signInButton = document.getElementById('signIn');
 	const container = document.getElementById('container');
+
 
 	signInButton.addEventListener('click', () => {
 		container.classList.add("right-panel-active");

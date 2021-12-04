@@ -10,7 +10,8 @@ monthly_consumption = [9.3, 8.7, 9, 8.5, 7.6, 7.8, 8.4, 8.4, 7.5, 8, 8.2, 8.7]
 monthly_effic = [50, 59, 78, 85, 90, 93, 100, 95, 86, 73, 57, 48]
 
 def calculate_annual_consumption(montly_consumption,month,consumption):
-    months=["ianuarie","februarie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+    months=['january', 'jebruary', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
+    
     month=month.lower()
     index_month=months.index(month)
     return int(consumption*(100/montly_consumption[index_month]))

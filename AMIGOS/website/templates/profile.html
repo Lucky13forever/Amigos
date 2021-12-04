@@ -42,6 +42,7 @@
 
             <input id="get_county" style="display: none;" value="{{user.county}}">
             <input id="get_city" style="display: none;" value="{{user.city}}">
+            <input id="get_month" style="display: none;" value="{{user.month}}">
             <select class="s1" name="county" id="counties" onchange="cities_func('')">
                 <script>
 
@@ -84,6 +85,7 @@
                     window.onload = function(){
                         counties();
                         cities_func('');
+                        gen_months();
                     };
                   function cities_func(county_param){
     
@@ -128,18 +130,29 @@
           </span>
           <form>
       <select class="s1" name="month" id="month">
-        <option value="Ianuarie">January</option>
-        <option value="Februarie">February</option>
-        <option value="Martie">March</option>
-        <option value="Aprilie">April</option>
-        <option value="Mai">May</option>
-        <option value="Iunie">June</option>
-        <option value="Iulie">July</option>
-        <option value="August">August</option>
-        <option value="Septembrie">September</option>
-        <option value="Octombrie">October</option>
-        <option value="Noiembrie">November</option>
-        <option value="Decembrie">December</option>
+            
+
+            <script>
+
+                function gen_months(){
+                    select = document.getElementById('month');
+                    while (select.firstChild) {
+                        select.removeChild(select.firstChild);
+                    }
+                    all_months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                    user_month = document.getElementById('get_month').value;
+                    console.log(user_month)
+                    for(let i=0; i<12; i++){
+                        var opt = document.createElement('option');
+                            opt.value = all_months[i];
+                            opt.innerHTML = all_months[i];
+                            if (opt.value == user_month){
+                                opt.selected = true;
+                            }
+                            select.appendChild(opt);
+                    }
+                }
+            </script>
           
       </select>
   </form>

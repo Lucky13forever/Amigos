@@ -15,8 +15,10 @@ def maxim_liste(l1:list,l2:list):
         p*=10
         aux//=10
     p//=10
-    return (maxim//p + 1)*p
-
+    try:
+        return (maxim//p + 1)*p
+    except:
+        return 0
 def yaxis(maxim :int):
     buc=maxim//10
     l=[]

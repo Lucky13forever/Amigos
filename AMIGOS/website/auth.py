@@ -140,9 +140,9 @@ def SIgnInSignUp():
             errors = []
             if search:
                 flash('This email is already being used by another account, please try another one')
-                errors.append('email')
+                errors.append('email_sign_up')
 
-            if error == 0:
+            if errors == []:
                 return redirect(url_for('auth.GetToKnow', user=current_user))
             else:
                 return render_template('SIgnInSignUp.html', user=current_user, errors=errors, old_info=old_info)
@@ -167,7 +167,7 @@ def SIgnInSignUp():
                     errors.append('password')
             else:
                 flash('Your email is incorrect, please try again', category='error')
-                errors.append('email')
+                errors.append('email_login')
 
             return render_template('SIgnInSignUp.html', user=current_user, errors=errors, old_info=old_info)
 
