@@ -152,7 +152,7 @@ a.middle:link, a.middle:visited {
   border-radius: 50%;
   background-color: #fff;
   display: inline-block;
-  float: center;
+  /* float: ; */
 }
 a.right:link, a.right:visited {
   width: 17px;
@@ -165,3 +165,4 @@ a.right:link, a.right:visited {
 a.left:hover, a.left:active, a.middle:hover, a.middle:active, a.right:hover, a.right:active {
   background-color: #DBDBDB;
 
+}

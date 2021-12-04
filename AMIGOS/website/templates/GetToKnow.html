@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="GetToKnow.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href = "{{ url_for('static',filename='assets/css/GetToKnow.css') }}" />
     <meta charset="UTF-8">
-    <link href="../img/favicon.png" rel="icon">
+    <link rel="icon" href = "{{ url_for('static',filename='assets/img/favicon.png') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get To Know | Solar Solutions</title>
 </head>
 
 <body style=background:#e77e64;>
     <div class="d">
-        <img src="../img/Ellipse 13.svg" class="Ellipse-13">
-        <img src="../img/Polygon 9.svg" class="Polygon-9">
+        <img class="Ellipse-13" src = "{{ url_for('static',filename='assets/img/Ellipse 13.svg') }}">
+        <img class="Polygon-9" src = "{{ url_for('static',filename='assets/img/Polygon 9.svg') }}">
         <p class="Text-Style-20">
             Let’s get to know <br>
             each other better!
