@@ -42,10 +42,10 @@ def reset_old_info():
     'phone' : "",
     'county' : "",
     'city' : "",
-    'roof_length' : 0.0,
-    'roof_width' : 0.0,
+    'roof_length' : "",
+    'roof_width' : "",
     'month' : "",  
-    'consumption' : 0,
+    'consumption' : "",
 }
 
 @auth.route('/consumption',  methods=['GET', 'POST'])
@@ -58,27 +58,31 @@ def consumption():
 
         # new_user['month'] = month
         # new_user['consumption'] = consumption
+        try:
+            name = new_user['name']
+            email = new_user['email']
+            password = new_user['password']
+            phone = new_user['phone']
+            county = new_user['county']
+            city = new_user['city']
+            roof_length = new_user['roof_length']
+            roof_width = new_user['roof_width']
 
-        name = new_user['name']
-        email = new_user['email']
-        password = new_user['password']
-        phone = new_user['phone']
-        county = new_user['county']
-        city = new_user['city']
-        roof_length = new_user['roof_length']
-        roof_width = new_user['roof_width']
+            old_info['month'] = month
+            old_info['consumption'] = consumption
 
 
-        user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'), phone=phone, county=county, city=city, roof_length=roof_length, roof_width=roof_width, month=month, consumption=consumption)
-        db.session.add(user)
-        db.session.commit()
+            user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'), phone=phone, county=county, city=city, roof_length=roof_length, roof_width=roof_width, month=month, consumption=consumption)
+            db.session.add(user)
+            db.session.commit()
 
-        login_user(user, remember=True)
-        
+            login_user(user, remember=True)
+        except:
+            pass
 
         return redirect(url_for('views.home', user=current_user))
     
-    return render_template('consumption.html', user=current_user)
+    return render_template('consumption.html', user=current_user, old_info=old_info)
 
 @auth.route('/Surface', methods=['GET', 'POST'])
 def Surface():
@@ -91,11 +95,14 @@ def Surface():
         new_user['roof_length'] = roof_length
         new_user['roof_width'] = roof_width
 
+        old_info['roof_length'] = roof_length
+        old_info['roof_width'] = roof_width
+
         print(roof_length, roof_width)
 
-        return redirect(url_for('auth.consumption', user=current_user))
+        return redirect(url_for('auth.consumption', user=current_user, old_info=old_info))
 
-    return render_template('Surface.html', user=current_user)
+    return render_template('Surface.html', user=current_user, old_info=old_info)
 
 @auth.route('/SIgnInSignUp', methods=['GET', 'POST'])
 def SIgnInSignUp():
