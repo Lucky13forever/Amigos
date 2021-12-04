@@ -39,38 +39,74 @@
                   Selected county
                 </span>
                 <form>
-            <select class="s1" name="select">
-                <option value="Timiș">Timiș</option>
-                <option value="fe">February</option>
-                <option value="mar">March</option>
-                <option value="ap">April</option>
-                <option value="may">May</option>
-                <option value="jun">June</option>
-                <option value="jul">July</option>
-                <option value="au">August</option>
-                <option value="se">September</option>
-                <option value="oc">October</option>
-                <option value="no">November</option>
-                <option value="de">December</option>
+            <select class="s1" name="county" id="counties" onchange="cities_func('')">
+                <script>
+
+                    function counties(){
+    
+                        keys = Object.keys(orase)
+                        console.log(keys.length)
+                        console.log('here')
+                        var min = 12,
+                        max = 100,
+                        select = document.getElementById('counties');
+                    
+                        for (var i = 0; i<keys.length; i++){
+                            var opt = document.createElement('option');
+                            opt.value = keys[i];
+                            opt.innerHTML = keys[i];
+                            
+                            select.appendChild(opt);
+                        }
+    
+                        
+      
+                    }
+                </script>
             </select>
         </form>
                 <span class="Selected-city">
                   Selected city
                 </span>
                 <form>
-            <select class="s1" name="select2">
-                <option value="Timișoara">Timișoara</option>
-                <option value="fe">February</option>
-                <option value="mar">March</option>
-                <option value="ap">April</option>
-                <option value="may">May</option>
-                <option value="jun">June</option>
-                <option value="jul">July</option>
-                <option value="au">August</option>
-                <option value="se">September</option>
-                <option value="oc">October</option>
-                <option value="no">November</option>
-                <option value="de">December</option>
+            <select class="s1" name="city" id="cities">
+                <script>
+            
+                    window.onload = function(){
+                        counties();
+                        cities_func('Alba');
+                    };
+                  function cities_func(county_param){
+    
+                      selected_county = document.getElementById('counties').selectedOptions[0];
+                      
+                      county = selected_county.value;
+    
+                      if (county_param == 'Alba'){
+                            county = 'Alba'   
+                      } 
+    
+                      
+    
+                      console.log('BOOM')
+                      console.log(county_param)
+      
+                      cities = orase[county];
+                      
+      
+                      select = document.getElementById('cities');
+                      while (select.firstChild) {
+                          select.removeChild(select.firstChild)
+                      }
+                      for(let i=0; i<cities.length; i++){
+                          var opt = document.createElement('option');
+                              opt.value = cities[i];
+                              opt.innerHTML = cities[i];
+                              select.appendChild(opt);
+                      }
+                  }
+              
+                </script>
             </select>
         </form>
             </div>
@@ -99,5 +135,6 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="{{ url_for('static',filename='assets/js/orase.js') }}"></script>
 </body>
 </html>
