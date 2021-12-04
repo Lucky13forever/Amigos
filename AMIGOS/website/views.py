@@ -17,6 +17,13 @@ def header_footer_general():
 
     return render_template('header_footer_general.html', user=current_user)
 
+
+@views.route('/profile')
+def profile():
+
+    return render_template('profile.html', user=current_user)
+
+
 @views.route('/')
 def home():
     

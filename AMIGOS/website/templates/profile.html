@@ -4,33 +4,33 @@
     <meta charset="utf-8">
     <title>Profile | Solar Solutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../img/favicon.png" rel="icon">
-    <link href="profile.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href = "{{ url_for('static',filename='assets/img/favicon.png') }}">
+    <link rel="stylesheet" type="text/css" href = "{{ url_for('static',filename='assets/css/profile.css') }}"/>
 </head>
 <body style=background:#e77e64;>
     <div class="wrapper">
         <div class="Rectangle-65">
-            <img src="../img/Ellipse 17.svg" class="Elipse-17">
-            <img src="../img/Polygon 8.svg" class="Polygon-8">
-            <a href="Home.html"><img src="../img/cancel-svgrepo-com%201.svg" class="Exit"></a>
+            <img class="Elipse-17" src = "{{ url_for('static',filename='assets/img/Ellipse 17.svg') }}">
+            <img class="Polygon-8" src = "{{ url_for('static',filename='assets/img/Polygon 8.svg') }}">
+            <a href="Home.html"><img src = "{{ url_for('static',filename='assets/img/cancel-svgrepo-com 1.svg') }}" class="Exit"></a>
             <div class="Rectangle-62">
-                <img src="../img/frame2.svg" class="Frame">
+                <img class="Frame" src = "{{ url_for('static',filename='assets/img/frame2.svg') }}">
                 <span class="profile2">
                   Profile
                 </span>
 
-                <img src="../img/account-svgrepo-com%201.svg" class="account-svgrepo-com-1">
-                <div class="Line-12">asd</div>
-                <img src="../img/envelope-svgrepo-com%201.svg" class="envelope-svgrepo-com-1">
+                <img class="account-svgrepo-com-1" src = "{{ url_for('static',filename='assets/img/account-svgrepo-com 1.svg') }}">
+                <div class="Line-12" contentEditable="true">  </div>
+                <img class="envelope-svgrepo-com-1" src = "{{ url_for('static',filename='assets/img/envelope-svgrepo-com 1.svg') }}">
                 <div class="Line-11"></div>
-                <img src="../img/phone-svgrepo-com%201.svg" class="phone-svgrepo-com-1">
+                <img class="phone-svgrepo-com-1" src = "{{ url_for('static',filename='assets/img/phone-svgrepo-com 1.svg') }}">
                 <div class="Line-10"></div>
-                <img src="../img/key-svgrepo-com%201.svg" class="key-svgrepo-com-1">
+                <img class="key-svgrepo-com-1" src = "{{ url_for('static',filename='assets/img/key-svgrepo-com 1.svg') }}">
                 <div class="Line-9"></div>
 
                 <div class="block">
-            <a href="Save.html" class="save">SAVE<img src="../img/check-svgrepo-com%201.svg" class="check"></a>
-            <a href="Home-not-logged.html" class="logout">LOG OUT<img src="../img/log-out-svgrepo-com%201.svg" class="log"></a>
+            <a href="Save.html" class="save">SAVE<img class="check" src = "{{ url_for('static',filename='assets/img/check-svgrepo-com 1.svg') }}"></a>
+            <a href="Home-not-logged.html" class="logout">LOG OUT<imgclass="log" src = "{{ url_for('static',filename='assets/img/log-out-svgrepo-com 1.svg') }}"></a>
                 </div>
 
             </div>
