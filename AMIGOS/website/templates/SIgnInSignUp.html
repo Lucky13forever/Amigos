@@ -2,6 +2,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        .display_red::placeholder{
+            color: red;
+            opacity: 1;
+        }
+        
+
+    </style>
 	<title>SolarSolutions</title>
 	<link rel="stylesheet" type="text/css"  href = "{{ url_for('static',filename='assets/css/Sign_Up.css') }}">
     <link rel="icon"  href = "{{ url_for('static',filename='assets/img/favicon.png') }}">
@@ -18,17 +26,6 @@
     <br>
     <br>
 
-    {% if errors != [] %}
-        <style>
-            .display_red::placeholder{
-                color: red;
-                opacity: 1;
-            }
-            
-
-        </style>
-    {% endif %}
-
     <input type="username" name="name" placeholder="Username" value="{{old_info['name']}}" required>
     <br>
 
@@ -37,7 +34,7 @@
         <input class="display_red" type="email" name="email" placeholder="This email is taken" required>
 
     {% else %}
-	<input type="email" name="email" placeholder="Email" value="{{ old_info['email'] }}" required>
+	<input type="email" name="email" placeholder="Email" value="{{ old_info['email_sign_up'] }}" required>
     
     {% endif %}
     
@@ -102,10 +99,7 @@
                     const container = document.getElementById('container');
 
                     old_state = document.getElementById('get_state').value
-                    if (old_state == 'create'){
-
-                    }
-                    else{
+                    if (old_state == 'login'){
                         container.classList.add("right-panel-active");
                     }
                     counties();
@@ -172,11 +166,20 @@
     <br>
     <br>
     <br>
-	<input type="email" name="email" placeholder="Email" required>
+    {% if 'email' in errors %}
+        <input class="display_red" type="email" name="email" placeholder="Your email is wrong" required>
+    {% else %}
+	    <input type="email" name="email" placeholder="Email" value="{{old_info['email_login']}}" required>
+    {% endif %}
     <br>
     <br>
     <br>
-	<input type="password" name="password" placeholder="Password" required>
+
+    {% if 'password' in errors %}
+        <input class="display_red" type="password" name="password" placeholder="Your password is wrong" required>
+	{% else %}
+        <input type="password" name="password" placeholder="Password" required>
+    {% endif %}
     <br>
     <br>
     <br>

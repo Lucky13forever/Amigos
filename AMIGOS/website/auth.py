@@ -16,7 +16,7 @@ auth = Blueprint('auth', __name__)
 
 
 new_user = {}
-
+old_info = {}
 def reset_new_user():
     global new_user
     new_user = {
@@ -36,7 +36,8 @@ def reset_old_info():
     global old_info
     old_info = {
     'name' : "",
-    'email' : "",
+    'email_sign_up' : "",
+    'email_login' : "",
     'password' : "",
     'phone' : "",
     'county' : "",
@@ -125,7 +126,7 @@ def SIgnInSignUp():
             new_user['city'] = city
 
             old_info['name'] = name
-            old_info['email'] = email
+            old_info['email_sign_up'] = email
             old_info['password'] = password
             old_info['phone'] = phone
             old_info['county'] = county
@@ -146,10 +147,13 @@ def SIgnInSignUp():
             else:
                 return render_template('SIgnInSignUp.html', user=current_user, errors=errors, old_info=old_info)
         else:
+            errors = []
             print(f'STATE_____________ {state}')
 
             email = data.get('email')
             password = data.get('password')
+
+            old_info['email_login'] = email
 
             my_user = User.query.filter_by(email= email).first()
 
@@ -160,9 +164,12 @@ def SIgnInSignUp():
                     return redirect(url_for('views.home', user=current_user))
                 else:
                     flash('Your password is incorrect, please try again', category='error')
+                    errors.append('password')
             else:
                 flash('Your email is incorrect, please try again', category='error')
+                errors.append('email')
 
+            return render_template('SIgnInSignUp.html', user=current_user, errors=errors, old_info=old_info)
 
 
     # while 1 == 1:
@@ -189,7 +196,7 @@ def login():
     #     db.session.query(User).delete()
     #     db.session.commit()
     #     break
-
+    global old_info
     old_info = []
 
     if request.method == 'POST':
