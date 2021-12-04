@@ -45,13 +45,13 @@
         <form method='POST'>
 
 
-            <button type="submit" id="click_submit">REAL</button>
+            <button type="submit" style="display: none;" id="click_submit">REAL</button>
 
             <script>
                 
                 function save_changes(){
                     button = document.getElementById('click_submit')
-                    alert(button.textContent)
+                    //alert(button.textContent)
                     button.click()
                 }
 
@@ -180,21 +180,21 @@
                 <span class="Surface Text-Style-21">Length:</span>
             <!-- <form class="inputtext"> -->
                 <label for="surface"></label>
-                <input type="text" id="surface" name="surface" value="{{user.roof_length}}">
+                <input type="text" id="surface" name="roof_length" value="{{user.roof_length}}">
             <!-- </form> -->
             <span class="Text-Style-22">m</span>
                 <br><br><br>
                 <span class="Surface Text-Style-23">Width:</span>
             <!-- <form class="inputtext"> -->
                 <label for="surface"></label>
-                <input type="text" id="surface" name="surface" value="{{user.roof_width}}">
+                <input type="text" id="surface" name="roof_width" value="{{user.roof_width}}">
             <!-- </form> -->
             <span class="Text-Style-22">m</span>
                 <br><br><br>
                 <span class="Surface Text-Style-21">Monthly consumption:</span>
             <!-- <form class="inputtext"> -->
                 <label for="surface"></label>
-                <input type="text" id="surface" name="surface" value="{{user.consumption}}">
+                <input type="text" id="surface" name="consumption" value="{{user.consumption}}">
             <!-- </form> -->
             
             

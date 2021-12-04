@@ -1,7 +1,6 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 import flask
 from sqlalchemy.orm.query import Query
-from werkzeug.wrappers import request
 from .models import *
 from flask_login import login_required, current_user
 from .recomandare import *
@@ -18,9 +17,30 @@ def header_footer_general():
     return render_template('header_footer_general.html', user=current_user)
 
 
-@views.route('/profile')
+@views.route('/profile', methods=['POST', 'GET'])
 def profile():
+    data = request.form
 
+    if request.method == 'POST':
+        county = data.get('county')
+        city = data.get('city')
+        month = data.get('month')
+        roof_length = data.get('roof_length')
+        roof_width = data.get('roof_width')
+        consumption = data.get('consumption')
+
+        search_user = User.query.filter_by(id=current_user.id).first()
+        if search_user:
+            search_user.county = county
+            search_user.city = city
+            search_user.month = month
+            search_user.roof_length = roof_length
+            search_user.roof_width = roof_width
+            search_user.consumption = consumption
+
+            db.session.commit()
+
+        print(county, city, month, consumption)
     return render_template('profile.html', user=current_user)
 
 
