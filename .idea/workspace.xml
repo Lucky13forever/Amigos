@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="Header_footer">
+    <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="calculator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Techie/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Techie/calculator.html" afterDir="false" />
     </list>
@@ -97,7 +97,7 @@
       <workItem from="1638538853573" duration="5922000" />
       <workItem from="1638549101148" duration="4752000" />
       <workItem from="1638711215447" duration="1524000" />
-      <workItem from="1638716010262" duration="1615000" />
+      <workItem from="1638716010262" duration="2637000" />
     </task>
     <task id="LOCAL-00001" summary="hello">
       <created>1637602247788</created>
@@ -288,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638717243093</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="calculator">
+      <created>1638717683944</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1638717683944</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,12 +329,13 @@
     <MESSAGE value="site" />
     <MESSAGE value="Recommendations page" />
     <MESSAGE value="Header_footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Header_footer" />
+    <MESSAGE value="calculator" />
+    <option name="LAST_COMMIT_MESSAGE" value="calculator" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Amigos$Fofiu_George.coverage" NAME="Fofiu_George Coverage Results" MODIFIED="1637667433404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/git_Setup" />
     <SUITE FILE_PATH="coverage/Amigos$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1637667208336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Amigos$Bulzan_Nicola.coverage" NAME="Bulzan_Nicola Coverage Results" MODIFIED="1637667223496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/git_Setup" />
-    <SUITE FILE_PATH="coverage/Amigos$main.coverage" NAME="main Coverage Results" MODIFIED="1638715182206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AMIGOS" />
+    <SUITE FILE_PATH="coverage/Amigos$main.coverage" NAME="main Coverage Results" MODIFIED="1638718457435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AMIGOS" />
   </component>
 </project>
