@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="Header_footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Techie/recommendations.html" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Techie/recommendations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/img/Frame.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Techie/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Techie/calculator.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +97,7 @@
       <workItem from="1638538853573" duration="5922000" />
       <workItem from="1638549101148" duration="4752000" />
       <workItem from="1638711215447" duration="1524000" />
-      <workItem from="1638716010262" duration="1198000" />
+      <workItem from="1638716010262" duration="1615000" />
     </task>
     <task id="LOCAL-00001" summary="hello">
       <created>1637602247788</created>
@@ -282,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638564414707</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Header_footer">
+      <created>1638717243093</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1638717243093</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
