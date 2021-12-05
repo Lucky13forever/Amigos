@@ -6,6 +6,7 @@ from flask_login import login_required, current_user
 from .recomandare import *
 from .grafice import *
 import json
+from werkzeug.security import generate_password_hash, check_password_hash
 
 
 views = Blueprint('views', __name__)
@@ -22,6 +23,13 @@ def profile():
     data = request.form
 
     if request.method == 'POST':
+        name = data.get('name')
+        email = data.get('email')
+        phone = data.get('phone')
+
+        new_password = data.get('password')
+
+
         county = data.get('county')
         city = data.get('city')
         month = data.get('month')
@@ -29,14 +37,22 @@ def profile():
         roof_width = data.get('roof_width')
         consumption = data.get('consumption')
 
+
         search_user = User.query.filter_by(id=current_user.id).first()
         if search_user:
+            search_user.name = name
+            search_user.email = email
+            search_user.phone = phone
             search_user.county = county
             search_user.city = city
             search_user.month = month
             search_user.roof_length = roof_length
             search_user.roof_width = roof_width
             search_user.consumption = consumption
+
+            if new_password != "":
+                password = generate_password_hash(new_password, method='sha256')
+                search_user.password = password
 
             db.session.commit()
 
