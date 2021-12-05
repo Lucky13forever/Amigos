@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="1 si 2 url">
+    <list default="true" id="ffef1bdb-ef77-48d2-abb7-7de59d858275" name="Changes" comment="Header_footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Profile/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Profile/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/Techie/recommendations.html" beforeDir="false" afterPath="$PROJECT_DIR$/AMIGOS/website/frontend/Techie/recommendations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AMIGOS/website/frontend/img/Frame.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +34,42 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AMIGOS/website/frontend/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\danbo\PycharmProjects\Amigos\AMIGOS\website\frontend\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\danbo\PycharmProjects\Amigos\AMIGOS\website\frontend\Get to know" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="proiect" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../pythonProject1/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AMIGOS" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AMIGOS/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -69,8 +96,9 @@
       <workItem from="1638459909707" duration="6194000" />
       <workItem from="1638480447829" duration="67000" />
       <workItem from="1638538853573" duration="5922000" />
-      <workItem from="1638549101148" duration="2329000" />
-      <workItem from="1638570664174" duration="527000" />
+      <workItem from="1638549101148" duration="4752000" />
+      <workItem from="1638711215447" duration="1524000" />
+      <workItem from="1638716010262" duration="1198000" />
     </task>
     <task id="LOCAL-00001" summary="hello">
       <created>1637602247788</created>
@@ -247,35 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638549337027</updated>
     </task>
-    <task id="LOCAL-00026" summary="1 si 2 url">
-      <created>1638569394694</created>
+    <task id="LOCAL-00026" summary="Header_footer">
+      <created>1638564414707</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1638569394694</updated>
+      <updated>1638564414707</updated>
     </task>
-    <task id="LOCAL-00027" summary="1 si 2 url">
-      <created>1638569428858</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1638569428858</updated>
-    </task>
-    <task id="LOCAL-00028" summary="1 si 2 url">
-      <created>1638570821841</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1638570821841</updated>
-    </task>
-    <task id="LOCAL-00029" summary="1 si 2 url">
-      <created>1638570888568</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1638570888568</updated>
-    </task>
-    <option name="localTasksCounter" value="30" />
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,14 +312,16 @@
     <MESSAGE value="1 si 2" />
     <MESSAGE value="pic" />
     <MESSAGE value="v" />
+    <MESSAGE value="1 si 2 url" />
     <MESSAGE value="site" />
     <MESSAGE value="Recommendations page" />
-    <MESSAGE value="1 si 2 url" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 si 2 url" />
+    <MESSAGE value="Header_footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Header_footer" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Amigos$Bulzan_Nicola.coverage" NAME="Bulzan_Nicola Coverage Results" MODIFIED="1637667223496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/git_Setup" />
     <SUITE FILE_PATH="coverage/Amigos$Fofiu_George.coverage" NAME="Fofiu_George Coverage Results" MODIFIED="1637667433404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/git_Setup" />
     <SUITE FILE_PATH="coverage/Amigos$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1637667208336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Amigos$Bulzan_Nicola.coverage" NAME="Bulzan_Nicola Coverage Results" MODIFIED="1637667223496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/git_Setup" />
+    <SUITE FILE_PATH="coverage/Amigos$main.coverage" NAME="main Coverage Results" MODIFIED="1638715182206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AMIGOS" />
   </component>
 </project>
