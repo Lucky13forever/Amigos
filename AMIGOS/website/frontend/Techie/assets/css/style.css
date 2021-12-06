@@ -14,16 +14,21 @@ body {
 }
 
 a {
-  color: #30849E;
+  color: #30849e;
   text-decoration: none;
 }
 
 a:hover {
-  color: #E77E64;
+  color: #e77e64;
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Outfit", sans-serif;
 }
 
@@ -37,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #30849E;
+  background: #30849e;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -49,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #E77E64;
+  background: #e77e64;
   color: #fff;
 }
 .back-to-top.active {
@@ -76,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #E77E64;
+  border: 6px solid #e77e64;
   border-top-color: #e7e4fe;
   border-radius: 50%;
   width: 60px;
@@ -118,36 +123,52 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   padding: 20px 0;
 }
-#header.header-scrolled, #header.header-inner-pages {
+#header.header-scrolled,
+#header.header-inner-pages {
   /*background: blue;  !!!!!!!!!!!!!!!!!!!!!!! rgba(24, 6, 185, 0.8) ; */
-  background: linear-gradient(45deg, #D3F7FF, #4694a6);
+  background: linear-gradient(45deg, #d3f7ff, #4694a6);
   background-size: 400% 400%;
   -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
   padding: 12px 0;
-
-
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
   animation: gradient 1s ease infinite;
   height: 100vh;
 }
-
 
 #header .logo {
   font-size: 32px;
@@ -187,7 +208,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar > ul > li {
   padding: 10px 0 10px 24px;
 }
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -200,7 +222,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   position: relative;
 }
-.navbar a i, .navbar a:focus i {
+.navbar a i,
+.navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
@@ -217,15 +240,20 @@ h1, h2, h3, h4, h5, h6 {
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
 }
-.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+.navbar a:hover:before,
+.navbar li:hover > a:before,
+.navbar .active:before {
   visibility: visible;
   width: 100%;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
   color: #fff;
 }
-.navbar .getstarted, .navbar .getstarted:focus {
+.navbar .getstarted,
+.navbar .getstarted:focus {
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 5px;
@@ -235,11 +263,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
-.navbar .getstarted:hover, .navbar .getstarted:focus:hover {
+.navbar .getstarted:hover,
+.navbar .getstarted:focus:hover {
   color: #fff;
   border-color: #fff;
 }
-.navbar .getstarted:before, .navbar li:hover > .getstarted:before {
+.navbar .getstarted:before,
+.navbar li:hover > .getstarted:before {
   visibility: hidden;
 }
 .navbar .dropdown ul {
@@ -267,8 +297,10 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #E77E64;
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: #e77e64;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -294,7 +326,6 @@ h1, h2, h3, h4, h5, h6 {
     left: -100%;
   }
 }
-
 
 /**
 * Mobile Navigation 
@@ -348,18 +379,24 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile > ul > li {
   padding: 0;
 }
-.navbar-mobile a, .navbar-mobile a:focus {
+.navbar-mobile a,
+.navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
   color: #2c4964;
 }
-.navbar-mobile a:hover:before, .navbar-mobile li:hover > a:before, .navbar-mobile .active:before {
+.navbar-mobile a:hover:before,
+.navbar-mobile li:hover > a:before,
+.navbar-mobile .active:before {
   visibility: hidden;
 }
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
   color: #5846f9;
 }
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
   margin: 15px;
 }
 .navbar-mobile .dropdown ul {
@@ -382,7 +419,9 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
 }
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
   color: #5846f9;
 }
 .navbar-mobile .dropdown > .dropdown-active {
@@ -395,32 +434,51 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, #D3F7FF, #4694a6);
+  background: linear-gradient(45deg, #d3f7ff, #4694a6);
   background-size: 400% 400%;
   -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
   animation: gradient 1s ease infinite;
   height: 100vh;
 }
 
-#hero .container, #hero .container-fluid {
+#hero .container,
+#hero .container-fluid {
   padding-top: 84px;
 }
 #hero h1 {
@@ -431,7 +489,7 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
 }
 #hero h2 {
-  color:  black; /* rgba(255, 255, 255, 0.8); */
+  color: black; /* rgba(255, 255, 255, 0.8); */
   margin: 10px 0 0 0;
   font-size: 20px;
 }
@@ -459,9 +517,8 @@ h1, h2, h3, h4, h5, h6 {
 #hero2 {
   width: 100%;
   height: 100%;
-
 }
- /* background: linear-gradient(45deg, #ffffff, #000000);
+/* background: linear-gradient(45deg, #ffffff, #000000);
   background-size: 400% 400%;
   -webkit-animation: AnimationName 10s ease infinite;
     -moz-animation: AnimationName 10s ease infinite;
@@ -487,9 +544,8 @@ h1, h2, h3, h4, h5, h6 {
 
 }
  */
-  */
-
-#hero2 .container, #hero2 .container-fluid {
+*/ #hero2 .container,
+#hero2 .container-fluid {
   padding-top: 84px;
 }
 #hero2 h1 {
@@ -533,7 +589,8 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     text-align: center;
   }
-  #hero .container, #hero .container-fluid {
+  #hero .container,
+  #hero .container-fluid {
     padding-top: 68px;
   }
   #hero .animated {
@@ -635,7 +692,7 @@ section {
 .about .content h3 {
   font-weight: 600;
   font-size: 32px;
-  color: #E77E64;
+  color: #e77e64;
 }
 .about .content ul {
   list-style: none;
@@ -647,7 +704,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #E77E64;
+  color: #e77e64;
 }
 .about .content p:last-child {
   margin-bottom: 0;
@@ -682,24 +739,42 @@ section {
   background: linear-gradient(45deg, #4663a6, #4694a6);
   background-size: 400% 400%;
   -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
   animation: gradient 1s ease infinite;
   height: 100vh;
   padding: 80px 0 60px 0;
@@ -852,7 +927,8 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel, .testimonials .testimonials-slider {
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
   overflow: hidden;
 }
 .testimonials .testimonial-item {
@@ -879,7 +955,8 @@ section {
   color: #000000;
   margin: 0 0 0 45px;
 }
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
   color: #47aeff;
   font-size: 26px;
 }
@@ -953,7 +1030,8 @@ section {
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
 }
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   color: #fff;
   background: #5846f9;
 }
@@ -1047,14 +1125,20 @@ section {
   margin-top: 20px;
   position: relative;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #5846f9;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #5846f9;
 }
 .portfolio-details .portfolio-info {
@@ -1185,31 +1269,27 @@ section {
   color: #fff;
 }
 
-
 /*--------------------------------------------------------------
 # Input budget text
 --------------------------------------------------------------*/
 
-.input_budget{
-
-  border:none;
+.input_budget {
+  border: none;
   border-bottom: 2px solid black;
   background-color: transparent;
   padding-top: 10px;
   padding-bottom: 10px;
-
 }
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 
-
-
 .faq {
-  background: powderblue/*linear-gradient(42deg, #5846f9 0%, #7b27d8 100%)*/;
+  background: powderblue /*linear-gradient(42deg, #5846f9 0%, #7b27d8 100%)*/;
 }
-.faq .section-title h2, .faq .section-title p {
+.faq .section-title h2,
+.faq .section-title p {
   color: black;
 }
 .faq .section-title h2::after {
@@ -1249,7 +1329,8 @@ section {
   left: 20px;
   color: #ff5828;
 }
-.faq .faq-list .icon-show, .faq .faq-list .icon-close {
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
   font-size: 24px;
   position: absolute;
   right: 0;
@@ -1350,12 +1431,14 @@ section {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 5px;
   box-shadow: none;
   font-size: 14px;
 }
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
   border-color: #5846f9;
 }
 .contact .php-email-form input {
@@ -1364,7 +1447,7 @@ section {
 .contact .php-email-form textarea {
   padding: 12px 15px;
 }
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #5846f9;
   border: 0;
   padding: 10px 24px;
@@ -1372,7 +1455,7 @@ section {
   transition: 0.4s;
   border-radius: 5px;
 }
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #7b27d8;
 }
 @-webkit-keyframes animate-loading {
@@ -1525,12 +1608,12 @@ section {
   text-align: left;
   border: 1px solid white;
 }
-#footer .footer-newsletter form input[type=email] {
+#footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
-#footer .footer-newsletter form input[type=submit] {
+#footer .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: -1px;
   right: -2px;
@@ -1545,7 +1628,7 @@ section {
   border-radius: 0 5px 5px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
-#footer .footer-newsletter form input[type=submit]:hover {
+#footer .footer-newsletter form input[type="submit"]:hover {
   background: #ffffff;
 }
 #footer .copyright-wrap {
@@ -1577,4 +1660,34 @@ section {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   text-decoration: none;
+}
+
+/* ----------------------------------------
+Recommendation cards
+-------------------------------------------*/
+.ratings i {
+  font-size: 16px;
+  color: red;
+}
+
+.strike-text {
+  color: red;
+  text-decoration: line-through;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.spec-1 {
+  color: #2b2929;
+  font-size: 20px;
+}
+
+h5 {
+  font-weight: 400;
+}
+
+.para {
+  font-size: 16px;
 }
