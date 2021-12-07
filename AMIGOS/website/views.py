@@ -94,11 +94,15 @@ def home():
 result = ((None, None, None, None), (None, None, None), None, None)
 
 
-# @views.system("/system")
-# def system():
-#     return render_template('system.html', user=current_user, step=calculator_step)
+@views.route("/system")
+def system():
+    return render_template('system.html', user=current_user, step=calculator_step, result=result)
 
 
+get_all_panels = load_all_panels()
+get_all_accumulators = load_all_accumulators()
+get_all_regulators = load_all_regulators()
+get_region_dict = load_region_dict()
 @views.route("/calculator", methods=['POST', 'GET'])
 def calculator():
 
@@ -107,14 +111,22 @@ def calculator():
     global calculator_step
     user = current_user
     
-    result = get_full_system(10000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
+    # result = get_full_system(10000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
 
     data = request.form
 
     if request.method == 'POST':
         step = data.get('step')
         calculator_step = step
-        return redirect(url_for("views.experimente", user=current_user, step=calculator_step))
+
+        if step == "full_solar":
+            budget = 500000
+        else:
+            budget = int(step)
+
+        result = get_full_system(budget, user.roof_width, user.roof_length, user.county, get_all_panels, get_all_accumulators, get_all_regulators, get_region_dict)
+
+        return redirect(url_for("views.system", user=current_user, step=calculator_step, result=result))
 
 
     return render_template("calculator.html", user=current_user)
@@ -130,7 +142,7 @@ def test():
     # ToDo: daca nu reusim sa gasim niciun sistem, fix la return
     user = current_user
 
-    result = get_full_system(40000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
+    result = get_full_system(10000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
 
 
     orase = {}
