@@ -7,11 +7,11 @@ Calculator | SolarSolutions
 {% block content %}
 
 
-<div class="row">
+
+<div class="row" style="max-width: unset;">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
-
 <div class="col" style="padding-right: 0; padding-left: 0 " id='left'>
 
     <!-- ajax -->
@@ -23,22 +23,31 @@ Calculator | SolarSolutions
         <div class=" col-lg-10 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column text-center">
           <h1>Now let's find the perfect options for your home!<br><br></h1>
 
-        <form action=" " method="POST" role="form" class="form-inline">
+        <form method="POST" role="form" class="form-inline">
         <div class="row" display:flex flex-direction:row >
 
             <h1>Budget: <br><br></h1>
-           <input type="text" placeholder="The sum you're willing to pay" class="input_budget" >
+            <input type="text" id="keep_state" name="step" style="display: none;">
+           <input type="text" placeholder="The sum you're willing to pay" class="input_budget" name="" id="buget" onchange="keep_state_func()">
+        
+            
+        
         </div>
 
 
-          <div id="enter_buget" style="display: block;"><button type="submit" class="btn-get-started scrollto">Next Step</button></div>
-   </form>
+          <div id="enter_buget" style="display: block;"><button type="button" class="btn-get-started scrollto" id="next_step" onclick="next_clicked()">Next Step</button></div>
+        
+            <button type="submit" id="submit" style="display: none;">SUBMIT</button>
+        </form>
 
       </div>
     </div>
 
   </section><!-- End Hero -->
   </div>
+
+
+
 
     <div class="col" style="padding-right: 0; padding-left: 0;  " id="right">
 
@@ -50,14 +59,45 @@ Calculator | SolarSolutions
         <div class=" col-lg-10 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column text-center" style="margin-top: -17%;">
           <h1>Money is not a problem for me, show the best system for my conditions!<br><br></h1>
 
-           <div id="full_solar" style="display: block;"><button type="submit" class="btn-get-started scrollto">Go full solar!</button></div>
+          <input type="text" style="display:none" name="step" value="full_solar">
+           <div id="full_solar" style="display: block;"><button type="submit" class="btn-get-started scrollto" onclick="solar_clicked()">Go full solar!</button></div>
 
+            <script>
+                submit = document.getElementById('submit')
+                function solar_clicked(){
+                    var keep_input = document.getElementById('keep_state')
 
+                    keep_input.value = "full_solar"
+                    console.log('changed')
+
+                    submit.click()
+                }
+                function next_clicked(){
+                    var keep_input = document.getElementById('keep_state')
+                    var buget = document.getElementById('buget')
+
+                    buget.required = true
+                    keep_input.value = buget.value
+                    console.log('changed')
+
+                    submit.click()
+                }
+                function keep_state_func(){
+                    var keep_input = document.getElementById('keep_state')
+                    var buget = document.getElementById('buget')
+
+                    keep_input.value = buget.value
+                    console.log('changed')
+                }
+
+            </script>
 
       </div>
     </div>
 
     </div>
+    </div>
+
     </div>
 
     <script>
