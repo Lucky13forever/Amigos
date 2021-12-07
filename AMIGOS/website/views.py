@@ -93,10 +93,10 @@ def home():
 
 result = ((None, None, None, None), (None, None, None), None, None)
 
-
+pictures = [None, None, None]
 @views.route("/system")
 def system():
-    return render_template('system.html', user=current_user, step=calculator_step, result=result)
+    return render_template('system.html', user=current_user, step=calculator_step, result=result, pictures=pictures)
 
 
 get_all_panels = load_all_panels()
@@ -109,6 +109,7 @@ def calculator():
 
     global result
     global calculator_step
+    global pictures
     user = current_user
     
     # result = get_full_system(10000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
@@ -125,8 +126,9 @@ def calculator():
             budget = int(step)
 
         result = get_full_system(budget, user.roof_width, user.roof_length, user.county, get_all_panels, get_all_accumulators, get_all_regulators, get_region_dict)
+        pictures[0] = f"url_for('static', filename='{result[0][0].picture}')"
 
-        return redirect(url_for("views.system", user=current_user, step=calculator_step, result=result))
+        return redirect(url_for("views.system", user=current_user, step=calculator_step, result=result, pictures=pictures))
 
 
     return render_template("calculator.html", user=current_user)
