@@ -6,7 +6,7 @@
         "capacity" : 55,
         "voltage" : 12,
         "price" : 710,
-        "picture" : "AMIGOS/website/pictures/acumulator_1.jpg",
+        "picture" : "../static/assets/pictures/acumulator_1.jpg",
         "link" : "https://www.solar-depot.ro/108/Baterie-solara-AGM-GEL-55Ah"
     },
     "2" : {
@@ -16,7 +16,7 @@
         "capacity" : 100,
         "voltage" : 12,
         "price" : 1040,
-        "picture" : "AMIGOS/website/pictures/acumulator_2.jpg",
+        "picture" : "../static/assets/pictures/acumulator_2.jpg",
         "link" : "https://www.solar-depot.ro/109/Baterie-solara-AGM-GEL-100Ah"
     },
     "3" : {
@@ -26,7 +26,7 @@
         "capacity" : 150,
         "voltage" : 12,
         "price" : 1529,
-        "picture" : "AMIGOS/website/pictures/acumulator_3.jpg",
+        "picture" : "../static/assets/pictures/acumulator_3.jpg",
         "link" : "https://www.solar-depot.ro/110/Baterie-solara-AGM-GEL-150Ah"
     },
     "4" : {
@@ -36,7 +36,7 @@
         "capacity" : 250,
         "voltage" : 12,
         "price" : 2299,
-        "picture" : "AMIGOS/website/pictures/acumulator_4.jpg",
+        "picture" : "../static/assets/pictures/acumulator_4.jpg",
         "link" : "https://www.solar-depot.ro/111/Baterie-solara-AGM-GEL-250Ah"
     }
 }

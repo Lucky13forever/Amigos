@@ -103,9 +103,9 @@ get_all_panels = load_all_panels()
 get_all_accumulators = load_all_accumulators()
 get_all_regulators = load_all_regulators()
 get_region_dict = load_region_dict()
+
 @views.route("/calculator", methods=['POST', 'GET'])
 def calculator():
-
 
     global result
     global calculator_step
@@ -125,7 +125,7 @@ def calculator():
         else:
             budget = int(step)
 
-        result = get_full_system(budget, user.roof_width, user.roof_length, user.county, get_all_panels, load_all_accumulators(), get_all_regulators, get_region_dict)
+        result = get_full_system(budget, user.roof_width, user.roof_length, user.county, get_all_panels, get_all_accumulators, get_all_regulators, get_region_dict)
         
         return redirect(url_for("views.system", user=current_user, step=calculator_step, result=result, pictures=pictures))
 

@@ -18,6 +18,7 @@ def load_all_accumulators(address = "AMIGOS/website/database/acumulatori.json"):
             l=[]
             for keys,value in data.items():
                 acc=Accumulator(value["name"],value["type"],value["capacity"],value["price"],value["link"],value["picture"])
+                print(value["picture"])
                 l.append(acc)
         return l
     except FileExistsError:
@@ -31,5 +32,7 @@ def load_all_accumulators(address = "AMIGOS/website/database/acumulatori.json"):
 # poza=input()
 # obj=Accumulator(nume,tip,capacitate,pret,linc,poza)
 # print(obj.name)
-
+print(1)
+print(load_all_accumulators()[0].picture)
+print(5)
 #Cazan Dorin
