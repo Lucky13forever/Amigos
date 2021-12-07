@@ -2,10 +2,7 @@
 
 {% block content %}
 
-<br>
-<br>
-<br>
-<br>
+
 
 <!-- 
 result[0] -> (Panel_obgj, Nr, Total_power, Total_Price)
@@ -19,7 +16,7 @@ result[3] -> Money left from buget
 
  -->
 
-<h1>{{result}}</h1>
+<!-- <h1>{{result}}</h1> -->
 <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
@@ -41,7 +38,7 @@ result[3] -> Money left from buget
             <div class="row justify-content-center" style="margin-top:-1%;"  >
               <div class=" col-lg-10 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column text-center">
          
-          <h1 style="font-size: 30px; padding-bottom: 3%;">Based on the collected data, we think that these systems will be suitable for you:</h1>
+          <h1 style="font-size: 30px; padding-bottom: 3%;">Based on the collected data, we think that these system will be suitable for you:</h1>
                 
             
           <div class="row p-2  border rounded" style="  background-color: white; box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);">
@@ -110,19 +107,19 @@ result[3] -> Money left from buget
 
 
           
-          <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./assets/img/casanoapte3.0.png"></div>
+          <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="{{result[2].picture}}"></div>
           <div class="col-md-6 mt-1">
       
             <h5 style="font-weight: bold; font-size: 25px; margin-right: -15%;">Recommended inverter's details</h5>
             <br>
             
-            <div class=" row spec-1" style="margin-right:60%;"><span>Name</span>
-              <span style="margin-top: 3%;">Type</span>
+            <div class=" row spec-1" style="margin-right:60%;"><span>Name: {{result[2].name}}</span>
+              <span style="margin-top: 3%;">Type: Hibrid</span>
       
-              <span style="margin-top: 3%;">Power<br></span>
+              <span style="margin-top: 3%;">Power: {{result[2].power}} W<br></span>
               <br>
               </div>
-            <div class="spec-1 row " style="margin-right:60%;"><span style="margin-top: 3%;">Charging</span><span style="margin-top: 3%;">Price</span><br><br><span style="margin-top: 3%;"><b>Price for all inverters</b></span></div>
+            <div class="spec-1 row " style="margin-right:60%;"><span style="margin-top: 3%;">Charging: {{result[2].charging}} Ah</span><span style="margin-top: 3%;">Price: {{result[2].price}}</span><br><br><span style="margin-top: 3%;"><b>Price for all inverters: {{result[2].price}}</b></span></div>
             <br>
         </div>
         <div class="align-items-center align-content-center col-md-3 border-left mt-1">
@@ -134,7 +131,7 @@ result[3] -> Money left from buget
             <h5 style="font-weight: bold; font-size: 25px; margin-right: -15%;">How many inverters will you need?</h5>
             <br><br>
 
-            <h6 style="font-weight: bold; font-size: 55px; margin-right: -15%;">10</h6>
+            <h6 style="font-weight: bold; font-size: 55px; margin-right: -15%;">1</h6>
 
           </div>
           
@@ -145,7 +142,7 @@ result[3] -> Money left from buget
      
     </div>
             
-    <h1 style="font-size: 30px; padding-bottom: 3%;">Total price:</h1>
+    <h1 style="font-size: 30px; padding-bottom: 3%;">Total price: {{budget - result[3]}} RON</h1>
           </div>
           
         
