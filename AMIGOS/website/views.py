@@ -89,7 +89,16 @@ def home():
     return render_template("home.html", user=current_user) #User.query.all()
 
 
+
+
 result = ((None, None, None, None), (None, None, None), None, None)
+
+
+# @views.system("/system")
+# def system():
+#     return render_template('system.html', user=current_user, step=calculator_step)
+
+
 @views.route("/calculator", methods=['POST', 'GET'])
 def calculator():
 
