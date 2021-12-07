@@ -145,7 +145,7 @@ def test():
     # ToDo: daca nu reusim sa gasim niciun sistem, fix la return
     user = current_user
 
-    result = get_full_system(10000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
+    result = get_full_system(1000000, 2000 , 2000, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
 
 
     orase = {}
