@@ -905,11 +905,13 @@ section {
 .features .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
-  margin: -15px 0 15px 0px;
+  margin: -15px 0 10px 60px;
+  text-align: justify;
 }
 .features .icon-box i {
   font-size: 48px;
   float: left;
+  margin-top: -15px;
   color: #47aeff;
 }
 .features .icon-box p {
