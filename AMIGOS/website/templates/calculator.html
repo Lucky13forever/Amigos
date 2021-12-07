@@ -78,9 +78,16 @@ Calculator | SolarSolutions
 
                     buget.required = true
                     keep_input.value = buget.value
+
+                    if (buget.value < 4600){
+                        alert("Budget must be grater then 4600")
+                    }
+                    else{
+
+                      submit.click()
+                    }
                     console.log('changed')
 
-                    submit.click()
                 }
                 function keep_state_func(){
                     var keep_input = document.getElementById('keep_state')
