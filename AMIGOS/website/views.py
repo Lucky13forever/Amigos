@@ -17,6 +17,12 @@ def header_footer_general():
 
     return render_template('header_footer_general.html', user=current_user)
 
+
+calculator_step = ""
+@views.route('/experimente')
+def experimente():
+    return render_template('experimente.html', user=current_user, step=calculator_step)
+
 @views.route('/profile', methods=['POST', 'GET'])
 def profile():
     data = request.form
@@ -84,12 +90,23 @@ def home():
 
 
 result = ((None, None, None, None), (None, None, None), None, None)
-@views.route("/calculator")
+@views.route("/calculator", methods=['POST', 'GET'])
 def calculator():
+
+
     global result
+    global calculator_step
     user = current_user
     
     result = get_full_system(10000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
+
+    data = request.form
+
+    if request.method == 'POST':
+        step = data.get('step')
+        calculator_step = step
+        return redirect(url_for("views.experimente", user=current_user, step=calculator_step))
+
 
     return render_template("calculator.html", user=current_user)
 
