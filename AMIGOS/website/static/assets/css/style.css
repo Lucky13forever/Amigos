@@ -144,8 +144,8 @@ h1, h2, h3, h4, h5, h6 {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
-  animation: gradient 1s ease infinite;
-  height: 100vh;
+  /* animation: gradient 1s ease infinite; */
+  /* height: 100vh; */
 }
 
 
@@ -416,8 +416,8 @@ h1, h2, h3, h4, h5, h6 {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
-  animation: gradient 1s ease infinite;
-  height: 100vh;
+  /* animation: gradient 1s ease infinite; */
+  /* height: 100vh; */
 }
 
 #hero .container, #hero .container-fluid {
@@ -700,9 +700,9 @@ section {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
-  animation: gradient 1s ease infinite;
-  height: 100vh;
-  padding: 80px 0 60px 0;
+  /* animation: gradient 1s ease infinite; */
+  /* height: 100vh; */
+  /* padding: 80px 0 60px 0; */
 }
 .counts .counters span {
   font-size: 48px;

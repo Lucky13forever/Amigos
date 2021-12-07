@@ -1,7 +1,87 @@
-{% extends "base.html" %}
+{%extends "header_footer_general.html" %}
+
+{% block title%}
+Calculator | SolarSolutions
+{% endblock %}
 
 {% block content %}
 
-<h1>This is the buget site</h1>
 
+<div class="row">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+
+<div class="col" style="padding-right: 0; padding-left: 0 " id='left'>
+
+    <!-- ajax -->
+
+    <section id="hero" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class=" col-lg-10 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column text-center">
+          <h1>Now let's find the perfect options for your home!<br><br></h1>
+
+        <form action=" " method="POST" role="form" class="form-inline">
+        <div class="row" display:flex flex-direction:row >
+
+            <h1>Budget: <br><br></h1>
+           <input type="text" placeholder="The sum you're willing to pay" class="input_budget" >
+        </div>
+
+
+          <div id="enter_buget" style="display: none;"><button type="submit" class="btn-get-started scrollto">Next Step</button></div>
+   </form>
+
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+  </div>
+
+    <div class="col" style="padding-right: 0; padding-left: 0;  " id="right">
+
+
+    <section id="hero" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class=" col-lg-10 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column text-center" style="margin-top: -17%;">
+          <h1>Money is not a problem for me, show the best system for my conditions!<br><br></h1>
+
+           <div id="full_solar" style="display: none;"><button type="submit" class="btn-get-started scrollto">Go full solar!</button></div>
+
+
+
+      </div>
+    </div>
+
+    </div>
+    </div>
+
+    <script>
+        $("#left").hover(function(){
+            var enter_buget = document.getElementById('enter_buget')
+            enter_buget.setAttribute('style', 'display: block;')
+
+            var full_solar = document.getElementById('full_solar')
+            full_solar.setAttribute('style', 'display: none')
+            
+        })
+        $("#right").hover(function(){
+            var enter_buget = document.getElementById('enter_buget')
+            enter_buget.setAttribute('style', 'display: none;')
+
+            var full_solar = document.getElementById('full_solar')
+            full_solar.setAttribute('style', 'disaply: block')
+        })
+        /** $("#left").click(function(){
+            alert('Left');
+        });
+        $("#right").click(function(){
+            alert('Right');
+        }); */ 
+
+    </script>
 {% endblock %}

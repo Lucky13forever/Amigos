@@ -17,7 +17,6 @@ def header_footer_general():
 
     return render_template('header_footer_general.html', user=current_user)
 
-
 @views.route('/profile', methods=['POST', 'GET'])
 def profile():
     data = request.form
@@ -84,19 +83,15 @@ def home():
     return render_template("home.html", user=current_user) #User.query.all()
 
 
-@views.route('/calculator')
-def calculator():
-    return render_template('calculator.html', user=current_user)
-
 result = ((None, None, None, None), (None, None, None), None, None)
-@views.route("/buget")
-def buget():
+@views.route("/calculator")
+def calculator():
     global result
     user = current_user
     
     result = get_full_system(10000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
 
-    return render_template("buget.html", user=current_user)
+    return render_template("calculator.html", user=current_user)
 
 @views.route('/test')
 def test():
