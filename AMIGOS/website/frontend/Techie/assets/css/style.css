@@ -659,7 +659,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .section-title h2 {
   font-size: 32px;
@@ -905,7 +905,7 @@ section {
 .features .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
-  margin: 5px 0 10px 60px;
+  margin: -15px 0 15px 0px;
 }
 .features .icon-box i {
   font-size: 48px;
@@ -915,13 +915,48 @@ section {
 .features .icon-box p {
   font-size: 15px;
   color: #848484;
-  margin-left: 60px;
+  margin-left: 80px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  display: list-item;         
+  list-style-type: disc;       
+  list-style-position: inside;
 }
 .features .image {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
+  margin-top: -15px;
+}
+
+/*--------------------------------------------------------------
+# General info
+--------------------------------------------------------------*/
+.info .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: -15px 0 15px 0px;
+  color: #0c2346;
+}
+.info .icon-box i {
+  font-size: 48px;
+  float: left;
+  color: #47aeff;
+}
+.info .icon-box p {
+  font-size: 20px;
+  color: #444444;
+  margin-left: 0px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.info .image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  margin-top: -15px;
 }
 
 /*--------------------------------------------------------------
@@ -1286,7 +1321,7 @@ section {
 --------------------------------------------------------------*/
 
 .faq {
-  background: powderblue /*linear-gradient(42deg, #5846f9 0%, #7b27d8 100%)*/;
+  background: #e77e64 /*linear-gradient(42deg, #5846f9 0%, #7b27d8 100%)*/;
 }
 .faq .section-title h2,
 .faq .section-title p {
@@ -1528,7 +1563,8 @@ section {
 #footer {
   color: #fff;
   font-size: 14px;
-  background: #efbfca; /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;*/
+  background: #0c2346;
+  /* background: #efbfca; linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat; */
   background-size: cover;
 }
 #footer .footer-top {
