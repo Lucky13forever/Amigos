@@ -125,7 +125,9 @@ def calculator():
         else:
             budget = int(step)
 
-        result = get_full_system(budget, user.roof_width, user.roof_length, user.county, get_all_panels, get_all_accumulators, get_all_regulators, get_region_dict)
+        result = get_full_system(budget, user.roof_width, user.roof_length, user.county, get_all_panels, load_all_accumulators(), get_all_regulators, get_region_dict)
+        
+        print(result[0][0].picture)
         return redirect(url_for("views.system", user=current_user, step=calculator_step, result=result, pictures=pictures))
 
 

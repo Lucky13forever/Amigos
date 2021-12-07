@@ -57,7 +57,7 @@ result[3] -> Money left from buget
                   <span style="margin-top: 3%;">Power: {{ result[0][0].power }} W<br></span>
                   <br>
                   </div>
-                <div class="spec-1 row " style="margin-right:60%;"><span style="margin-top: 3%;">Length: {{ result[0][0].length }} m</span><span style="margin-top: 3%;">Width: {{ result[0][0].width }} m</span><span style="margin-top: 3%;">Price: {{ result[0][0].price }} Ron<br></span><br><br><span style="margin-top: 3%;"><b>Price for all panels {{ result[0][3] }} RON</b></span></div>
+                <div class="spec-1 row " style="margin-right:60%;"><span style="margin-top: 3%;">Length: {{ result[0][0].length }} m</span><span style="margin-top: 3%;">Width: {{ result[0][0].width }} m</span><span style="margin-top: 3%;">Price: {{ result[0][0].price }} Ron<br></span><br><br><span style="margin-top: 3%;"><b>Price for all panels: {{ result[0][3] }} RON</b></span></div>
                 <br>
 
             </div>
@@ -76,19 +76,19 @@ result[3] -> Money left from buget
                 </div>
            
           </div>
-          <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="./assets/img/casanoapte3.0.png"></div>
+          <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="{{result[1][0].picture}}"></div>
           <div class="col-md-6 mt-1">
       
             <h5 style="font-weight: bold; font-size: 25px; margin-right: -15%;">Recommended battery's details</h5>
             <br>
             
-            <div class=" row spec-1" style="margin-right:60%;"><span>Name</span>
-              <span style="margin-top: 3%;">Type</span>
+            <div class=" row spec-1" style="margin-right:60%;"><span>Name: {{result[1][0].name }}</span>
+              <span style="margin-top: 3%;">Type: {{result[1][0].type }}</span>
       
-              <span style="margin-top: 3%;">Capacity<br></span>
+              <span style="margin-top: 3%;">Capacity: {{result[1][0].capacity }} Ah<br></span>
               <br>
               </div>
-            <div class="spec-1 row " style="margin-right:60%;"><span style="margin-top: 3%;">Voltage</span><span style="margin-top: 3%;">Price<br></span><br><br><span style="margin-top: 3%;"><b>Price for all batteries</b></span></div>
+            <div class="spec-1 row " style="margin-right:60%;"><span style="margin-top: 3%;">Voltage: 12 V</span><span style="margin-top: 3%;">Price: {{result[1][0].price }}<br></span><br><br><span style="margin-top: 3%;"><b>Price for all batteries: {{result[1][2]}} RON</b></span></div>
             <br>
         </div>
         <div class="align-items-center align-content-center col-md-3 border-left mt-1">
@@ -101,7 +101,7 @@ result[3] -> Money left from buget
             <h5 style="font-weight: bold; font-size: 25px; margin-right: -15%;">How many batteries will you need?</h5>
             <br><br>
 
-            <h6 style="font-weight: bold; font-size: 55px; margin-right: -15%;">10</h6>
+            <h6 style="font-weight: bold; font-size: 55px; margin-right: -15%;">{{result[1][1]}}</h6>
 
           </div>
      
