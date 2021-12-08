@@ -190,3 +190,11 @@ def graf_test():
 
 
     return render_template('graf_test.html', consumption_graph=consumption_graph, cost_graph=cost_graph, surplus_graph=surplus_graph, user=current_user)
+
+
+@views.route("/graph_consum")
+def consum():
+
+
+    consumption_graph = create_consumption_graph(result)
+    return render_template("graph_consum.html", user=current_user, consumption_graph=consumption_graph)

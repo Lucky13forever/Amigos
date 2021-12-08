@@ -1,0 +1,138 @@
+{% extends "header_footer_general.html" %}
+
+{% block content %}
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+     <!-- <h1 class="logo"><a href="index.html">Techie</a></h1>
+       Uncomment below if you prefer to use an image logo -->
+       <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+
+
+          
+          <!--<li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+          <li><a class="nav-link scrollto" href="#contact">System</a></li>
+          <li class="dropdown"><a href="#"><span>Graphs</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Consumption</a></li>
+              <li><a href="#">Price</a></li>
+              <li><a href="#">Surplus</a></li>
+            </ul>
+
+            <li><a class="nav-link scrollto" href="#contact">Profile</a></li>
+          </li>
+        </ul>
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <div class="container" style="width: 50%; height: 80%; margin: 10% auto">
+      <div class="section-title">
+        <h2>Consumption Chart</h2>
+        <p>The following chart illustrates the comparison between your current consumption and the expected consumption using the system proposed by our calculator, based on your entries.</p>
+      </div>
+    
+      <canvas id="myChart"></canvas>
+    </div>
+
+
+    <input type="text" id="max_point" value="{{consumption_graph.max_point}}">
+    <input type="text" id="column_red" value="{{consumption_graph.colums1}}">
+    <input type="text" id="column_blue" value="{{consumption_graph.colums2}}">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+
+      var max_point = document.getElementById("max_point").value
+      var column_red = document.getElementById("column_red").value
+      var column_blue = document.getElementById("column_blue").value
+
+      console.log(column_red[0])
+
+      column_red = column_red.replace('[', '')
+      column_red = column_red.replace(']', '')
+
+      column_red = column_red.split(", ")
+
+
+      column_blue = column_blue.replace('[', '')
+      column_blue = column_blue.replace(']', '')
+      column_blue = column_blue.split(", ")
+      
+
+      const data_column_red = []
+      const data_column_blue = []
+
+      let i = 0
+      for(i=0; i<column_red.length; i++){
+        column_red[i] = parseInt(column_red[i])
+        data_column_red[i] = column_red[i] * max_point / 100;
+
+        column_blue[i] = parseInt(column_blue[i])
+        data_column_blue[i] = column_blue[i] * max_point / 100;
+
+      }
+      console.log(column_red)
+
+      data_column_red[i + 1] = max_point
+      data_column_blue[i + 1] = max_point
+
+      let myChart = document.getElementById("myChart").getContext("2d");
+      let massPopChart = new Chart(myChart, {
+        type: "bar",
+        data: {
+          labels: [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+          ],
+          datasets: [
+            {
+              label: "Your consumption",
+              data: data_column_red,
+              backgroundColor: "rgba(231, 126, 100,0.3)",
+              borderColor: "rgba( 231, 126, 100,0.5)",
+              borderWidth: 2,
+            },
+            {
+              label: "System's produced energy",
+              data: data_column_blue,
+              backgroundColor: "rgba(48, 132, 158,0.3)",
+              borderColor: "rgba(48, 132, 158,0.5)",
+              borderWidth: 2,
+            },
+          ],
+        },
+      });
+    </script>
+      </main>
+
+  <!-- ======= Footer ======= -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+</body>
+
+</html>
+
+{% endblock %}
