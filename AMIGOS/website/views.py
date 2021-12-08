@@ -223,7 +223,7 @@ def cost():
 def surplus():
     data = request.form
 
-    price_per_kW = 0.67
+    price_per_kW = 0.23
 
     if request.method == 'POST':
         price_per_kW = float(data.get('price_per_kW'))
