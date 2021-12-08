@@ -15,13 +15,13 @@ views = Blueprint('views', __name__)
 @views.route('/header_footer_general')
 def header_footer_general():
 
-    return render_template('header_footer_general.html', user=current_user)
+    return render_template('header_footer_general.html', user=current_user, show_system=False )
 
 
 calculator_step = ""
 @views.route('/experimente')
 def experimente():
-    return render_template('experimente.html', user=current_user, step=calculator_step)
+    return render_template('experimente.html', user=current_user, show_system=False, step=calculator_step)
 
 @views.route('/profile', methods=['POST', 'GET'])
 def profile():
@@ -62,13 +62,13 @@ def profile():
             db.session.commit()
 
         print(county, city, month, consumption)
-    return render_template('profile.html', user=current_user)
+    return render_template('profile.html', user=current_user, show_system=False )
 
 
 @views.route('/')
 def home():
     
-    # return render_template("home.html", user=current_user)
+    # return render_template("home.html", user=current_user, show_system=False )
 
     # prblema daca bugetul e prea mic, NonType Error
     # result = get_full_system(2000, 10, 10, "Constanta", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
@@ -86,7 +86,7 @@ def home():
     # acumulatori = result[1]
     # regulatori = result[2]
     # ramas_din_buget = result[3]
-    return render_template("home.html", user=current_user) #User.query.all()
+    return render_template("home.html", user=current_user, show_system=False ) #User.query.all()
 
 
 
@@ -97,7 +97,7 @@ pictures = [None, None, None]
 budget = None
 @views.route("/system")
 def system():
-    return render_template('system.html', user=current_user, step=calculator_step, result=result, pictures=pictures, budget=budget)
+    return render_template('system.html', user=current_user, show_system=True , step=calculator_step, result=result, pictures=pictures, budget=budget)
 
 
 get_all_panels = load_all_panels()
@@ -129,15 +129,15 @@ def calculator():
 
         result = get_full_system(budget, user.roof_width, user.roof_length, user.county, get_all_panels, get_all_accumulators, get_all_regulators, get_region_dict)
         
-        return redirect(url_for("views.system", user=current_user, step=calculator_step, result=result, pictures=pictures, budget=budget))
+        return redirect(url_for("views.system", user=current_user, show_system=False , step=calculator_step, result=result, pictures=pictures, budget=budget))
 
 
-    return render_template("calculator.html", user=current_user)
+    return render_template("calculator.html", user=current_user, show_system=False )
 
 @views.route('/test')
 def test():
     
-    # return render_template("home.html", user=current_user)
+    # return render_template("home.html", user=current_user, show_system=False )
 
     # prblema daca bugetul e prea mic, NonType Error
     # result = get_full_system(2000, 10, 10, "Constanta", load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
@@ -164,13 +164,13 @@ def test():
     ramas_din_buget = result[3]
 
     pret_sistem = result[0][3] + result[1][2] + result[2].price
-    return render_template("test.html", orase = orase, panouri=panouri, acumulatori=acumulatori, regulatori=regulatori, ramas=ramas_din_buget, pret_sistem = pret_sistem, ok = ok, user=current_user) #User.query.all()
+    return render_template("test.html", orase = orase, panouri=panouri, acumulatori=acumulatori, regulatori=regulatori, ramas=ramas_din_buget, pret_sistem = pret_sistem, ok = ok, user=current_user, show_system=False ) #User.query.all()
 
 
 @views.route('/database')
 def database():
 
-    return render_template('database.html', user=current_user, table_user=User.query.all())
+    return render_template('database.html', user=current_user, show_system=False , table_user=User.query.all())
 
 @views.route('/graf_test')
 def graf_test():
@@ -189,7 +189,7 @@ def graf_test():
     surplus_graph = create_surplus_graph(result, price_per_kW)
 
 
-    return render_template('graf_test.html', consumption_graph=consumption_graph, cost_graph=cost_graph, surplus_graph=surplus_graph, user=current_user)
+    return render_template('graf_test.html', consumption_graph=consumption_graph, cost_graph=cost_graph, surplus_graph=surplus_graph, user=current_user, show_system=False )
 
 
 @views.route("/graph_consum")
@@ -197,7 +197,7 @@ def consum():
 
 
     consumption_graph = create_consumption_graph(result)
-    return render_template("graph_consum.html", user=current_user, consumption_graph=consumption_graph)
+    return render_template("graph_consum.html", user=current_user, show_system=True , consumption_graph=consumption_graph)
 
 @views.route("/graph_cost", methods=['POST', 'GET'])
 def cost():
@@ -213,7 +213,7 @@ def cost():
     print(f'type: {type(price_per_kW)}')
     cost_graph = create_cost_graph(result, price_per_kW)
 
-    return render_template("graph_cost.html", user=current_user, cost_graph=cost_graph)
+    return render_template("graph_cost.html", user=current_user, show_system=True , cost_graph=cost_graph)
 
 @views.route("/graph_surplus", methods=['POST', 'GET'])
 def surplus():
@@ -226,4 +226,4 @@ def surplus():
 
     
     surplus_graph = create_surplus_graph(result, price_per_kW)
-    return render_template("graph_surplus.html", user=current_user, surplus_graph=surplus_graph)
+    return render_template("graph_surplus.html", user=current_user, show_system=True, surplus_graph=surplus_graph)

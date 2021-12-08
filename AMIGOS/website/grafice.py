@@ -110,7 +110,14 @@ def create_consumption_graph(result) -> Graph:
 
 
 annual_savings = 0
+
+
 def create_cost_graph(result, price_per_kW):
+    if user_consumption == 0 or energy_production == 0:
+        create_consumption_graph(result)
+
+
+
     monthly_cost_without_system = calculate_monthly_cost_without_system(price_per_kW, user_consumption)
 
     monthly_cost_with_system = calculate_montly_cost_with_system(price_per_kW, user_consumption, energy_production)
@@ -130,6 +137,9 @@ def create_cost_graph(result, price_per_kW):
     return cost_graph
 
 def create_surplus_graph(result, price_per_kW):
+    if user_consumption == 0 or energy_production == 0:
+        create_consumption_graph(result)
+
     surplus_gain = calculate_surplus_gain(price_per_kW, user_consumption, energy_production)
 
     surplus_profit = calculate_surplus_profit(price_per_kW, surplus_gain)
