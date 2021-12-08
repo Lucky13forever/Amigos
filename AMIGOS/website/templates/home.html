@@ -19,7 +19,14 @@
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1>Don't waste money.<br>Go full solar.</h1>
           <h2>Solar energy, tailor-made for you.</h2>
-          <div><a href="#" class="btn-get-started scrollto">Let's start this journey...</a></div>
+          
+          {% if user.is_authenticated %}
+            <div><a href="/calculator" class="btn-get-started scrollto">Let's start this journey...</a></div>
+          {% else %}
+            <div><a href="/SIgnInSignUp" class="btn-get-started scrollto">Let's start this journey...</a></div>
+        
+          {% endif %}
+        
         </div>
         <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
           <img src="assets/img/casazi3.0.png" class="img-fluid animated" alt="">

@@ -62,6 +62,15 @@ Calculator | SolarSolutions
           <input type="text" style="display:none" name="step" value="full_solar">
            <div id="full_solar" style="display: block;"><button type="submit" class="btn-get-started scrollto" onclick="solar_clicked()">Go full solar!</button></div>
 
+
+           <!-- {% if low_budget == true %}
+              <script>
+                window.onload = function(){
+                  console.log('low')
+                  alert('Budget is too low, cannot make a recomandation')
+                }
+              </script>
+          {% endif %} -->
             <script>
                 submit = document.getElementById('submit')
                 function solar_clicked(){
@@ -79,8 +88,8 @@ Calculator | SolarSolutions
                     buget.required = true
                     keep_input.value = buget.value
 
-                    if (buget.value < 4600){
-                        alert("Budget must be grater then 4600")
+                    if (buget.value < 6000){
+                        alert("Budget must be grater then 6000")
                     }
                     else{
 

@@ -18,7 +18,16 @@
         <h3>Type in here a particular price per kW:</h3>
 
         <form method="POST">
-          <input type="text" id="price_per_kW" name="price_per_kW" style="background-color: transparent; border:none; border-bottom:1px solid rgba(0, 0, 0, 0.5);">
+          <style>
+            input:focus{
+              outline: none;
+            }
+            input[type='text']::placeholder
+            {   
+                text-align: center;      /* for Chrome, Firefox, Opera */
+            }
+              </style>
+          <input type="text" id="price_per_kW" name="price_per_kW" placeholder="Default is 0.67 RON" style="background-color: transparent; border:none; border-bottom:1px solid rgba(0, 0, 0, 0.5);">
   
           </form>
 

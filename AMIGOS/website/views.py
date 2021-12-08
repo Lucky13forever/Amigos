@@ -97,8 +97,10 @@ pictures = [None, None, None]
 budget = None
 @views.route("/system")
 def system():
-    return render_template('system.html', user=current_user, show_system=True , step=calculator_step, result=result, pictures=pictures, budget=budget)
-
+    try:
+        return render_template('system.html', user=current_user, show_system=True , step=calculator_step, result=result, pictures=pictures, budget=budget)
+    except:
+        return redirect(url_for("views.calculator", user=current_user, show_system=False, low_buget=True ))
 
 get_all_panels = load_all_panels()
 get_all_accumulators = load_all_accumulators()
@@ -132,7 +134,7 @@ def calculator():
         return redirect(url_for("views.system", user=current_user, show_system=False , step=calculator_step, result=result, pictures=pictures, budget=budget))
 
 
-    return render_template("calculator.html", user=current_user, show_system=False )
+    return render_template("calculator.html", user=current_user, low_budget=False, show_system=False )
 
 @views.route('/test')
 def test():
