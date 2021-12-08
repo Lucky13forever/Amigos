@@ -40,10 +40,10 @@ def yaxis(maxim :int):
 
 def get_percent(x,y):
     try: 
-        val=y*100/x
+        val=float(y*100/x)
     except:
         val = 0
-    return int(val)
+    return val
 
 def colums(max_point:int, data:list):
     l=[]
