@@ -1,0 +1,86 @@
+{% extends "header_footer_general.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- verificare-->
+
+
+<body>
+
+  <main id="main">
+
+    <div class="container" style="width: 50%; height: 80%; margin: 10% auto">
+      <div class="section-title">
+        <h2>Price Chart</h2>
+        <p>The following chart illustrates the comparison between the price you currently pay and the expected price using the system proposed by our calculator, based on your entries.</p>
+        <br>
+        <br>
+        <h3>Type in here a particular price per kW:</h3>
+
+        <style>
+          input:focus{
+            outline: none;
+          }
+        </style>
+
+        <form method="POST">
+        <input type="text" name="" id="price_per_kW" name="price_per_kW" style="background-color: transparent; border:none; border-bottom:1px solid rgba(0, 0, 0, 0.5);">
+
+        </form>
+      </div>
+    
+      <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      let myChart = document.getElementById("myChart").getContext("2d");
+      let massPopChart = new Chart(myChart, {
+        type: "bar",
+        data: {
+          labels: [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+          ],
+          datasets: [
+            {
+              label: "The price you currently pay",
+              data: [300, 0, 0, 0, 0, 0, 350, 0, 0, 0, 0, 0, 600],
+              backgroundColor: "rgba(231, 126, 100,0.3)",
+              borderColor: "rgba( 231, 126, 100,0.5)",
+              borderWidth: 2,
+            },
+            {
+              label: "The predicted price after installing the system",
+              data: [500, 0, 0, 0, 0, 0, 200, 0, 0, 0, 0, 0],
+              backgroundColor: "rgba(48, 132, 158,0.3)",
+              borderColor: "rgba(48, 132, 158,0.5)",
+              borderWidth: 2,
+            },
+          ],
+        },
+      });
+    </script>
+      </main>
+
+</footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+</body>
+
+</html>
+
+{% endblock %}

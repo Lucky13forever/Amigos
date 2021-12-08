@@ -198,3 +198,18 @@ def consum():
 
     consumption_graph = create_consumption_graph(result)
     return render_template("graph_consum.html", user=current_user, consumption_graph=consumption_graph)
+
+@views.route("/graph_cost", methods=['POST', 'GET'])
+def cost():
+    data = request.form
+
+    price_per_kW = 0.67
+
+    if request.method == 'POST':
+        price_per_kW = float(data.get('price_per_kW'))
+
+    price_per_kW = 0.67
+    print(f'THIS IS PRICE: {price_per_kW}')
+    cost_graph = create_cost_graph(result, price_per_kW)
+
+    return render_template("graph_cost.html", user=current_user, cost_graph=cost_graph)
