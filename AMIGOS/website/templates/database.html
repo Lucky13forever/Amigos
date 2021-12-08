@@ -2,6 +2,8 @@
 
 {% block content %}
 <h1>This are all the users</h1>
+<h1>There are <span style="color: red;"> {{rows}}</span>  Users</h1>
+
 <br>
 <br>
 
@@ -17,6 +19,7 @@
 
 <h1>This is the entire database</h1>
 
+<div style="display: block;">
 {% for user in table_user %}
 
 <h1>____________________________________________________________________</h1>
@@ -33,4 +36,5 @@
 
 
 {% endfor %}
+</div>
 {% endblock %}

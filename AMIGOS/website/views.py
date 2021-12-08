@@ -172,7 +172,9 @@ def test():
 @views.route('/database')
 def database():
 
-    return render_template('database.html', user=current_user, show_system=False , table_user=User.query.all())
+    rows = User.query.count()
+
+    return render_template('database.html', user=current_user, show_system=False , table_user=User.query.all(), rows=rows)
 
 @views.route('/graf_test')
 def graf_test():
