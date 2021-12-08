@@ -214,3 +214,16 @@ def cost():
     cost_graph = create_cost_graph(result, price_per_kW)
 
     return render_template("graph_cost.html", user=current_user, cost_graph=cost_graph)
+
+@views.route("/graph_surplus", methods=['POST', 'GET'])
+def surplus():
+    data = request.form
+
+    price_per_kW = 0.67
+
+    if request.method == 'POST':
+        price_per_kW = float(data.get('price_per_kW'))
+
+    
+    surplus_graph = create_surplus_graph(result, price_per_kW)
+    return render_template("graph_surplus.html", user=current_user, surplus_graph=surplus_graph)
