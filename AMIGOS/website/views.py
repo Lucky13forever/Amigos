@@ -208,8 +208,9 @@ def cost():
     if request.method == 'POST':
         price_per_kW = float(data.get('price_per_kW'))
 
-    price_per_kW = 0.67
+    # price_per_kW = 0.67
     print(f'THIS IS PRICE: {price_per_kW}')
+    print(f'type: {type(price_per_kW)}')
     cost_graph = create_cost_graph(result, price_per_kW)
 
     return render_template("graph_cost.html", user=current_user, cost_graph=cost_graph)
