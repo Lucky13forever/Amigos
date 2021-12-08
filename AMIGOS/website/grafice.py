@@ -9,17 +9,30 @@ from .our_functions.apply_percent import apply_percent
 monthly_consumption = [9.3, 8.7, 9, 8.5, 7.6, 7.8, 8.4, 8.4, 7.5, 8, 8.2, 8.7]
 monthly_effic = [50, 59, 78, 85, 90, 93, 100, 95, 86, 73, 57, 48]
 
+month_provided_index = None
+consumption_provided = None
+
 def calculate_annual_consumption(montly_consumption,month,consumption):
     months=['january', 'jebruary', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
     
+    global month_provided_index
+    global consumption_provided
+
     month=month.lower()
     index_month=months.index(month)
+
+    month_provided_index = index_month
+    consumption_provided = consumption
+    
     return int(consumption*(100/montly_consumption[index_month]))
 
 def calculate_user_consumption(monthly_consumption: list, annual_consumption: int): #definesc functia
     rez=[] #creez o noua lista care va contine consumul lunar
     for i in range(len(monthly_consumption)): #parcurg lista
-        rez.append(int(monthly_consumption[i]/100*annual_consumption)) #adaug in lista consumul calculat
+        if i == month_provided_index:
+            rez.append(consumption_provided)
+        else:
+            rez.append(int(monthly_consumption[i]/100*annual_consumption)) #adaug in lista consumul calculat
     return rez #returnez lista creata
 
 def calculate_optimal_power_per_month(total_power: int):

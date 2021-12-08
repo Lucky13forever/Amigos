@@ -11,9 +11,9 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 views = Blueprint('views', __name__)
 
-
 @views.route('/header_footer_general')
 def header_footer_general():
+
 
     return render_template('header_footer_general.html', user=current_user, show_system=False )
 
@@ -201,6 +201,8 @@ def consum():
 
 
     consumption_graph = create_consumption_graph(result)
+
+    
     return render_template("graph_consum.html", user=current_user, show_system=True , consumption_graph=consumption_graph)
 
 @views.route("/graph_cost", methods=['POST', 'GET'])
