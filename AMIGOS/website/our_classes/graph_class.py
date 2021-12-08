@@ -1,5 +1,5 @@
 #Puscasu Vlad si Birla Alexandru
-def maxim_liste(l1:list,l2:list):
+def maxim_liste_vechi(l1:list,l2:list):
     maxim = 0
     for i in l1:
         if i > maxim:
@@ -19,6 +19,15 @@ def maxim_liste(l1:list,l2:list):
         return (maxim//p + 1)*p
     except:
         return 0
+
+def maxim_liste(l1: list, l2: list):
+    unu = sorted(l1)
+    doi = sorted(l2)
+
+    maxim = max(unu[-1], doi[-1])
+    return maxim
+
+
 def yaxis(maxim :int):
     buc=maxim//10
     l=[]
