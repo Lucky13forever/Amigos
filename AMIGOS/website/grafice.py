@@ -126,8 +126,8 @@ annual_savings = 0
 
 
 def create_cost_graph(result, price_per_kW):
-    if user_consumption == 0 or energy_production == 0:
-        create_consumption_graph(result)
+    
+    create_consumption_graph(result)
 
 
 
@@ -150,8 +150,8 @@ def create_cost_graph(result, price_per_kW):
     return cost_graph
 
 def create_surplus_graph(result, price_per_kW):
-    if user_consumption == 0 or energy_production == 0:
-        create_consumption_graph(result)
+    
+    create_consumption_graph(result)
 
     surplus_gain = calculate_surplus_gain(price_per_kW, user_consumption, energy_production)
 
