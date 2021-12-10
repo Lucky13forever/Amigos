@@ -17,16 +17,17 @@ class User(db.Model, UserMixin):
     roof_width = db.Column(db.Float)
     month = db.Column(db.String(150))
     consumption = db.Column(db.Integer)
-    buget = db.Column(db.Integer)
-    annual_savings = db.Column(db.Integer)
-    annual_profits = db.Column(db.Integer)
+    budget = db.Column(db.Integer)
+    #annual_savings = db.Column(db.Integer)
+    #annual_profits = db.Column(db.Integer)
+    #print()
 
 class Stats(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     m_consumption = db.Column(db.Integer)
     m_annual_savings = db.Column(db.Integer)
     m_annual_profits = db.Column(db.Integer)
-    m_buget = db.Column(db.Integer)
+    m_budget = db.Column(db.Integer)
     nr_users = db.Column(db.Integer)
 
 
