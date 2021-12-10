@@ -1,6 +1,3 @@
-#Lucian Muntiu si Vlad Neagoe
-def calculate_optimal_power_per_month(total_power: int):
-    energy_for_a_day = total_power * 5
-    energy_for_a_month = energy_for_a_day * 30 # energia pe o luna in W
-    energy_for_a_month_kW = energy_for_a_month / 1000
-    return energy_for_a_month_kW
+version https://git-lfs.github.com/spec/v1
+oid sha256:3ceb4602e3519b0064ea3833d00dff4e0fca1a85e210b0cdd19c85846f5761dc
+size 284

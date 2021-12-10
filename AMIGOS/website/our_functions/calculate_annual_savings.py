@@ -1,7 +1,3 @@
-# Bulzan Nicola, Soreata Eduard, Iovescu Razvan
-
-def calculate_annual_savings (monthly_cost_without_system: list, monthly_cost_with_system: list):
-    s=int(0)
-    for i in range(0, 12):
-        s += monthly_cost_without_system[i] - monthly_cost_with_system[i]
-    return s
+version https://git-lfs.github.com/spec/v1
+oid sha256:d59936ef9bbedb60d6a13746d6aed800ee1cbdbe36530f9abbbe6dafb380e9ac
+size 274

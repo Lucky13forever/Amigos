@@ -1,26 +1,3 @@
-import json
-
-class Panels:
-      
-      def __init__(self, name: str, type:str, power: int, length: float, width: float, price: int, picture: str, link: str):
-            self.name = name
-            self.type = type
-            self.power = power
-            self.length = length
-            self.width = width
-            self.price = price
-            self.picture = picture
-            self.link = link
-
-
-def load_all_panels():
-      all_panels = []
-      with open("AMIGOS/website/database/panouri.json", "r") as pan_file:
-            my_dict = json.load(pan_file)
-
-      for pan in my_dict.values():
-            all_panels.append(Panels(pan["name"], pan["type"], pan["power"], pan["length"], pan["width"], pan["price"], pan["picture"], pan["link"]))
-      
-      return all_panels
-
-      
+version https://git-lfs.github.com/spec/v1
+oid sha256:3ef6a180e9f860b655ba61b32487e8b4c48b1f3de73b869bbe2ea7f2462bf39a
+size 794

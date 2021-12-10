@@ -1,7 +1,3 @@
-{   "1" : [ "Craiova", "Satu-Mare"],
-    "2" : [ "Botosani", "Dolj", "Gorj", "Maramures", "Mehedinti", "Olt", "Suceava", "Teleorman", "Valcea"],
-    "3" : [ "Alba", "Arad", "Arges", "Bihor", "Bistrita Nasaud", "Brasov", "Caras Severin", "Cluj", "Dambovita", "Giurgiu", "Harghita", "Hunedoara", "Iasi", "Mures", "Prahova", "Salaj", "Sibiu", "Timis" ],
-    "4" : [ "Bacau", "Bucuresti", "Calarasi", "Covasna", "Ilfov", "Neamt", "Vaslui"],
-    "5" : [ "Braila", "Buzau", "Constanta", "Galati", "Ialomita", "Tulcea", "Vrancea"]
-    
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4ff086081b814421767677f0a04c2597c3160e7e7361af8e3348381f5dcc6515
+size 530

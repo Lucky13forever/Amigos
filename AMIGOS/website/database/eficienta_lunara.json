@@ -1,14 +1,3 @@
-{
-  "Ianuarie": 50,
-  "Februarie": 59,
-  "Martie": 78,
-  "Aprilie": 85,
-  "Mai": 90,
-  "Iunie": 93,
-  "Iulie": 100,
-  "August": 95,
-  "Septembrie": 86,
-  "Octombrie": 73,
-  "Noiembrie": 57,
-  "Decembrie": 48
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e74e877388a88d4c3aa731ac76607d06bb1977c73cf481b8ca55b10ab9b4f4d2
+size 210

@@ -1,10 +1,3 @@
-# Osman Raluca, Vlad Neagoe
-class Regulator_with_invertor :
-    def __init__(self,name:str,power:str,charging:int,price:int,link:str,picture:str):
-        self.name=name
-        self.power=power
-        self.charging=charging
-        self.price=price
-        self.link=link
-        self.picture=picture
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:759c557582c9ec08d256fd7081398ce726b245d9b99f8768049d1a34717aa5ff
+size 304

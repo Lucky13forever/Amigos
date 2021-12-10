@@ -1,7 +1,3 @@
-def calculate_annual_consumption(montly_consumption,month,consumption):
-    months=["ianuarie","februarie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
-    month=month.lower()
-    index_month=months.index(month)
-    return int(consumption*(100/montly_consumption[index_month]))
-
-#Popa Iulia
+version https://git-lfs.github.com/spec/v1
+oid sha256:32f443703d5ae1b486f86eb39b3468808ea0d2990191e618a82f26fafb743bd3
+size 351

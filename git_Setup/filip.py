@@ -1,4 +1,3 @@
-def SHA256(string :str):
-    # returns a string containing the hash (SHA 256) of the given string in hexadecimal
-    from hashlib import sha256
-    return sha256(string.encode('utf-8')).hexdigest()
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d178b6033f30db822df9354df067acf47ab4b50415fe0aa0cee53001d4d8f8e
+size 197

@@ -1,18 +1,3 @@
-#Balutoiu Deian, Birla Alexandru si Puscasu Vlad
-import json
-from our_classes.accumulator_class import Accumulator
-def load_all_accumulators(address: str):
-    try:
-        with open(address, "r") as file:
-            data = json.load(file)
-            l=[]
-            for keys,value in data.items():
-                acc=Accumulator(value["name"],value["type"],value["capacity"],value["price"],value["link"],value["picture"])
-                l.append(acc)
-        return l
-    except FileExistsError:
-        print("FileReadError")
-
-
-# print(load_all_accumulators('AMIGOS/website/database/acumulatori.json'))
-    
+version https://git-lfs.github.com/spec/v1
+oid sha256:4b6051a38be29b41bcb7aee4a67500b8c4d7a92d722f907abc7ac726ad751ab8
+size 614

@@ -1,8 +1,3 @@
-# Cinteza Emilian
-
-
-def calculate_monthly_cost_without_system(price_per_kW: float, monthly_user_consumption: list):
-    monthly_price = []
-    for each_month in monthly_user_consumption:
-        monthly_price.append(int(each_month * price_per_kW))
-    return monthly_price
+version https://git-lfs.github.com/spec/v1
+oid sha256:372d013bd2c6911d9838f30baceb6dcc117575ff5eac94a5b3b34ca4d7c33dc4
+size 273

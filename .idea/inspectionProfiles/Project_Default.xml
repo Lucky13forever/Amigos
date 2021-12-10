@@ -1,14 +1,3 @@
-<component name="InspectionProjectProfileManager">
-  <profile version="1.0">
-    <option name="myName" value="Project Default" />
-    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
-      <option name="ignoredIdentifiers">
-        <list>
-          <option value="set.sort" />
-          <option value="dict.sort" />
-          <option value="int.__getitem__" />
-        </list>
-      </option>
-    </inspection_tool>
-  </profile>
-</component>
+version https://git-lfs.github.com/spec/v1
+oid sha256:4df9432a2639f471b3ab30477e4edd4be4f5b0f8aca7455f63f3ed991c97a5cf
+size 508

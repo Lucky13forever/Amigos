@@ -1,12 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="database" uuid="a1f1d255-69c9-4135-bfca-c6fe647ca54c">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:E:\manu\project\Amigos\AMIGOS\website\database.db</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-  </component>
-</project>
+version https://git-lfs.github.com/spec/v1
+oid sha256:a6584a6bec255ad36c32a78eed15c04deb3ace973cdb44bca4e999bb8e7bc54f
+size 548

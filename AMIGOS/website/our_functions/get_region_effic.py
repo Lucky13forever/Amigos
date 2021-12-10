@@ -1,11 +1,3 @@
-
-def get_region_effic(region_dict,city):
-    for i in range(1,6):
-        if city in region_dict[str(i)]:
-            return(70+6*i)
-
-
-
-# -Iulia Popa, Remus Porumb
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:314bb8bab26e671a1e1dfc9e6707bb5fb8edc52c20ee375e23df6fe33de9f3b8
+size 166

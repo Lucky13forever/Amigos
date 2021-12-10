@@ -1,7 +1,3 @@
-#Despina Cojocaru
-def calculate_energy_production(power: int, region_dict: dict, county: str, monthly_effic: list):
-    region_effic = get_region_effic(region_dict, county)
-    result = []
-    for each_month in monthly_effic:
-        result.append(get_percent(power, region_effic)+each_month)
-    return result
+version https://git-lfs.github.com/spec/v1
+oid sha256:b659afa54247aa57f0d7b67b1529fc7c0000faa5a85697eab317cdd1115242ce
+size 316

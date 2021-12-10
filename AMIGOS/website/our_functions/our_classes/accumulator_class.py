@@ -1,20 +1,3 @@
-class Accumulator:
- 
-    def __init__(self, name :str, type :str, capacity :int, price :int, link :str, picture :str):
-        self.name=name
-        self.type=type
-        self.capacity=capacity
-        self.price=price
-        self.link=link
-        self.picture=picture
-
-# nume=input()
-# tip=input()
-# capacitate=int(input())
-# pret=int(input())
-# linc=input()
-# poza=input()
-# obj=Accumulator(nume,tip,capacitate,pret,linc,poza)
-# print(obj.name)
-
-#Cazan Dorin
+version https://git-lfs.github.com/spec/v1
+oid sha256:583041a1ed6748d6be5f1139ef60ae90bd0b5c21ac70c1fc961a3a07ddc158c2
+size 464

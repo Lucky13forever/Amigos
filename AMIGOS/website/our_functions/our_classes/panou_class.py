@@ -1,26 +1,3 @@
-import json
-
-class Panels:
-      
-      def __init__(self, model, pret, suprafata, putere):
-            self.model = model
-            self.price = pret
-            self.surface = suprafata
-            self.power = putere
-
-all_panels = []
-def load_all_panels():
-
-      with open("AMIGOS/website/database/panouri.json", "r") as pan_file:
-            my_dict = json.load(pan_file)
-
-      for pan in my_dict.values():
-            all_panels.append(Panels(pan["type"], pan["price"], pan["size"], pan["power"]))
-      
-      return all_panels
-
-
-load_all_panels()
-
-print(all_panels[0].surface)
-      
+version https://git-lfs.github.com/spec/v1
+oid sha256:defc65e4e27116dc58dd7d2d9483c9c2529c5122abe2cfffd7d243b924281591
+size 594

@@ -1,14 +1,3 @@
-import json
-
-with open('orase.json', 'r') as file:
-    my_dict = json.load(file)
-
-    for key, cities in my_dict.items():
-        for i in range(len(cities)):
-            my_dict[key][i] = my_dict[key][i].capitalize()
-
-    for key in my_dict.keys():
-        my_dict[key] = sorted(my_dict[key])
-
-    with open('output.json', 'w') as out:
-        json.dump(my_dict, out, indent=4)
+version https://git-lfs.github.com/spec/v1
+oid sha256:f78fa501b4f7f5c4820a92e7bab1acefe34fde9e15ee90a4d1e9babba2edc6aa
+size 378
