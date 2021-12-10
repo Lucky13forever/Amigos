@@ -1,3 +1,6 @@
 def apply_percent(x,y):
-    y=(y*x)//100
+    try:
+        y=(y*x)//100
+    except:
+        y=2
     return y

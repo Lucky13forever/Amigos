@@ -20,7 +20,7 @@
 <h1>This is the entire database</h1>
 
 <div style="display: block;">
-{% for user in table_user %}
+{% with user = table_user[0] %}
 
 <h1>____________________________________________________________________</h1>
 <h1 style="color: red;"> ID: {{user.id}} </h1>
@@ -35,6 +35,6 @@
 <h1>Consumption: {{user.consumption}}</h1>
 
 
-{% endfor %}
+{% endwith %}
 </div>
 {% endblock %}
