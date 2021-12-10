@@ -72,7 +72,7 @@ def consumption():
             old_info['consumption'] = consumption
 
 
-            user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'), phone=phone, county=county, city=city, roof_length=roof_length, roof_width=roof_width, month=month, consumption=consumption, buget = 0)
+            user = User(name= name, email= email, password=generate_password_hash(password, method='sha256'), phone=phone, county=county, city=city, roof_length=roof_length, roof_width=roof_width, month=month, consumption=consumption, budget = 0)
             db.session.add(user)
             db.session.commit()
 
