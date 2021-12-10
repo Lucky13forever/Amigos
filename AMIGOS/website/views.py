@@ -172,7 +172,7 @@ def profile():
 def home():
     print(get_all_panels)
 
-    generate_users()
+    # generate_users()
     
     # return render_template("home.html", user=current_user, show_system=False )
 
