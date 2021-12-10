@@ -231,7 +231,7 @@ def calculator():
         calculator_step = step
 
         if step == "full_solar":
-            budget = 500000
+            budget = 120000
         else:
             budget = int(step)
 
