@@ -92,32 +92,32 @@ def calculate_surplus_profit(price_per_kW,monthly_profit):
 #this are measured in kW
 user_consumption = 0
 energy_production = 0
-def create_consumption_graph(result) -> Graph:
-    user = current_user
+def create_consumption_graph(result, user) -> Graph:
+    # user = current_user
     annual_consumption = calculate_annual_consumption(monthly_consumption, user.month, user.consumption)
     
     # column 1
     global user_consumption
     user_consumption = calculate_user_consumption(monthly_consumption, annual_consumption)
     
-    print(f'Consumul anual este {annual_consumption}')
-    print(f'From grafice I have this\nUser consumption: {user_consumption}')
+    # print(f'Consumul anual este {annual_consumption}')
+    # print(f'From grafice I have this\nUser consumption: {user_consumption}')
     optimal_power = calculate_optimal_power_per_month(result[0][2])
-    print(f'This is optimal: {optimal_power} from {result[0][2]}')
+    # print(f'This is optimal: {optimal_power} from {result[0][2]}')
     
     # column 2
     global energy_production
     energy_production = calculate_energy_production(optimal_power, load_region_dict(), user.county, monthly_effic)
-    print(f'Energy produced is {energy_production}')
+    # print(f'Energy produced is {energy_production}')
 
 
     # now let's create the consumption graph
 
     consumption_graph = Graph(user_consumption, energy_production)
-    print(f'This is max_point {consumption_graph.max_point}')
-    print(f'This is the y_axis: {consumption_graph.yaxis_values}')
-    print(f'This is the first column : {consumption_graph.colums1}')
-    print(f'This is the second column : {consumption_graph.colums2}')
+    # print(f'This is max_point {consumption_graph.max_point}')
+    # print(f'This is the y_axis: {consumption_graph.yaxis_values}')
+    # print(f'This is the first column : {consumption_graph.colums1}')
+    # print(f'This is the second column : {consumption_graph.colums2}')
 
     return consumption_graph
 
@@ -125,9 +125,9 @@ def create_consumption_graph(result) -> Graph:
 annual_savings = 0
 
 
-def create_cost_graph(result, price_per_kW):
+def create_cost_graph(result, price_per_kW, user):
     
-    create_consumption_graph(result)
+    create_consumption_graph(result, user)
 
 
 
@@ -135,7 +135,7 @@ def create_cost_graph(result, price_per_kW):
 
     monthly_cost_with_system = calculate_montly_cost_with_system(price_per_kW, user_consumption, energy_production)
 
-
+    global annual_savings
     annual_savings = calculate_annual_savings(monthly_cost_without_system, monthly_cost_with_system)
 
 
@@ -143,15 +143,16 @@ def create_cost_graph(result, price_per_kW):
     cost_graph.annual_savings = annual_savings
 
 
-    print(f'This is monthly_cost_without: {monthly_cost_without_system}')
-    print(f'This is monthly_cost_wit_system: {monthly_cost_with_system}')
-    print(f'This is annual savings : {annual_savings}')
+    # print(f'This is monthly_cost_without: {monthly_cost_without_system}')
+    # print(f'This is monthly_cost_wit_system: {monthly_cost_with_system}')
+    # print(f'This is annual savings : {annual_savings}')
     
     return cost_graph
 
-def create_surplus_graph(result, price_per_kW):
+annual_profits = 0
+def create_surplus_graph(result, price_per_kW, user):
     
-    create_consumption_graph(result)
+    create_consumption_graph(result, user)
 
     surplus_gain = calculate_surplus_gain(price_per_kW, user_consumption, energy_production)
 
@@ -160,6 +161,16 @@ def create_surplus_graph(result, price_per_kW):
     surplus_graph = Graph(surplus_gain, surplus_gain)
     surplus_graph.annual_profit = surplus_profit
 
-    print(f'This is surplus: {surplus_gain}')
+    global annual_profits
+    annual_profits = surplus_profit
+
+    # print(f'This is surplus: {surplus_gain}')
 
     return surplus_graph
+
+def get_user_stats(result, user):
+    create_consumption_graph(result, user)
+    create_cost_graph(result, 0.67, user)
+    create_surplus_graph(result, 0.23, user)
+
+    return annual_savings, annual_profits

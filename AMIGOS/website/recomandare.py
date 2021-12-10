@@ -18,7 +18,10 @@ def load_region_dict(address = "AMIGOS/website/database/regiuni.json"):
 
 
 def apply_percent(x,y):
-    y=(y*x)//100
+    try:
+        y=(y*x)//100
+    except:
+        y=1
     return y
 
 def get_region_effic(region_dict,city):

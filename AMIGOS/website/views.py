@@ -1,3 +1,4 @@
+from re import search
 from flask import Blueprint, render_template, request, redirect, url_for
 import flask
 from sqlalchemy.orm.query import Query
@@ -7,6 +8,8 @@ from .recomandare import *
 from .grafice import *
 import json
 from werkzeug.security import generate_password_hash, check_password_hash
+from flask_login import login_user, login_required, logout_user, current_user
+import random
 
 
 views = Blueprint('views', __name__)
@@ -27,33 +30,100 @@ def experimente():
 def stats():
     return render_template('stats.html', user=current_user, table_stats=Stats.query.all())
 
+
+
+
+
+
+def generate_users():
+
+    all_users = []
+
+    with open('AMIGOS/website/database/usernames.json', 'r') as file:
+        usernames = json.load(file)
+
+        with open('AMIGOS/website/database/orase.json', 'r') as orase_file:
+            orase = json.load(orase_file)
+            counties = list(orase.keys())
+
+            print(f'COUNTIES: {len(usernames)}')
+
+
+
+            m_savings = 0
+            m_profits = 0
+            m_cons = 0
+            m_buget = 0
+            for i in range(1, 5_000 + 1):
+                name = usernames[i % 4800]
+                county = random.choice(counties)
+                city = random.choice(orase[county])
+                
+
+                cons = random.randint(200, 1000)
+                buget = random.randint(6000, 120_000)
+
+
+
+                length = random.randint(1, 20)
+                width = random.randint(1, 20)
+
+                global result
+                result = get_full_system(buget, width, length, county, get_all_panels, get_all_accumulators, get_all_regulators, get_region_dict)
+
+
+                new_user = User(name= name, email= f'{name}{i}@gmail.com', password=generate_password_hash(f'{name}{i}', method='sha256'), phone='0123456789', county=county, city=city, roof_length=length, roof_width=width, month='November', consumption=cons)
+                savings, profits = get_user_stats(result, new_user)
+                
+                m_buget += buget
+                m_savings += savings
+                m_profits += profits
+                m_cons += cons
+
+                # login_user(new_user, remember=True)
+                all_users.append(new_user)
+            
+                if i % 5_000 == 0:
+
+                    search
+                    print('another 5_000')
+                    db.session.add_all(all_users)
+
+                    db.session.commit()
+                    all_users = []
+                    
+            imp = 5000
+            m_cons /= imp
+            m_savings /= imp
+            m_profits /= imp
+            m_buget /= imp
+            nr_users = imp
+
+    new_stats = Stats(m_consumption=m_cons, m_annual_savings=m_savings, m_annual_profits=profits, m_buget=m_buget, nr_users=nr_users)
+    db.session.add(new_stats)
+    db.session.commit()
+
+
 @views.route('/profile', methods=['POST', 'GET'])
 def profile():
-    # try to output users
-    table_users = User.query.all()
-    ok = 0
-    for user in table_users:
-        if user.id==8000:
-            print('Found 1000')
-        ok = user.name
+    # try to output usersw
+    # table_users = User.query.all()
+    # ok = 0
+    # for user in table_users:
+    #     if user.id==8000:
+    #         print('Found 1000')
+    #     ok = user.name
 
     print('DONE')
 
     # add new users
-    # for i in range(2000, 10_000):
-    #     new_user = User(name= 'name', email= f'{i}@gmail.com', password=generate_password_hash('1234', method='sha256'), phone='0724037007', county="Timis", city='Timisoara', roof_length=6.1, roof_width=5.5, month='November', consumption=300)
-
-    #     db.session.add(new_user)
-    #     db.session.commit()
-    #     if i % 1000 == 0:
-    #         print('Another 1000')
-
+    # generate_users()
     # add a new Stat
 
-    stat = Stats(county='Timis', buget=150, annual_savings=500, annual_profits=300)
+    # stat = Stats(county='Timis', buget=150, annual_savings=500, annual_profits=300)
 
-    db.session.add(stat)
-    db.session.commit()
+    # db.session.add(stat)
+    # db.session.commit()
 
 
     data = request.form
@@ -100,6 +170,9 @@ def profile():
 
 @views.route('/')
 def home():
+    print(get_all_panels)
+
+    # generate_users()
     
     # return render_template("home.html", user=current_user, show_system=False )
 
@@ -217,13 +290,13 @@ def graf_test():
     
     result = get_full_system(40000, user.roof_width , user.roof_length, user.county , load_all_panels(), load_all_accumulators(), load_all_regulators(), load_region_dict())
 
-    consumption_graph = create_consumption_graph(result)
+    consumption_graph = create_consumption_graph(result, user)
 
 
     price_per_kW = 0.67
-    cost_graph = create_cost_graph(result, price_per_kW)
+    cost_graph = create_cost_graph(result, price_per_kW, user)
 
-    surplus_graph = create_surplus_graph(result, price_per_kW)
+    surplus_graph = create_surplus_graph(result, price_per_kW, user)
 
 
     return render_template('graf_test.html', consumption_graph=consumption_graph, cost_graph=cost_graph, surplus_graph=surplus_graph, user=current_user, show_system=False )
@@ -232,8 +305,8 @@ def graf_test():
 @views.route("/graph_consum")
 def consum():
 
-
-    consumption_graph = create_consumption_graph(result)
+    user = current_user
+    consumption_graph = create_consumption_graph(result, user)
 
     
     return render_template("graph_consum.html", user=current_user, show_system=True , consumption_graph=consumption_graph)
@@ -250,7 +323,9 @@ def cost():
     # price_per_kW = 0.67
     print(f'THIS IS PRICE: {price_per_kW}')
     print(f'type: {type(price_per_kW)}')
-    cost_graph = create_cost_graph(result, price_per_kW)
+    
+    user = current_user
+    cost_graph = create_cost_graph(result, price_per_kW, user)
 
     return render_template("graph_cost.html", user=current_user, show_system=True , cost_graph=cost_graph)
 
@@ -264,5 +339,6 @@ def surplus():
         price_per_kW = float(data.get('price_per_kW'))
 
     
-    surplus_graph = create_surplus_graph(result, price_per_kW)
+    user=current_user
+    surplus_graph = create_surplus_graph(result, price_per_kW, user)
     return render_template("graph_surplus.html", user=current_user, show_system=True, surplus_graph=surplus_graph)
