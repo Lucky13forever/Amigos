@@ -1,5 +1,4 @@
 from flask import Blueprint, render_template, request, redirect, url_for
-import math
 import flask
 from sqlalchemy.orm.query import Query
 from .models import *
@@ -24,8 +23,39 @@ calculator_step = ""
 def experimente():
     return render_template('experimente.html', user=current_user, show_system=False, step=calculator_step)
 
+@views.route('/stats')
+def stats():
+    return render_template('stats.html', user=current_user, table_stats=Stats.query.all())
+
 @views.route('/profile', methods=['POST', 'GET'])
 def profile():
+    # try to output users
+    table_users = User.query.all()
+    ok = 0
+    for user in table_users:
+        if user.id==8000:
+            print('Found 1000')
+        ok = user.name
+
+    print('DONE')
+
+    # add new users
+    # for i in range(2000, 10_000):
+    #     new_user = User(name= 'name', email= f'{i}@gmail.com', password=generate_password_hash('1234', method='sha256'), phone='0724037007', county="Timis", city='Timisoara', roof_length=6.1, roof_width=5.5, month='November', consumption=300)
+
+    #     db.session.add(new_user)
+    #     db.session.commit()
+    #     if i % 1000 == 0:
+    #         print('Another 1000')
+
+    # add a new Stat
+
+    stat = Stats(county='Timis', buget=150, annual_savings=500, annual_profits=300)
+
+    db.session.add(stat)
+    db.session.commit()
+
+
     data = request.form
 
     if request.method == 'POST':
