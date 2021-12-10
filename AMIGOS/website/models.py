@@ -27,3 +27,6 @@ class Stats(db.Model, UserMixin):
     annual_profits = db.Column(db.Integer)
 
 
+
+
+
