@@ -46,7 +46,7 @@ def generate_users():
 
 
 
-            for i in range(20_000, 1_000_000):
+            for i in range(20_000, 30_000):
                 for mail in range(209):
                     for name in usernames:
 
@@ -59,13 +59,17 @@ def generate_users():
 
                         all_users.append(new_user)
                 
-                if i % 50_000:
-                    print('another 50000')
+                if i % 5_000:
+                    print('another 5_000')
+                    db.session.add_all(all_users)
+    
+                    db.session.commit()
+                    all_users = []
                     
 
-    db.session.add_all(all_users)
+    # db.session.add_all(all_users)
     
-    db.session.commit()
+    # db.session.commit()
 
 
 @views.route('/profile', methods=['POST', 'GET'])
