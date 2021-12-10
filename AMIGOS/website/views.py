@@ -241,16 +241,16 @@ def calculator():
        
         if search and search.budget == 0:
             search.budget = budget
-            db.session.commit()
             newStat = Stats.query.first()
-            newStat.m_consumption = newStat.m_consumption * (newStat.nr_users / (newStat.nr_users + 1)) + user.consumption
-            newStat.m_budget = newStat.m_budget * (newStat.nr_users / (newStat.nr_users + 1)) + budget
-            newStat.nr_users += 1
+            newStat.m_consumption = newStat.m_consumption * (newStat.nr_users / (newStat.nr_users + 1)) + user.consumption / (newStat.nr_users + 1)
+            newStat.m_budget = newStat.m_budget * (newStat.nr_users / (newStat.nr_users + 1)) + budget / (newStat.nr_users + 1)
 
             savings, profits = get_user_stats(result, search)
-            newStat.m_annual_savings = newStat.m_annual_savings * (newStat.nr_users / (newStat.nr_users + 1)) + savings
-            newStat.m_annual_profits = newStat.m_annual_profits * (newStat.nr_users / (newStat.nr_users + 1)) + profits
-    
+            newStat.m_annual_savings = newStat.m_annual_savings * (newStat.nr_users / (newStat.nr_users + 1)) + savings / (newStat.nr_users + 1)
+            newStat.m_annual_profits = newStat.m_annual_profits * (newStat.nr_users / (newStat.nr_users + 1)) + profits / (newStat.nr_users + 1)
+            newStat.nr_users += 1
+
+            db.session.commit()
         
         return redirect(url_for("views.system", user=current_user, show_system=False , step=calculator_step, result=result, pictures=pictures, budget=budget))
 
