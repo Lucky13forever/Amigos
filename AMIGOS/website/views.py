@@ -7,6 +7,7 @@ from .recomandare import *
 from .grafice import *
 import json
 from werkzeug.security import generate_password_hash, check_password_hash
+import random
 
 
 views = Blueprint('views', __name__)
@@ -27,9 +28,49 @@ def experimente():
 def stats():
     return render_template('stats.html', user=current_user, table_stats=Stats.query.all())
 
+
+
+
+def generate_users():
+
+    all_users = []
+
+    with open('AMIGOS/website/database/usernames.json', 'r') as file:
+        usernames = json.load(file)
+
+        with open('AMIGOS/website/database/orase.json', 'r') as orase_file:
+            orase = json.load(orase_file)
+            counties = list(orase.keys())
+
+            print(f'COUNTIES: {counties}')
+
+
+
+            for i in range(20_000, 1_000_000):
+                for mail in range(209):
+                    for name in usernames:
+
+                        county = random.choice(counties)
+                        city = random.choice(orase[county])
+                        
+
+
+                        new_user = User(name= name, email= f'{name}{mail}@gmail.com', password=generate_password_hash(f'{name}{mail}', method='sha256'), phone='0123456789', county=county, city=city, roof_length=random.randint(1, 20), roof_width=random.randint(1, 20), month='November', consumption=random.randint(200, 1000))
+
+                        all_users.append(new_user)
+                
+                if i % 50_000:
+                    print('another 50000')
+                    
+
+    db.session.add_all(all_users)
+    
+    db.session.commit()
+
+
 @views.route('/profile', methods=['POST', 'GET'])
 def profile():
-    # try to output users
+    # try to output usersw
     table_users = User.query.all()
     ok = 0
     for user in table_users:
@@ -40,14 +81,7 @@ def profile():
     print('DONE')
 
     # add new users
-    # for i in range(2000, 10_000):
-    #     new_user = User(name= 'name', email= f'{i}@gmail.com', password=generate_password_hash('1234', method='sha256'), phone='0724037007', county="Timis", city='Timisoara', roof_length=6.1, roof_width=5.5, month='November', consumption=300)
-
-    #     db.session.add(new_user)
-    #     db.session.commit()
-    #     if i % 1000 == 0:
-    #         print('Another 1000')
-
+    generate_users()
     # add a new Stat
 
     stat = Stats(county='Timis', buget=150, annual_savings=500, annual_profits=300)
