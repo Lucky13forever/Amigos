@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, request, redirect, url_for
+import math
 import flask
 from sqlalchemy.orm.query import Query
 from .models import *
@@ -40,8 +41,10 @@ def profile():
         month = data.get('month')
         roof_length = data.get('roof_length')
         roof_width = data.get('roof_width')
-        consumption = data.get('consumption')
-
+        try:
+            consumption = int(data.get('consumption'))
+        except:
+            consumption = data.get('consumption')
 
         search_user = User.query.filter_by(id=current_user.id).first()
         if search_user:
