@@ -20,7 +20,6 @@ class User(db.Model, UserMixin):
     budget = db.Column(db.Integer)
     #annual_savings = db.Column(db.Integer)
     #annual_profits = db.Column(db.Integer)
-    #print()
 
 class Stats(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)

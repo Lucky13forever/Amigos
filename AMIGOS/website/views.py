@@ -53,7 +53,7 @@ def generate_users():
             m_savings = 0
             m_profits = 0
             m_cons = 0
-            m_buget = 0
+            m_budget = 0
             for i in range(1, 5_000 + 1):
                 name = usernames[i % 4800]
                 county = random.choice(counties)
@@ -61,7 +61,7 @@ def generate_users():
                 
 
                 cons = random.randint(200, 1000)
-                buget = random.randint(6000, 120_000)
+                budget = random.randint(6000, 120_000)
 
 
 
@@ -69,13 +69,13 @@ def generate_users():
                 width = random.randint(1, 20)
 
                 global result
-                result = get_full_system(buget, width, length, county, get_all_panels, get_all_accumulators, get_all_regulators, get_region_dict)
+                result = get_full_system(budget, width, length, county, get_all_panels, get_all_accumulators, get_all_regulators, get_region_dict)
 
 
-                new_user = User(name= name, email= f'{name}{i}@gmail.com', password=generate_password_hash(f'{name}{i}', method='sha256'), phone='0123456789', county=county, city=city, roof_length=length, roof_width=width, month='November', consumption=cons)
+                new_user = User(name= name, email= f'{name}{i}@gmail.com', password=generate_password_hash(f'{name}{i}', method='sha256'), phone='0123456789', county=county, city=city, roof_length=length, roof_width=width, month='November', consumption=cons, budget = budget)
                 savings, profits = get_user_stats(result, new_user)
                 
-                m_buget += buget
+                m_budget += budget
                 m_savings += savings
                 m_profits += profits
                 m_cons += cons
@@ -96,10 +96,10 @@ def generate_users():
             m_cons /= imp
             m_savings /= imp
             m_profits /= imp
-            m_buget /= imp
+            m_budget /= imp
             nr_users = imp
 
-    new_stats = Stats(m_consumption=m_cons, m_annual_savings=m_savings, m_annual_profits=profits, m_buget=m_buget, nr_users=nr_users)
+    new_stats = Stats(m_consumption=m_cons, m_annual_savings=m_savings, m_annual_profits=profits, m_budget=m_budget, nr_users=nr_users)
     db.session.add(new_stats)
     db.session.commit()
 
@@ -172,7 +172,7 @@ def profile():
 def home():
     print(get_all_panels)
 
-    # generate_users()
+    generate_users()
     
     # return render_template("home.html", user=current_user, show_system=False )
 
