@@ -18,7 +18,7 @@ class User(db.Model, UserMixin):
     month = db.Column(db.String(150))
     consumption = db.Column(db.Integer)
 
-class Calculator(db.Model, UserMixin):
+class Stats(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     county = db.Column(db.String(150))
     # consumption = db.Column(db.Integer)
@@ -26,7 +26,4 @@ class Calculator(db.Model, UserMixin):
     annual_savings = db.Column(db.Integer)
     annual_profits = db.Column(db.Integer)
 
-class Stats(db.Model, UserMixin):
-    id = db.Column(db.Integer, primary_key=True)
-    monthly_consumption = db.Column(db.Integer)
 
