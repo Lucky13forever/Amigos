@@ -35,3 +35,4 @@ E:/GitRepos/Amigos/AMIGOS/website/database.db filter=lfs diff=lfs merge=lfs -tex
 /git_Setup/Stefan Claudiu filter=lfs diff=lfs merge=lfs -text
 /git_Setup/Vlad_Neagoe filter=lfs diff=lfs merge=lfs -text
 /git_Setup/ioana filter=lfs diff=lfs merge=lfs -text
+PATTERN filter=lfs diff=lfs merge=lfs -text
